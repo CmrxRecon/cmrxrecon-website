@@ -17,4 +17,4 @@ git commit -m "update 2026 post"
 git push
 
 cd $ROOT_DIR
-git add modules/cmrxrecon.github.io/2026
+git add modules/cmrxrecon.github.io

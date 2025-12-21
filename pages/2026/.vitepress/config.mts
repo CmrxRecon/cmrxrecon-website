@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/home' },
+      { text: 'Home', link: '/' },
       { text: 'Data', link: '/data'},
       { text: 'Tasks', link: '/tasks'},
       { text: 'Join the challenge', link: '/join-the-challenge'},
@@ -19,7 +19,7 @@ export default defineConfig({
       ]},
       { text: 'Sponsors', link: '/sponsors' },
       { text: 'FAQ', link: '/faq' },
-      { text: 'debug', link: '/markdown-examples' },
+      // { text: 'debug', link: '/markdown-examples' },
     ],
 
     sidebar: [
@@ -33,7 +33,13 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/CmrxRecon' },
+      { icon: 'twitter', link: 'https://twitter.com/CMRxRecon' },
+      { icon: {
+        svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>'
+      }, 
+        link: 'https://github.com/CmrxRecon/cmrxrecon-website' 
+      },
     ]
   }
 })

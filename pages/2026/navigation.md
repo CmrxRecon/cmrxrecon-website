@@ -1,6 +1,6 @@
 # Navigation Menu
 
-- [Home](/home)
+- [Home](/)
 - [Examples](/markdown-examples)
 - [Data](/data)
 - [Tasks](/tasks)
