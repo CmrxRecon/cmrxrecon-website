@@ -5,7 +5,11 @@ export default defineConfig({
   title: "CMRxRecon2026",
   description: "website for CMRxRecon series competitions",
   base: '/2026',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
+  ],
   themeConfig: {
+    logo: '/logo-combine.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -40,6 +44,10 @@ export default defineConfig({
       }, 
         link: 'https://github.com/CmrxRecon/cmrxrecon-website' 
       },
-    ]
+    ],
+    footer: {
+      // message: '<div style="height: 3cm; border: 3px solid #e65918ff;">GE HealthCare is a trusted global healthcare solutions partner, delivering advanced technologies, pharmaceutical diagnostics, and AI-powered tools that can help make hospitals more efficient, clinicians more effective, therapies more precise, and patients healthier and happier. With over 125 years of experience, we collaborate with providers worldwide to simplify care pathways and shape the future of personalized, connected, and compassionate care.</div>Released under the MIT License, powered by <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress.</a>',
+      copyright: 'Copyright © 2025-present CMRxRecon Team'
+    }
   }
 })
