@@ -2,27 +2,27 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "CMRxRecon2026",
-  description: "website for CMRxRecon series competitions",
-  base: '/2026',
+  title: "CMRx4Dflow2027",
+  description: "website for CMRx4Dflow series competitions",
+  base: '/2027',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/2027/home/face.png' }]
   ],
   themeConfig: {
     logo: '/logo-combine.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Data', link: '/data'},
-      { text: 'Tasks', link: '/tasks'},
-      { text: 'Join the challenge', link: '/join-the-challenge'},
-      { text: 'Submission', 
-        items: [
-          { text: 'Task Submission', link: 'submission-task'},
-          { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
-      ]},
-      { text: 'Sponsors', link: '/sponsors' },
-      { text: 'FAQ', link: '/faq' },
+      // { text: 'Home', link: '/' },
+      // { text: 'Data', link: '/data'},
+      // { text: 'Tasks', link: '/tasks'},
+      // { text: 'Join the challenge', link: '/join-the-challenge'},
+      // { text: 'Submission', 
+      //   items: [
+      //     { text: 'Task Submission', link: 'submission-task'},
+      //     { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
+      // ]},
+      // { text: 'Sponsors', link: '/sponsors' },
+      // { text: 'FAQ', link: '/faq' },
       // { text: 'debug', link: '/markdown-examples' },
     ],
 

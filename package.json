@@ -5,6 +5,13 @@
   "scripts": {
     "dev-2026": "vitepress dev pages/2026",
     "build-2026": "vitepress build pages/2026",
+    "dev-fields-2026": "vitepress dev pages/mrixfields-2026",
+    "build-fields-2026": "vitepress build pages/mrixfields-2026",
+    "dev-2027": "vitepress dev pages/2027",
+    "build-2027": "vitepress build pages/2027",
     "preview-2026": "vitepress preview pages/2026"
+  },
+  "dependencies": {
+    "vue": "^3.5.26"
   }
 }
