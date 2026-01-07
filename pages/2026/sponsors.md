@@ -21,7 +21,7 @@ We are the leader in AI-enabled MR solutions. By delivering on the promise of Ef
 
 <!-- 插入刚才上传的视频 -->
 <center>
-  <video width="90%" controls preload="metadata" poster="./public/sponsors/video1_cover.png">
+  <video width="90%" controls preload="metadata" poster="./public/sponsors/video1_cover.png" autoplay loop playsinline muted>
     <source src="./public/sponsors/video1.mp4" type="video/mp4">
     您的浏览器不支持视频播放。
   </video>
