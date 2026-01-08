@@ -96,15 +96,43 @@ CMRxRecon2026 aims to bridge these gaps by advancing ultra-fast 4D flow MRI reco
 ## Timeline
 
 The schedule of the challenge is as follows. All deadlines are Pacific Standard Time (PST +11:59).
+<style>
+.timeline-box {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
-- [Mar. 1, 2026] Website opens for registration  
-- [Mar. 10, 2026] Release training data  
-- [Apr. 15, 2026] Release validation data  
-- [May. 15, 2026] Submission system opens for validation for regular tasks  
-- [Jun. 10, 2026] Submission system opens for validation for special tasks  
-- [Jun. 20, 2026] Submission system opens for testing  
-- [Jul. 30, 2026] STACOM paper submission deadline  
-- [Aug. 20, 2026] Testing docker submission deadline for regular tasks  
-- [Sep. 27, 2026] Release final results of regular tasks during the MICCAI annual meeting  
-- [Oct. 30, 2026] Testing docker submission deadline for special tasks  
-- [Feb. 4–7, 2026] Release final results of special tasks during the SCMR annual meeting
+.timeline-row {
+  padding: 10px 15px;
+}
+
+.timeline-row:nth-child(odd) {
+  background: #f5f7ff;
+}
+
+.timeline-row:nth-child(even) {
+  background: #e9efff;
+}
+
+.timeline-row strong {
+  color: #003399;
+}
+</style>
+
+<div class="timeline-box">
+  <div class="timeline-row"><strong>[Mar. 1, 2026]</strong> Website opens for registration</div>
+  <div class="timeline-row"><strong>[Mar. 10, 2026]</strong> Release training data</div>
+  <div class="timeline-row"><strong>[Apr. 15, 2026]</strong> Release validation data</div>
+  <div class="timeline-row"><strong>[May. 15, 2026]</strong> Submission system opens for validation for regular tasks</div>
+  <div class="timeline-row"><strong>[Jun. 10, 2026]</strong> Submission system opens for validation for special tasks</div>
+  <div class="timeline-row"><strong>[Jun. 20, 2026]</strong> Submission system opens for testing</div>
+  <div class="timeline-row"><strong>[Jul. 30, 2026]</strong> STACOM paper submission deadline</div>
+  <div class="timeline-row"><strong>[Aug. 20, 2026]</strong> Testing docker submission deadline for regular tasks</div>
+  <div class="timeline-row"><strong>[Sep. 27, 2026]</strong> Release final results of regular tasks during the MICCAI annual meeting</div>
+  <div class="timeline-row"><strong>[Oct. 30, 2026]</strong> Testing docker submission deadline for special tasks</div>
+  <div class="timeline-row"><strong>[Feb. 4–7, 2027]</strong> Release final results of special tasks during the SCMR annual meeting</div>
+</div>
