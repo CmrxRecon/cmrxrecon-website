@@ -6,9 +6,6 @@ hero:
   text: "Official website for CMRxRecon series competitions"
   tagline: Ultra-Fast 4D Flow MRI Reconstruction Challenge
   actions:
-    - theme: brand
-      text: Overview
-      link: /overview
     - theme: alt
       text: Data
       link: /data
