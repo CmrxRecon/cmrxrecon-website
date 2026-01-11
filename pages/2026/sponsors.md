@@ -1,5 +1,5 @@
 # Sponsor
-The challenge is sponsored by GE Healthcare Co., Ltd.
+The challenge is sponsored by GE Healthcare.
 
 ## About GE Healthcare
 GE HealthCare is a trusted global healthcare solutions partner, delivering advanced technologies, pharmaceutical diagnostics, and AI-powered tools that can help make hospitals more efficient, clinicians more effective, therapies more precise, and patients healthier and happier. With over 125 years of experience, we collaborate with providers worldwide to simplify care pathways and shape the future of personalized, connected, and compassionate care.
