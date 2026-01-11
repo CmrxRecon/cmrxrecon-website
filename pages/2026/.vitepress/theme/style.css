@@ -49,7 +49,7 @@
 
 :root {
   /* 导航栏高度调整 */
-  --vp-nav-logo-height: 100px;
+  --vp-nav-logo-height: 85%;
   --vp-nav-height: 100px;
 
   
