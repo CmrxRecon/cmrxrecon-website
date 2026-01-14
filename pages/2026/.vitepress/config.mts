@@ -1,4 +1,17 @@
 import { defineConfig } from 'vitepress'
+// import customFooter from './custom_footer.html?raw'
+
+import fs from 'fs'
+import path from 'path'
+
+// ✅ 2. 关键：处理ES模块的路径兼容（mts文件必须这么写，解决__dirname不存在的问题）
+const __dirname = path.dirname(new URL(import.meta.url).pathname)
+
+// ✅ 3. 读取你的 custom_footer.html 文件为纯文本字符串
+// const customFooter = fs.readFileSync(
+//   path.join(__dirname, './custom_footer.html'), // 拼接html文件的绝对路径
+//   'utf8' // 必须指定编码为utf8，否则返回buffer二进制，不是文本
+// )
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -47,6 +60,7 @@ export default defineConfig({
     ],
     footer: {
       // message: '<div style="height: 3cm; border: 3px solid #e65918ff;">GE HealthCare is a trusted global healthcare solutions partner, delivering advanced technologies, pharmaceutical diagnostics, and AI-powered tools that can help make hospitals more efficient, clinicians more effective, therapies more precise, and patients healthier and happier. With over 125 years of experience, we collaborate with providers worldwide to simplify care pathways and shape the future of personalized, connected, and compassionate care.</div>Released under the MIT License, powered by <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress.</a>',
+      message: customFooter,
       copyright: 'Copyright © 2026-present CMRxRecon Team'
     }
   }
