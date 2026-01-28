@@ -129,8 +129,9 @@ All submissions will be reported in the leaderboard. Each participating team can
 
 
 #### Task Submission
-- **Validation Submission Tutorial:** https://www.synapse.org/Synapse:syn64545434/wiki/637610
-- **Test Submission Tutorial:** https://www.synapse.org/Synapse:syn64545434/wiki/637611
+
+- **Validation submission tutorial:** [Synapse Wiki](https://www.synapse.org/Synapse:syn64545434/wiki/637610)  
+- **Test submission tutorial:** [Synapse Wiki](https://www.synapse.org/Synapse:syn64545434/wiki/637611)  
 
 #### Challenge Platform
 - Hosted on **Synapse** platform: https://www.synapse.org/Synapse:syn64545434/wiki/

@@ -1,4 +1,17 @@
 import { defineConfig } from 'vitepress'
+// import customFooter from './custom_footer.html?raw'
+
+import fs from 'fs'
+import path from 'path'
+
+// ✅ 2. 关键：处理ES模块的路径兼容（mts文件必须这么写，解决__dirname不存在的问题）
+const __dirname = path.dirname(new URL(import.meta.url).pathname)
+
+// ✅ 3. 读取你的 custom_footer.html 文件为纯文本字符串
+// const customFooter = fs.readFileSync(
+//   path.join(__dirname, './custom_footer.html'), // 拼接html文件的绝对路径
+//   'utf8' // 必须指定编码为utf8，否则返回buffer二进制，不是文本
+// )
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

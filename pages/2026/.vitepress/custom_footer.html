@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  /* 仅作用于这个模块的独立样式，添加父级命名空间，无全局污染 */
+  .cmrx-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  .cmrx-footer .contact-area { flex: 1; margin-right: 20px; }
+  .cmrx-footer .contact-area h2 { font-size: 22px; margin-bottom: 20px; font-weight: normal; }
+  .cmrx-footer .contact-item { display: flex; align-items: center; margin-bottom: 15px; gap: 10px; }
+  .cmrx-footer .contact-item i { font-size: 20px; color: #000; }
+  .cmrx-footer .contact-item a { text-decoration: underline; color: #000; text-underline-offset: 2px; }
+  .cmrx-footer .logo-area { flex: 3; display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap:20px; align-items:center; justify-items:center; }
+  .cmrx-footer .logo-area img { max-width:100px; max-height:80px; object-fit:contain; }
+  .cmrx-footer .year-area { flex:1; margin-left:20px; }
+  .cmrx-footer .year-block { margin-bottom:25px; }
+  .cmrx-footer .year-block h3 { font-size:18px; margin-bottom:5px; font-weight:bold; }
+  .cmrx-footer .year-block a { display:block; text-decoration:underline; color:#000; margin-bottom:3px; }
+</style>
+
+<!-- 纯DIV模块，直接嵌入即可 -->
+<div class="cmrx-footer">
+  <!-- 左侧联系区 -->
+  <div class="contact-area">
+    <h2>Contact us:</h2>
+    <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:CMRxRecon@outlook.com">CMRxRecon@outlook.com</a></div>
+    <div class="contact-item"><i class="fab fa-twitter"></i><a href="#">CMRxRecon</a></div>
+    <div class="contact-item"><i class="fas fa-link"></i><a href="#">Synapse Link</a></div>
+    <div class="contact-item"><i class="fab fa-github"></i><a href="#">CMRxRecon</a></div>
+  </div>
+  <!-- 中间Logo区 -->
+  <div class="logo-area">
+    <img src="logo1.png" alt="logo"><img src="logo2.png" alt="logo"><img src="logo3.png" alt="logo">
+    <img src="logo4.png" alt="logo"><img src="logo5.png" alt="logo"><img src="logo6.png" alt="logo">
+    <img src="logo7.png" alt="logo"><img src="logo8.png" alt="logo"><img src="logo9.png" alt="logo">
+    <img src="logo10.png" alt="logo"><img src="logo11.png" alt="logo"><img src="logo12.png" alt="logo">
+  </div>
+  <!-- 右侧年份区 -->
+  <div class="year-area">
+    <div class="year-block"><h3>CMRxRecon2024</h3><a href="#">Website</a><a href="#">Synapse</a></div>
+    <div class="year-block"><h3>CMRxRecon2023</h3><a href="#">Website</a><a href="#">Synapse</a></div>
+    <div class="year-block"><h3>CMRxMotion2022</h3><a href="#">Website</a><a href="#">Synapse</a></div>
+  </div>
+</div>
