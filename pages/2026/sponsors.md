@@ -64,7 +64,7 @@ Cardiac MR has been too slow, complex and inconsistent for too long1. Now with c
 Experience accelerated diagnostics and crystal-clear imaging, powered by deep learning. From AI-boosted precision to lightning-fast scans, explore the seamless connection between innovation and patient-centric care..
 
 <center>
-  <video width="90%" controls preload="metadata" poster="./public/sponsors/video2_cover.png">
+  <video width="100%" controls preload="metadata" poster="./public/sponsors/video2_cover.png">
     <source src="./public/sponsors/video2.mp4" type="video/mp4">
     您的浏览器不支持视频播放。
   </video>
