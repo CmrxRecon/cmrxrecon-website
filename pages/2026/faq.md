@@ -31,7 +31,7 @@ For all the tasks regarding the sampling patterns and accelerations, all paired 
 We do not require teams to upload the training code. Only the inference code's Docker image is needed for participation.
 
 **7. Can we preprocess the data?**  
-We do not restrict any data preprocessing, and we only evaluate the final reconstruction effect. However, the total running time for all data in each task cannot exceed 40 hours.
+We do not restrict any data preprocessing, and we only evaluate the final reconstruction effect. However, the total running time for all data in each task cannot exceed 20 hours.
 
 **6. Is motion correction between different frames necessary?**  
 No, it can be done but is not mandatory.
@@ -46,7 +46,7 @@ It is not mandatory.
 Each team can consist of up to 6 people. The authors in the submitted paper should be the same as the team member list.
 
 **2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?**  
-Yes. But to ensure the fairness of this challenge, you are only allowed to use the datasets provided by fastMRI, CMRxRecon2023, CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed.
+Yes. But to ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023,CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed.
 
 **1. Is it possible to download the challenge dataset without participating in the challenge?**  
 Yes. However, all results generated based on this dataset can only be published three months after the end of the challenge. According to our agreement, it is required to cite our provided article and acknowledge the data source when referencing the results.
@@ -63,4 +63,4 @@ Yes. However, all results generated based on this dataset can only be published 
 
 5. Redistribution or transfer of data or data links is prohibited. Participants must use the data solely for their own purposes.
 
-6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by fastMRI, CMRxRecon2023, CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
+6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023, CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
