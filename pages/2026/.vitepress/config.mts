@@ -16,7 +16,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname)
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CMRxRecon2026",
-  description: "website for CMRx series competitions",
+  description: "website of CMRx series challenges",
   base: '/2026',
   appearance: false,
   head: [
@@ -24,7 +24,7 @@ export default defineConfig({
   ],
   themeConfig: {
     
-    logo: '/logo-combined.jpg',
+    logo: '/logo-combined.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -65,7 +65,7 @@ export default defineConfig({
       // message: '<div style="height: 3cm; border: 3px solid #e65918ff;">GE HealthCare is a trusted global healthcare solutions partner, delivering advanced technologies, pharmaceutical diagnostics, and AI-powered tools that can help make hospitals more efficient, clinicians more effective, therapies more precise, and patients healthier and happier. With over 125 years of experience, we collaborate with providers worldwide to simplify care pathways and shape the future of personalized, connected, and compassionate care.</div>Released under the MIT License, powered by <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress.</a>',
       message: `
     <center>
-      <img src="/2026/public/alllogos.png" style="height:110px; margin-bottom: 10px;" />
+      <img src="/2026/alllogos.png" style="height:110px; margin-bottom: 10px;" />
     </center>
     <div>Released under the MIT License, powered by 
       <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress</a>.

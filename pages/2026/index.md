@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "CMRx4DFlow2026"
-  text: "Official website for CMRx series challenges"
+  text: "Website of CMRx series challenges"
   tagline: Ultra-Fast 4D Flow MRI Reconstruction Challenge
 
 features:
