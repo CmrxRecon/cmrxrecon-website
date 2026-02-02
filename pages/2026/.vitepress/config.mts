@@ -16,15 +16,25 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname)
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CMRxRecon2026",
-  description: "website for CMRxRecon series competitions",
+  description: "website of CMRx series challenges",
   base: '/2026',
   appearance: false,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/2026/public/logo-combined.png' }],
+    ['script', { async: 'true', src: 'https://www.googletagmanager.com/gtag/js?id=G-Y1FZN1BJN8'}],
+    ['script', {}, 
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y1FZN1BJN8');
+      `
+    ]
   ],
   themeConfig: {
     
-    logo: '/newcombined1.jpg',
+    logo: '/logo-combined.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -33,7 +43,7 @@ export default defineConfig({
       { text: 'Join the challenge', link: '/join-the-challenge'},
       { text: 'Submission', 
         items: [
-          { text: 'Task Submission', link: 'submission-task'},
+          { text: 'Task Submission', link: '/submission-task'},
           { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
       ]},
       { text: 'Sponsors', link: '/sponsors' },
