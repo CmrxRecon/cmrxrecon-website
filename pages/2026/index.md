@@ -1,5 +1,7 @@
 ---
 layout: home
+pageClass: narrow-page
+
 
 hero:
   name: "CMRx4DFlow2026"
@@ -10,7 +12,7 @@ features:
   - title: Ultra-Fast 4D Flow MRI
     details: Accelerating 4D Flow MRI acquisition and reconstruction toward routine clinical use.
   - title: Multi-center Clinical Dataset
-    details: Over 500 cases from 10+ clinical centers covering diverse aortic pathologies.
+    details: Over 400 cases from 10+ clinical centers covering diverse aortic pathologies.
   - title: AI-driven Reconstruction
     details: Extreme undersampling with reliable magnitude, phase, and hemodynamic reconstruction.
 ---
@@ -30,11 +32,11 @@ features:
 —an integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Abu Dhabi, United Arab Emirates, from October 4th to 8th, 2026.  
 LEARN MORE (MICCAI 2026 - 29. International Conference On Medical Image Computing & Computer Assisted Intervention)
 
-🫀 CMRx4DFlow2026: Ultra-Fast 4D Flow MRI
+**🫀 CMRx4DFlow2026: Ultra-Fast 4D Flow MRI**
 
 > Our Vision: To challenge physical limits and leverage AI to dramatically accelerate 4D flow MRI acquisitions and reconstructions, transforming prolonged procedures into clinically viable rapid scans, and thereby ensuring every patient can benefit from advanced flow visualization.
 
-🌟 What is 4D Flow MRI? (Beyond Images: A "Digital Twin" of Your Cardiovascular System)
+**🌟 What is 4D Flow MRI? (Beyond Images: A "Digital Twin" of Your Cardiovascular System)**
 
 Imagine not just taking a static "snapshot" of the heart, but creating a complete, dynamic replica of blood circulating within you in the digital world. This is 4D Flow MRI—building a precise cardiovascular "Digital Twin."
 
@@ -43,9 +45,10 @@ Imagine not just taking a static "snapshot" of the heart, but creating a complet
 - Pivotal Clinical Value: Clinicians can use this "digital proxy" to precisely assess risks for aortic aneurysms, stenosis, or dissections, and simulate surgical planning.
 <br/>
 <center>
-  <img src="./public/home/towardsclinicaladoption.gif" style="max-width: 600px; margin-top: 12px;" />
+  <img src="./public/home/PAGE.gif" style="max-width: 900px; width: 100%; margin-top: 12px;" />
 </center>
-🎯 Why This Challenge? (Pain Points & Opportunities)
+
+**🎯 Why This Challenge? (Pain Points & Opportunities)**
 
 While 4D Flow concept is powerful, its widespread routine clinical adoption faces significant, long-standing barriers.
 
