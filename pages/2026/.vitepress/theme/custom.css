@@ -1,0 +1,11 @@
+
+.VPNavBarAppearance, .VPNavScreenAppearance, .appearance{
+    display: none !important;
+    /* background-color: #ff0000; */
+  }
+
+:root {
+  /* 导航栏高度调整 */
+  --vp-nav-logo-height: 85%;
+  --vp-nav-height: 100px;
+}
