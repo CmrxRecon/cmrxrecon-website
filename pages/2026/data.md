@@ -17,7 +17,7 @@ title: Data
        style="max-width: 600px; height: auto; margin-bottom: 20px;">
 </center>
 
-# Data sources
+## Data sources
 
 CMRxRecon2026 provides an extensive multi-center, multi-vendor k-space 4D Flow MRI dataset.
 
@@ -142,7 +142,7 @@ Further background on 4D flow MRI:
 
 ### Data Directory Structure
 
-```text
+``` text
 ChallengeData
 ├─ Task
 │  ├─ TrainSet
@@ -164,3 +164,10 @@ ChallengeData
 │                 ├─ coilmap.mat
 │                 ├─ segmask.mat
 │                 └─ params.csv
+```
+
+--------------------------------
+
+<center>
+  <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px;" />
+</center>

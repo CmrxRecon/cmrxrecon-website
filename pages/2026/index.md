@@ -5,7 +5,7 @@ pageClass: narrow-page
 
 hero:
   name: "CMRx4DFlow2026"
-  text: "Official website for CMRxRecon series challenges"
+  text: "Official website for CMRx series challenges"
   tagline: Ultra-Fast 4D Flow MRI Reconstruction Challenge
 
 features:
@@ -107,3 +107,9 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[Oct. 08, 2026]</strong> Release final results during the MICCAI annual meeting
   </div>
 </div>
+
+--------------------------------
+
+<center>
+  <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px;" />
+</center>
