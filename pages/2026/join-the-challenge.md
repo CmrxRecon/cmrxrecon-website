@@ -9,7 +9,7 @@ title: Join the Challenge
 2. Submit your team information here: [WJX Form](https://www.wjx.top/vm/rkAd42X.aspx#) (`https://www.wjx.top/vm/rkAd42X.aspx#`)
 
 ### Download the data
-Download mimic data here (for testing)[Data](/https://www.synapse.org/Synapse:syn73710887) (`https://www.synapse.org/Synapse:syn73710887`)
+Download mimic data here (for testing)[Data](https://www.synapse.org/Synapse:syn73710887) (`https://www.synapse.org/Synapse:syn73710887`)
 
 Download full data here (for the challenge) [Data](https://www.synapse.org/Synapse:syn64545434/wiki/638361) (`https://www.synapse.org/Synapse:syn64545434/wiki/638361`)
 
