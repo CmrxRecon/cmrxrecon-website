@@ -3,10 +3,18 @@ title: Tasks
 ---
 
 # Tasks
+
+<center>
+  <img src="/tasks/newpic.png" 
+       alt="CMRxRecon Tasks Overview" 
+       width="100%" 
+       style="max-width: 800px; height: auto; margin-bottom: 20px;">
+</center>
+
 <center>
   <img src="/tasks/image1.png" 
        alt="CMRxRecon Tasks Overview" 
-       width="90%" 
+       width="100%" 
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
@@ -120,7 +128,7 @@ While the primary regular tasks focus on aortic 4D Flow, the principles of blood
 The top 5 winners in each task will receive monetary awards. The bonus distribution plan is shown in the table below.
 
 <center>
-  <img src="/tasks/awards.png" alt="Awards Overview" width="90%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
+  <img src="/tasks/awards.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
 </center>
 
 All submissions will be reported in the leaderboard. Each participating team can engage in any tasks or all four tasks. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI annual meeting.

@@ -9,7 +9,9 @@ title: Join the Challenge
 2. Submit your team information here: [WJX Form](https://www.wjx.top/vm/rkAd42X.aspx#) (`https://www.wjx.top/vm/rkAd42X.aspx#`)
 
 ### Download the data
-Download data here: [Synapse Data](https://www.synapse.org/Synapse:syn64545434/wiki/638361) (`https://www.synapse.org/Synapse:syn64545434/wiki/638361`)
+Download mimic data here (for testing)[Data](/mnt/nas/nas3/openData/rawdata/4dFlow/ChallengeData/Demo) (`/mnt/nas/nas3/openData/rawdata/4dFlow/ChallengeData/Demo`)
+
+Download full data here (for the challenge) [Data](https://www.synapse.org/Synapse:syn64545434/wiki/638361) (`https://www.synapse.org/Synapse:syn64545434/wiki/638361`)
 
 ### Train the model
 Participants are expected to train models in their local computational environments and submit docker containers on the Synapse platform.  

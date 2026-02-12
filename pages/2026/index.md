@@ -5,7 +5,7 @@ pageClass: narrow-page
 
 hero:
   name: "CMRx4DFlow2026"
-  text: "Official website for CMRxRecon series challenges"
+  text: "Official website for CMRx series challenges"
   tagline: Ultra-Fast 4D Flow MRI Reconstruction Challenge
 
 features:
@@ -23,8 +23,6 @@ features:
 ![Slide 1](./public/home/image1.png)
 
 
----
-
 ## About Us
 
 #### Welcome to the 4D Flow MRI Reconstruction Challenge 2026 (CMRx4DFlow2026)
@@ -38,11 +36,11 @@ LEARN MORE (MICCAI 2026 - 29. International Conference On Medical Image Computin
 
 **🌟 What is 4D Flow MRI? (Beyond Images: A "Digital Twin" of Your Cardiovascular System)**
 
-Imagine not just taking a static "snapshot" of the heart, but creating a complete, dynamic replica of blood circulating within you in the digital world. This is 4D Flow MRI—building a precise cardiovascular "Digital Twin."
+Imagine not just taking a static "snapshot" of the heart, but creating a complete, dynamic replica of blood circulating within you in the digital world. This is **4D Flow MRI**—building a precise cardiovascular **"Digital Twin."**
 
-- 3D Space + 1D Time: 4D Flow MRI captures the intricate hemodynamic dynamics across the entire cardiac cycle, detailing every pulsation, swirl, and impact of blood flow in three-dimensional space.
-- Beyond Anatomy: It quantitatively calculates critical hemodynamic parameters such as Flow Velocity, Wall Shear Stress (WSS), and Vorticity.
-- Pivotal Clinical Value: Clinicians can use this "digital proxy" to precisely assess risks for aortic aneurysms, stenosis, or dissections, and simulate surgical planning.
+- **3D Space + 1D Time**: 4D Flow MRI captures the intricate hemodynamic dynamics across the entire cardiac cycle, detailing every pulsation, swirl, and impact of blood flow in three-dimensional space.
+- **Beyond Anatomy**: It quantitatively calculates critical hemodynamic parameters such as **Flow Velocity, Wall Shear Stress (WSS)**, and **Vorticity**.
+- **Pivotal Clinical Value**: Clinicians can use this "digital proxy" to precisely assess risks for aortic aneurysms, stenosis, or dissections, and simulate surgical planning.
 <br/>
 <center>
   <img src="./public/home/PAGE.gif" style="max-width: 900px; width: 100%; margin-top: 12px;" />
@@ -52,14 +50,12 @@ Imagine not just taking a static "snapshot" of the heart, but creating a complet
 
 While 4D Flow concept is powerful, its widespread routine clinical adoption faces significant, long-standing barriers.
 
-- The Clinical Pain Point: Time Burden: Acquiring a comprehensive (high resolution) 4D Flow dataset typically demands 30–60 minutes of scanner time. This duration is not only physically demanding for patients, often leading to motion artifacts, but also imposes prohibitive time and cost burdens on hospital workflows.
-- The Technological Bottleneck: Insufficient Acceleration: While existing acceleration techniques (such as parallel imaging or standard compressed sensing) have reduced scan times, they commonly yield results in 10–20 minutes with low to medium spatial resolution. This remains significantly longer than the sub-5-minute window desired for integration into routine clinical MRI protocols.
-- The Unique Acceleration Potential of 4D Flow: Unlike conventional 2D or 3D MRI, 4D Flow data inherently includes three spatial dimensions plus a temporal dimension, and multiple velocity encoding dimensions. This creates a massive data acquisition burden, but simultaneously offers a vast parameter space for intelligent undersampling. The redundant information across these multiple dimensions presents a unique and significant opportunity for AI-driven reconstruction to achieve unprecedented acceleration rates.
-- The AI Opportunity: Breaking the Speed Limit: This challenge is our call to action. We seek innovative algorithms that leverage advanced deep learning and reconstruction methodologies to bridge this critical gap. By achieving high-fidelity hemodynamic information from extreme undersampling (10x–50x data reduction), we can dramatically accelerate 4D Flow MRI.
+- **The Clinical Pain Point: Time Burden:** Acquiring a comprehensive (high resolution) 4D Flow dataset typically demands **30–60 minutes** of scanner time. This duration is not only physically demanding for patients, often leading to motion artifacts, but also imposes prohibitive time and cost burdens on hospital workflows.
+- **The Technological Bottleneck:** Insufficient Acceleration: While existing acceleration techniques (such as parallel imaging or standard compressed sensing) have reduced scan times, they commonly yield results in **10–20 minutes with low to medium spatial resolution.** This remains significantly longer than the **sub-5-minute** window desired for integration into routine clinical MRI protocols.
+- **The Unique Acceleration Potential of 4D Flow:** Unlike conventional 2D or 3D MRI, 4D Flow data inherently includes three spatial dimensions plus a temporal dimension, and multiple velocity encoding dimensions. This creates a massive data acquisition burden, but simultaneously offers a vast parameter space for intelligent undersampling. The redundant information across these multiple dimensions presents a unique and significant opportunity for AI-driven reconstruction to achieve unprecedented acceleration rates.
+- **The AI Opportunity: Breaking the Speed Limit:** This challenge is our call to action. We seek innovative algorithms that leverage advanced deep learning and reconstruction methodologies to bridge this critical gap. By achieving high-fidelity hemodynamic information from extreme undersampling (10x–50x data reduction), we can dramatically accelerate 4D Flow MRI.
 
-The Core Goal: CMRx4DFlow2026 provides a standardized benchmark to accelerate the clinical adoption of 4D Flow MRI. We promote reconstruction algorithms that balance high-fidelity accuracy with computational efficiency, ensuring robust performance across diverse scanners and patient populations
-
----
+**The Core Goal:** CMRx4DFlow2026 provides a standardized benchmark to accelerate the clinical adoption of 4D Flow MRI. We promote reconstruction algorithms that balance high-fidelity accuracy with computational efficiency, ensuring robust performance across diverse scanners and patient populations.
 
 ## Evolution of the CMRxRecon Series
 
@@ -71,15 +67,20 @@ The Core Goal: CMRx4DFlow2026 provides a standardized benchmark to accelerate th
 | 2026 | 4D Flow MRI | 10+ | 10+ | Healthy individuals; patients with multi-organ diseases (heart, brain, aorta, kidney, liver, carotid artery) | 3D Cartesian (k-t Gaussian) | ~400 |
 
 
-To bridge the gap between research and clinical deployment, the 2026 challenge utilizes over 400 cases from 10+ centers to evaluate reconstruction performance across four specific dimensions:
+To bridge the gap between research and clinical deployment, the 2026 challenge utilizes over **400 cases** from **10+** centers to evaluate reconstruction performance across four specific dimensions:
 
-1. Regular Task 1: Accurate Reconstruction under High Acceleration – To evaluate the robustness and generalization performance of reconstruction models under high (10x-50x) acceleration factors across different clinical centers and various scanners.
-2. Regular Task 2: Fast Reconstruction under Limited Computing Resources – To evaluate the clinical performance and computational efficiency of reconstruction models across standardized hardware (NVIDIA A6000).
-3. Special Task 1: Generalizability across new sites and diseases – To evaluate the hardware robustness and cross-site generalization performance of reconstruction models across different magnetic field strengths (1.5T, 3T, and 5T) and diverse clinical scenarios.
-4. Special Task 2: Generalizability across different anatomical regions – To evaluate the universality and cross-organ generalization performance of reconstruction models across multiple anatomical regions (e.g., brain, liver, kidney, and carotid arteries).
+1. **Regular Task 1: Accurate Reconstruction under High Acceleration** – To evaluate the robustness and generalization performance of reconstruction models under high (10x-50x) acceleration factors across different clinical centers and various scanners.
+2. **Regular Task 2: Fast Reconstruction under Limited Computing Resources** – To evaluate the clinical performance and computational efficiency of reconstruction models across standardized hardware (NVIDIA A6000).
+3. **Special Task 1: Generalizability across new sites and diseases** – To evaluate the hardware robustness and cross-site generalization performance of reconstruction models across different magnetic field strengths (1.5T, 3T, and 5T) and diverse clinical scenarios.
+4. **Special Task 2: Generalizability across different anatomical regions** – To evaluate the universality and cross-organ generalization performance of reconstruction models across multiple anatomical regions (e.g., brain, liver, kidney, and carotid arteries).
 
+## Awards
+The top 5 winners in each task will receive monetary awards. The bonus distribution plan is shown in the table below.
+<center>
+  <img src="/tasks/awards.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
+</center>
+All submissions will be reported in the leaderboard. Each participating team can engage in any tasks or all four tasks. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI annual meeting.
 
----
 
 ## Timeline
 The schedule of the challenge is as follows. All deadlines are Pacific Standard Time (PST +11:59).

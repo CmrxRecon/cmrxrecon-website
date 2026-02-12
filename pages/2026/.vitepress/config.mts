@@ -75,7 +75,7 @@ export default defineConfig({
       // message: '<div style="height: 3cm; border: 3px solid #e65918ff;">GE HealthCare is a trusted global healthcare solutions partner, delivering advanced technologies, pharmaceutical diagnostics, and AI-powered tools that can help make hospitals more efficient, clinicians more effective, therapies more precise, and patients healthier and happier. With over 125 years of experience, we collaborate with providers worldwide to simplify care pathways and shape the future of personalized, connected, and compassionate care.</div>Released under the MIT License, powered by <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress.</a>',
       message: `
     <center>
-      <img src="/2026/public/alllogos.png" style="height:80px; margin-bottom: 10px;" />
+      <img src="/2026/public/alllogos.png" style="height:120px; margin-bottom: 10px;" />
     </center>
     <div>Released under the MIT License, powered by 
       <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress</a>.

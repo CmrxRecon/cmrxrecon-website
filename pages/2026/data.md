@@ -43,13 +43,6 @@ CMRxRecon2026 provides an extensive multi-center, multi-vendor k-space 4D Flow M
 - **Sequence Type:** ECG-gated 3D Cartesian 4D Flow MRI  
   - Protocols include both retrospective gating and prospective gating
 
-📊 **Anatomical Views**
-
-- Aortic view  
-- Oblique sagittal view  
-- Sagittal view  
-- Coronal view  
-- Axial view
 
 📊 **Diseases**
 
