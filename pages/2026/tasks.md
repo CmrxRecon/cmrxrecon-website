@@ -192,4 +192,8 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 1. It should be restricted to the data provided by the current and previous CMRxRecon challenge as well as data from the ‘fastMRI’ challenge (the most related public dataset), under the terms and conditions associated with the data usage.
 2. For each task, participants are allowed to train only one model to reconstruct various images at the aforementioned different undersampling scenarios.  
 
----
+--------
+
+<center>
+  <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px; bottom: -1cm;" />
+</center>
