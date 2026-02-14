@@ -49,7 +49,7 @@ export default defineConfig({
       { text: 'Sponsors', link: '/sponsors' },
       { text: 'Organizers', link: '/organizers' },
       { text: 'FAQ', link: '/faq' },
-      { text: 'All challenges', link: '/all-challenges' },
+      { text: 'Related challenges', link: '/related-challenges' },
       // { text: 'debug', link: '/markdown-examples' },
     ],
 
