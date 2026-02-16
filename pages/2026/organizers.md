@@ -29,6 +29,15 @@
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
+### Department of Radiology, Stanford University, USA
+- Aiqi Sun
+
+<center>
+  <img src="/organizers/stan.png" 
+       alt="1" 
+       width="50%" 
+       style="max-width: 800px; height: auto; margin-bottom: 20px;">
+</center>
 
 ### Department of Electrical and Electronic Engineering & I-X, Imperial College London, UK
 - Chen Qin
