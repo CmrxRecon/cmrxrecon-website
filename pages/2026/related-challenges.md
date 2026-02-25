@@ -24,7 +24,7 @@ title: All challenges.
 
 ---
 
-- CMRx4DFlow2027(Upcoming)
+- CMRx4DFlow2027
    - [https://cmrx.chihucloud.com/2027](https://cmrx.chihucloud.com/2027)
 
 ---
