@@ -219,7 +219,7 @@
 </center>
 
 ### Shanghai Fuying Medical Technology Co., Ltd., China
-- Ziqiang Xu
+- Ziqiang Xu(Technical Support, daryl.Xu@foxmail.com)
 
 <center>
   <img src="/organizers/hfmed.png" 

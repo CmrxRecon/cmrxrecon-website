@@ -11,7 +11,7 @@ Yes. However, all results generated based on this dataset can only be published 
 Yes. But to ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023,CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed.
 
 **3. What is the maximum number of team members allowed?**  
-Each team can consist of up to 6 people. The authors in the submitted paper should be the same as the team member list.
+Each team can consist of up to 6 people.
 
 **4. Is it mandatory to perform calculations in the complex domain?**  
 It is not mandatory.

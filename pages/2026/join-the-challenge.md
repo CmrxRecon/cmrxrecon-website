@@ -5,13 +5,15 @@ title: Join the Challenge
 # Join The Challenge!
 
 ### Join the challenge!
-1. Sign up and apply to join the challenge on the Synapse platform: [Synapse Project Page](https://www.synapse.org/Synapse:syn64545434/wiki/) (`https://www.synapse.org/Synapse:syn64545434/wiki/`)
-2. Submit your team information here: [WJX Form](https://www.wjx.top/vm/rkAd42X.aspx#) (`https://www.wjx.top/vm/rkAd42X.aspx#`)
+1. Apply to join the challenge on synapse to get full access to the challenge files.
+ - [Synapse Project Page](https://www.synapse.org/Synapse:syn64545434/wiki/) (`https://www.synapse.org/Synapse:syn64545434/wiki/`)
+2. Submit your team information here[WJX Form](https://www.wjx.top/vm/rkAd42X.aspx#) (`https://www.wjx.top/vm/rkAd42X.aspx#`)
+  - > After clicking the Submit button, the password for extracting the data will be displayed upon submission, as shown in the figure on the right. Please save it carefully. 
 
 ### Download the data
 Download mimic data here (for testing)[Data](https://www.synapse.org/Synapse:syn73710887) (`https://www.synapse.org/Synapse:syn73710887`)
 
-Download full data here (for the challenge) [Data](https://www.synapse.org/Synapse:syn64545434/wiki/638361) (`https://www.synapse.org/Synapse:syn64545434/wiki/638361`)
+Download full data here (for the challenge) [Data](https://www.synapse.org/Synapse:syn73936554) (`https://www.synapse.org/Synapse:syn73936554`)
 
 ### Train the model
 Participants are expected to train models in their local computational environments and submit docker containers on the Synapse platform.  
