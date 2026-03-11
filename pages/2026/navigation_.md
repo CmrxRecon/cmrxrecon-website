@@ -9,5 +9,5 @@
 - Submission
   - [Task Submission](submission-task)
   - [Stacom workshop paper](/submission-stacom-workshop-paper)
-- [Sponsors](/sponsors)
+- [Support](/support)
 - [FAQ](/faq)
