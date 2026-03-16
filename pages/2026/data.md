@@ -19,7 +19,7 @@ title: Data
 
 ## Data sources
 
-CMRxRecon2026 provides an extensive multi-center, multi-vendor k-space 4D Flow MRI dataset.
+CMRx4DFlow2026 provides an extensive multi-center, multi-vendor k-space 4D Flow MRI dataset.
 
 💾 **Data Overview: Scale & Diversity**
 

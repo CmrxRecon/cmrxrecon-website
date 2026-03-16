@@ -15,7 +15,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname)
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "CMRxRecon2026",
+  title: "CMRx4DFlow2026",
   description: "website of CMRx series challenges",
   base: '/2026',
   appearance: false,

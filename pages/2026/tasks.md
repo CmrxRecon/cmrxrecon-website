@@ -18,7 +18,7 @@ title: Tasks
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
-The CMRxRecon2026 challenge includes two regular tasks and two special tasks. The tasks are awarded independently, so each team can choose to participate in any one of them. For each task, participants can submit one model each (which can be four different models, or they can submit just one model, but they must submit it separately for each task). Please note that for the four tasks, the training dataset we provide is the same; however, the validation and test datasets may be different for each of the four tasks.
+The CMRx4DFlow2026 challenge includes two regular tasks and two special tasks. The tasks are awarded independently, so each team can choose to participate in any one of them. For each task, participants can submit one model each (which can be four different models, or they can submit just one model, but they must submit it separately for each task). Please note that for the four tasks, the training dataset we provide is the same; however, the validation and test datasets may be different for each of the four tasks.
 
 ## Objective
 

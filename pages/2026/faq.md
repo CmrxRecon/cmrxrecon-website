@@ -8,7 +8,7 @@ title: FAQ
 Yes. However, all results generated based on this dataset can only be published three months after the end of the challenge. According to our agreement, it is required to cite our provided article and acknowledge the data source when referencing the results.
 
 **2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?**  
-Yes. But to ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023,CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed.
+Yes. But to ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023,CMRxRecon2024, CMRxRecon2025 and CMRx4DFlow2026. Data augmentation based on the training dataset is allowed.
 
 **3. What is the maximum number of team members allowed?**  
 Each team can consist of up to 6 people.
@@ -78,4 +78,4 @@ To replicate the undersampled data for validation and test, please refer to :
 
 5. Redistribution or transfer of data or data links is prohibited. Participants must use the data solely for their own purposes.
 
-6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023, CMRxRecon2024, CMRxRecon2025 and CMRxRecon2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
+6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023, CMRxRecon2024, CMRxRecon2025 and CMRx4DFlow2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
