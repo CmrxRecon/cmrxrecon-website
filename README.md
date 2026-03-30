@@ -21,6 +21,8 @@ pnpm install
 
 ```
 # 预览更新后的网站
-npm run dev-2026
+npm run dev-2026  # CMRx4DFlow2026
+npm run dev-fields-2026  # MRIxFields2026
+npm run dev-2027  # 2027 challenge 
 ```
 
