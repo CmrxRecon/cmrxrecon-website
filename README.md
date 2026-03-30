@@ -15,14 +15,13 @@ npm install -g pnpm
 pnpm install
 ```
 
-## 编辑文档
+## 更新网站内容的流程
 
-修改 pages/2026 目录下的 .md 文件即可
-
+- 修改 pages/ 目录下的 .md 文件
+- 预览修改后的效果
 ```
-# 预览更新后的网站
 npm run dev-2026  # CMRx4DFlow2026
 npm run dev-fields-2026  # MRIxFields2026
 npm run dev-2027  # 2027 challenge 
 ```
-
+- 向本仓库发起合并请求（PR, pull request）
