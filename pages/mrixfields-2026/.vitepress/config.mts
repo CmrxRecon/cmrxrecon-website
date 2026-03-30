@@ -12,18 +12,19 @@ export default defineConfig({
     logo: '/logo-combine.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      // { text: 'Home', link: '/' },
-      // { text: 'Data', link: '/data'},
-      // { text: 'Tasks', link: '/tasks'},
-      // { text: 'Join the challenge', link: '/join-the-challenge'},
-      // { text: 'Submission', 
-      //   items: [
-      //     { text: 'Task Submission', link: 'submission-task'},
-      //     { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
-      // ]},
-      // { text: 'Sponsors', link: '/sponsors' },
-      // { text: 'FAQ', link: '/faq' },
-      // { text: 'debug', link: '/markdown-examples' },
+      { text: 'Home', link: '/' },
+      { text: 'Data', link: '/data'},
+      { text: 'Tasks', link: '/tasks'},
+      { text: 'Join the challenge', link: '/join-the-challenge'},
+      { text: 'Submission', 
+        items: [
+          { text: 'Task Submission', link: '/submission-task'},
+          { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
+      ]},
+      { text: 'Support', link: '/support' },
+      { text: 'Organizers', link: '/organizers' },
+      { text: 'FAQ', link: '/faq' },
+      { text: 'Related challenges', link: '/related-challenges' },
     ],
 
     sidebar: [
