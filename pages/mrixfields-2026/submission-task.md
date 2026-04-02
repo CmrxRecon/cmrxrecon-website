@@ -4,8 +4,8 @@ title: Task Submission
 
 # Task Submission
 
-Validation submission tutorial: [Synapse](https://www.synapse.org/Synapse:syn64545434/wiki/637610)  
-Test submission tutorial: [Synapse](https://www.synapse.org/Synapse:syn64545434/wiki/637611)
+Validation submission tutorial: [Synapse](https://www.synapse.org/Synapse:syn72060672/wiki/639759)  
+Test submission tutorial: [Synapse](https://www.synapse.org/Synapse:syn72060672/wiki/639760)
 
 
 --------------------------------

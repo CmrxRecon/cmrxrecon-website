@@ -51,7 +51,7 @@ provide(layoutInfoInjectionKey, { heroImageSlotExists })
     <VPLocalNav :open="isSidebarOpen" @open-menu="openSidebar" />
 
     <VPSidebar :open="isSidebarOpen">
-      <template #sidebar-nav-before><slot name="sidebar-nav-before" /></template>
+      <template #sidebar-nav-before><slot name="sidebar-nav-before" /></template>ƒ
       <template #sidebar-nav-after><slot name="sidebar-nav-after" /></template>
     </VPSidebar>
 

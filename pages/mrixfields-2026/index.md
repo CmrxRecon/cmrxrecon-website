@@ -4,82 +4,114 @@ pageClass: narrow-page
 
 
 hero:
-  name: "CMRx4DFlow2026"
-  text: "Official website for CMRx series challenges"
-  tagline: Ultra-Fast 4D Flow MRI Reconstruction Challenge
+  name: "MRIxFields2026"
+  text: "Official website for the MICCAI MRIxFields 2026 challenge"
+  tagline: A Benchmark for Cross-Field MRI Translation and Harmonization
 
 features:
-  - title: Ultra-Fast 4D Flow MRI
-    details: Accelerating 4D Flow MRI acquisition and reconstruction toward routine clinical use.
-  - title: Multi-center Clinical Dataset
-    details: Over 400 cases from 10+ clinical centers covering diverse aortic pathologies.
-  - title: AI-driven Reconstruction
-    details: Extreme undersampling with reliable magnitude, phase, and hemodynamic reconstruction.
+  - title: Unified Generative Modeling 
+    details: A structured valuation protocol defining three complementary tasks. 7T-equivalent synthesis, ultra-low-field enhancement, and controllable any-to-any field-conditioned transformation.
+  - title: Comprehensive Multi-Field Dataset 
+    details: About 850 multi-center scans spanning 0.1T–7T, including 500 unpaired subjects and 200 (5 scanners) prospectively acquired travelling-volunteer paired scans for anatomically grounded cross-field evaluation.
+  - title: Cross-Field MRI Harmonization
+    details: Addressing field-strength heterogeneity as a structured full-spectrum benchmark (0.1T–7T) for principled cross-domain generalization and representation consistency. 
+
 ---
 
 
 ## Image Gallery
 
-![Slide 1](./public/home/image1.png)
+![Slide 1](./public/home/index2.png)
 
 
 ## About Us
 
-#### Welcome to the 4D Flow MRI Reconstruction Challenge 2026 (CMRx4DFlow2026)
+#### Welcome to the Generalizable Cross-Field MRI Translation and Harmonization Challenge (MRIxFields2026)
 
-—an integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Abu Dhabi, United Arab Emirates, from October 4th to 8th, 2026.  
+
+—an integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Abu Dhabi, United Arab Emirates, from October 4th to 8th, 2026. 
+
 LEARN MORE (MICCAI 2026 - 29. International Conference On Medical Image Computing & Computer Assisted Intervention)
 
-**🫀 CMRx4DFlow2026: Ultra-Fast 4D Flow MRI**
 
-> Our Vision: To challenge physical limits and leverage AI to dramatically accelerate 4D flow MRI acquisitions and reconstructions, transforming prolonged procedures into clinically viable rapid scans, and thereby ensuring every patient can benefit from advanced flow visualization.
+**🧠 MRIxFields2026: Cross-Field MRI Translation and Harmonization**
 
-**🌟 What is 4D Flow MRI? (Beyond Images: A "Digital Twin" of Your Cardiovascular System)**
+> Our Vision: To bridge ultra-low-field accessibility and ultra-high-field image quality within a single benchmark. By leveraging AI to encode and manipulate field-dependent imaging characteristics, we aim to catalyze the development of scalable, field-aware MRI synthesis methods to support reliable multi-center neuroscience research and the real-world clinical deployment of low-field MRI systems.
 
-Imagine not just taking a static "snapshot" of the heart, but creating a complete, dynamic replica of blood circulating within you in the digital world. This is **4D Flow MRI**—building a precise cardiovascular **"Digital Twin."**
 
-- **3D Space + 1D Time**: 4D Flow MRI captures the intricate hemodynamic dynamics across the entire cardiac cycle, detailing every pulsation, swirl, and impact of blood flow in three-dimensional space.
-- **Beyond Anatomy**: It quantitatively calculates critical hemodynamic parameters such as **Flow Velocity, Wall Shear Stress (WSS)**, and **Vorticity**.
-- **Pivotal Clinical Value**: Clinicians can use this "digital proxy" to precisely assess risks for aortic aneurysms, stenosis, or dissections, and simulate surgical planning.
+**🌟 What is Cross-Field MRI Harmonization? (Beyond Hardware: A Unified View of the Brain)**
+
+Imagine taking a brain MRI from any hospital—whether on a portable, low-cost scanner or a high-end research machine—and instantly transforming it into a standardized, high-quality image. This is Cross-Field MRI Harmonization—breaking the physical limits of MRI scanners.
+
+
+- **The Multi-Field Challenge**: canners range from ultra-low (0.1T) to ultra-high (7T) fields, creating massive variations in noise, resolution, homogeneity and contrast. These differences severely limit data comparability across different hospitals.
+- **Beyond Hardware Limits**: Using advanced generative AI, we can 	computationally reconstruct 7T-equivalent high-field images from arbitrary scanners , and restore crucial tissue contrast from severely degraded 0.1T ultra-low-field scans.
+
+- **Pivotal Clinical Value**: This technology enables seamless dataset harmonization for large-scale, multi-center neuroscience research. Crucially, it brings reliable, high-quality diagnostic imaging to low-resource and point-of-care settings without the need for expensive hardware.
+
 <br/>
 <center>
-  <img src="./public/home/PAGE.gif" style="max-width: 900px; width: 100%; margin-top: 12px;" />
+  <img src="./public/home/index.png" style="max-width: 900px; width: 100%; margin-top: 12px;" />
 </center>
 
 **🎯 Why This Challenge? (Pain Points & Opportunities)**
 
-While 4D Flow concept is powerful, its widespread routine clinical adoption faces significant, long-standing barriers.
+While MRI is a central tool for neuroscience research and clinical assessment, the vast diversity in scanning hardware creates significant, long-standing barriers for large-scale data integration.
 
-- **The Clinical Pain Point: Time Burden:** Acquiring a comprehensive (high resolution) 4D Flow dataset typically demands **30–60 minutes** of scanner time. This duration is not only physically demanding for patients, often leading to motion artifacts, but also imposes prohibitive time and cost burdens on hospital workflows.
-- **The Technological Bottleneck:** Insufficient Acceleration: While existing acceleration techniques (such as parallel imaging or standard compressed sensing) have reduced scan times, they commonly yield results in **10–20 minutes with low to medium spatial resolution.** This remains significantly longer than the **sub-5-minute** window desired for integration into routine clinical MRI protocols.
-- **The Unique Acceleration Potential of 4D Flow:** Unlike conventional 2D or 3D MRI, 4D Flow data inherently includes three spatial dimensions plus a temporal dimension, and multiple velocity encoding dimensions. This creates a massive data acquisition burden, but simultaneously offers a vast parameter space for intelligent undersampling. The redundant information across these multiple dimensions presents a unique and significant opportunity for AI-driven reconstruction to achieve unprecedented acceleration rates.
-- **The AI Opportunity: Breaking the Speed Limit:** This challenge is our call to action. We seek innovative algorithms that leverage advanced deep learning and reconstruction methodologies to bridge this critical gap. By achieving high-fidelity hemodynamic information from extreme undersampling (10x–50x data reduction), we can dramatically accelerate 4D Flow MRI.
+- **The Clinical Pain Point: Field-Dependent Heterogeneity:** The rapidly expanding spectrum of MRI scanners (from 0.1T to 7T) introduces substantial heterogeneity in signal-to-noise ratio, contrast behavior, and spatial resolution. These differences fundamentally limit data comparability across hospitals and pose a major barrier to the clinical translation of AI-based MRI models.
 
-**The Core Goal:** CMRx4DFlow2026 provides a standardized benchmark to accelerate the clinical adoption of 4D Flow MRI. We promote reconstruction algorithms that balance high-fidelity accuracy with computational efficiency, ensuring robust performance across diverse scanners and patient populations.
+- **The Technological Bottleneck: Narrow-Domain Limits:** Existing datasets and challenges are typically confined to narrow field ranges or single-domain settings. Because of this, conventional pipelines and current generative models often fail to generalize across realistic multi-field scenarios or struggle with severely degraded ultra-low-field acquisitions.
 
-## Evolution of the CMRxRecon Series
+- **The Unique Opportunity of Multi-Field Datasets:** This challenge introduces the first publicly available MRI benchmark that systematically covers the entire clinically relevant magnetic field spectrum. By providing prospectively acquired cross-field paired scans, it offers a rare and rigorous foundation for directly evaluating anatomical consistency and cross-domain generalization.
 
-| CMRxRecon Series | Modalities | No. of Centers | No. of Scanners | Populations | Sampling Trajectory | No. of Subjects |
-|------------------|------------|----------------|------------------|-------------|---------------------|-----------------|
-| 2023 | Cine, Mapping | 1 | 1 | Healthy individuals | 2D Uniform | ~300 |
-| 2024 | Cine, T1 and T2 Mapping, Blackblood, Phase contrast, Tagging | 1 | 1 | Healthy individuals | 2D Uniform, 3D k-t Uniform, 3D k-t Gaussian, 3D k-t Radial | ~300 |
-| 2025 | Cine, T1, T2 and T2* Mapping, T1w, T2w, T1rho, Blackblood, Phase contrast, LGE, Perfusion | 5+ | 10+ | Healthy individuals and patients with hypertrophic cardiomyopathy; dilated cardiomyopathy; myocardial infarction; coronary artery disease; arrhythmias, etc. | 2D and 3D k-t Uniform, 2D and 3D k-t Gaussian, 2D and 3D k-t Radial | ~600 |
-| 2026 | 4D Flow MRI | 10+ | 10+ | Healthy individuals; patients with multi-organ diseases (heart, brain, aorta, kidney, liver, carotid artery) | 3D Cartesian (k-t Gaussian) | ~400 |
+- **The AI Opportunity: Breaking Hardware Barriers:** We seek innovative data-driven approaches capable of bridging these physical hardware gaps. Generative models have the potential to infer high-field-equivalent anatomical structures from low-field inputs , enabling uniform structural analysis and restoring diagnostic reliability without expensive hardware.
 
 
-To bridge the gap between research and clinical deployment, the 2026 challenge utilizes over **400 cases** from **10+** centers to evaluate reconstruction performance across four specific dimensions:
+**The Core Goal:** MRIxFields2026 provides a rigorous testbed for assessing robustness, generalizability, and anatomical fidelity of generative models in heterogeneous multi-field MRI environments. By bridging ultra-low-field accessibility and ultra-high-field image quality within a single benchmark, we aim to catalyze scalable, field-aware MRI synthesis methods for real-world clinical deployment.
 
-1. **Regular Task 1: Accurate Reconstruction under High Acceleration** – To evaluate the robustness and generalization performance of reconstruction models under high (10x-50x) acceleration factors across different clinical centers and various scanners.
-2. **Regular Task 2: Fast Reconstruction under Limited Computing Resources** – To evaluate the clinical performance and computational efficiency of reconstruction models across standardized hardware (NVIDIA A6000).
-3. **Special Task 1: Generalizability across new sites and diseases** – To evaluate the hardware robustness and cross-site generalization performance of reconstruction models across different magnetic field strengths (1.5T, 3T, and 5T) and diverse clinical scenarios.
-4. **Special Task 2: Generalizability across different anatomical regions** – To evaluate the universality and cross-organ generalization performance of reconstruction models across multiple anatomical regions (e.g., brain, liver, kidney, and carotid arteries).
+
+## MRIxFields2026 Challenge Overview
+
+
+
+| Module | Description |
+|---|---|
+| Challenge Name | MRIxFields2026: A Generalizable Cross-Field MRI Translation and Harmonization Challenge |
+| Field Strengths | 0.1T, 1.5T, 3T, 5T, 7T |
+| Imaging Modality | Structural MRI |
+| Sequences / Contrasts | 3D T1-weighted, 2D/3D T2-weighted, 2D/3D T2-FLAIR |
+| Data Composition | Unpaired multi-field cohorts + travelling-volunteer paired cross-field cohort |
+| Total Cases | 850+ cases for each modality (T1W, T2W and T2-Flair) |
+| Unpaired Cohort | 650+ cases (across 5 field strengths for each modality) |
+| Paired Cohort | 200 cases (40 volunteers × 5 field strengths for each modality) |
+| Training Set | 700 cases+ (unpaired cohort + 10 paired subjects × 5 field strengths) |
+| Validation Set | 50 cases (10 volunteers × 5 field strengths) |
+| Test Set | 100 cases (20 held-out volunteers × 5 field strengths) |
+| Case Definition | One case is defined as a complete scan of a single subject acquired on one MRI system at a specific field strength |
+| Paired Information | The travelling-volunteer cohort consists of the same subjects scanned across all five field strengths |
+| Primary Applications | Cross-field MRI synthesis, ultra-low-field enhancement, controllable field-to-field translation |
+| Evaluation Reference | Ground-truth images at the target/high field strength from the paired cohort |
+| Evaluation Metrics | nRMSE, SSIM, LPIPS, Dice, normalized volume consistency |
+| Scanners | 0.1T: piMR-820H; 1.5T: uMR 670; 3T: MAGNETOM Prisma; 5T: uMR Jupiter; 7T: MAGNETOM Terra |
+
+To bridge the gap between heterogeneous clinical acquisitions and high-fidelity neuroscience research, the MRIxFields2026 challenge utilizes about 850 cases spanning 5 magnetic field strengths (0.1T to 7T) to evaluate generative models across three specific tasks:
+
+
+1. **Task 1: Ultra-High Field MRI Synthesis from Arbitrary Magnetic Field Strengths** – Targets the generation of high-field-equivalent MRI from arbitrary input field strengths, enabling models to recover fine anatomical details and quantitative properties associated with 7T imaging.
+2. **Task 2: Higher-Field MRI Generation from Ultra-Low Magnetic Field Strengths** – Addresses a rapidly emerging global priority: enhancing 0.1T ultra-low-field MRI to restore clinically meaningful tissue contrast under severely degraded imaging conditions.
+3. **Task 3: Controllable Field-to-Field MRI Synthesis with a Unified Conditional Model** – Introduces controllable, generalizable field-to-field synthesis via explicit conditioning mechanisms. This is crucial for harmonizing datasets across hospitals, reducing domain shift, and supporting large-scale clinical AI deployment.
+
+
+
 
 ## Awards
-The top 5 winners in each task will receive monetary awards. The bonus distribution plan is shown in the table below.
+Each task will have 1 First Prize, 3 Second Prize and 5 Third Prize. We are actively finalizing the details with our sponsors, with a total prize pool of approximately **$9000**.
+
 <center>
   <img src="/tasks/awards.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
 </center>
-All submissions will be reported in the leaderboard. Each participating team can engage in any tasks or all four tasks. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI annual meeting.
+All valid submissions will be reported in the public leaderboard. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI 2026 annual meeting. Participating teams with a valid submission can nominate their team members as co-authors for the final challenge summary paper.
+
 
 
 ## Timeline
@@ -87,22 +119,19 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 
 <div style="max-width: 700px; margin-top: 1rem;">
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[Feb. 01, 2026]</strong> Website opens for registration
+    <strong>[Apr. 01, 2026]</strong> Website opens for registration
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Mar. 01, 2026]</strong> Release training data and validation data
+    <strong>[Apr. 10, 2026]</strong> Release training data and validation data
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[May. 01, 2026]</strong> Submission system opens for validation
+    <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Jul. 01, 2026]</strong> Submission system opens for testing
+    <strong>[July. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[Jul. 30, 2026]</strong> STACOM paper submission deadline
-  </div>
-  <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Aug. 20, 2026]</strong> Testing docker submission deadline
+    <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Oct. 08, 2026]</strong> Release final results during the MICCAI annual meeting
@@ -112,5 +141,5 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 --------------------------------
 
 <center>
-  <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px;" />
+  <img src="./public/alllogos.png" style="height:160px; margin-bottom: 20px;" />
 </center>

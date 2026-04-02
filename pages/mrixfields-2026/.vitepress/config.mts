@@ -4,12 +4,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MRIxFields2026",
   description: "website for MRIxFields series competitions",
-  base: '/2026',
+  base: '/mrixfields-2026',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
   ],
   themeConfig: {
-    logo: '/logo-combine.png',
+    logo: '/public/logo-combined.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -47,7 +47,30 @@ export default defineConfig({
       // },
     ],
     footer: {
-      // message: '<div style="height: 3cm; border: 3px solid #e65918ff;">GE HealthCare is a trusted global healthcare solutions partner, delivering advanced technologies, pharmaceutical diagnostics, and AI-powered tools that can help make hospitals more efficient, clinicians more effective, therapies more precise, and patients healthier and happier. With over 125 years of experience, we collaborate with providers worldwide to simplify care pathways and shape the future of personalized, connected, and compassionate care.</div>Released under the MIT License, powered by <a target="_blank" rel="noopener noreferrer" href="https://vitepress.dev/">VitePress.</a>',
+      message: `
+        <div style="
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:center;
+          align-items:center;
+          gap:14px;
+          font-size:14px;
+          line-height:1.8;
+          text-align:center;
+        ">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.synapse.org/Synapse:syn72060672/wiki/636549">
+            Synapse Website
+          </a>
+          <span style="opacity:0.45;">|</span>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/mrixfields">
+            GitHub
+          </a>
+          <span style="opacity:0.45;">|</span>
+          <a href="mailto:mrixfields@outlook.com">
+            Contact: mrixfields@outlook.com
+          </a>
+        </div>
+      `,
       copyright: 'Copyright © 2026-present MRIxFields Team'
     }
   }
