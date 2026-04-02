@@ -4,9 +4,19 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MRIxFields2026",
   description: "website for MRIxFields series competitions",
-  base: '/mrixfields-2026',
+  base: '/2026',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }],
+    ['script', { async: 'true', src: 'https://www.googletagmanager.com/gtag/js?id=G-0C45G4WF13'}],
+    ['script', {}, 
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0C45G4WF13');
+      `
+    ]
   ],
   themeConfig: {
     logo: '/public/logo-combined.png',
@@ -24,7 +34,7 @@ export default defineConfig({
       { text: 'Support', link: '/support' },
       { text: 'Organizers', link: '/organizers' },
       { text: 'FAQ', link: '/faq' },
-      { text: 'Related challenges', link: '/related-challenges' },
+      // { text: 'Related challenges', link: '/related-challenges' },
     ],
 
     sidebar: [
