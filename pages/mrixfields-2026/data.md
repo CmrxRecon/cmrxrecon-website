@@ -43,8 +43,8 @@ The precise role of each split varies across tasks, depending on whether the tas
 
 
 ### Task 1: Ultra-High-Field MRI Synthesis from Arbitrary Input Field Strengths
-- **Training Set (N ≈ 750+)**  
-  - The training set consists primarily of the retrospective unpaired cohort **(N = 650 cases)**, supplemented with paired data from **10 travelling volunteers (N = 50 cases).**
+- **Training Set (N ≈ 700 for each modality)**  
+  - The training set consists primarily of the retrospective unpaired cohort **(N ≈ 650 cases)**, supplemented with paired data from **10 travelling volunteers (N = 50 cases).**
   
   This yields a total of more than 750 training cases, covering all five field strengths and multiple structural contrasts.
 
@@ -59,10 +59,10 @@ The precise role of each split varies across tasks, depending on whether the tas
   Paired 7T references are withheld and used exclusively for final evaluation.
 
 ### Task 2: Higher-Field MRI Generation from Ultra-Low-Field MRI
-- **Training Set (N ≈ 750+)**  
+- **Training Set ((N ≈ 700 for each modality)**  
   - The training set includes all retrospective unpaired data **(N = 650 cases)**, with emphasis on **0.1T inputs**, and paired data from **10 travelling volunteers (N = 50 cases).**
 
-  In total, the training set contains more than 750 cases, spanning ultra-low-field to higher-field domains.
+  In total, the training set contains **more than 750 cases**, spanning ultra-low-field to higher-field domains.
 
 - **Validation Set (N = 50):**  
   - The validation set consists of **10 travelling volunteers (N = 50 cases)**, including paired **0.1T and higher-field scans** for within-subject evaluation.
@@ -74,7 +74,7 @@ The precise role of each split varies across tasks, depending on whether the tas
   The 0.1T images serve as inputs, while higher-field references are withheld for evaluation.
 
 ### Task 3: Controllable Field-to-Field MRI Synthesis with a Unified Conditional Model
-- **Training Set (N ≈ 750+)**  
+- **Training Set (N ≈ 700 for each modality)**  
   - The training set includes the full retrospective unpaired cohort **(N = 650 cases)** and paired data from **10 travelling volunteers (N = 50 cases).**
 
   This results in **more than 750 training cases**, covering all field strengths and supporting many-to-many translation learning.
