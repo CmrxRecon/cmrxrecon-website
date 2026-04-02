@@ -4,128 +4,107 @@ title: Tasks
 
 # Tasks
 
-<center>
-  <img src="/tasks/newpic.png" 
-       alt="CMRxRecon Tasks Overview" 
-       width="100%" 
-       style="max-width: 800px; height: auto; margin-bottom: 20px;">
-</center>
+The MRIxFields2026 challenge includes three complementary tasks. The tasks are evaluated and awarded independently, so each team can choose to participate in any one of them, or all three.
 
-<center>
-  <img src="/tasks/image1.png" 
-       alt="CMRxRecon Tasks Overview" 
-       width="100%" 
-       style="max-width: 800px; height: auto; margin-bottom: 20px;">
-</center>
 
-The CMRx4DFlow2026 challenge includes two regular tasks and two special tasks. The tasks are awarded independently, so each team can choose to participate in any one of them. For each task, participants can submit one model each (which can be four different models, or they can submit just one model, but they must submit it separately for each task). Please note that for the four tasks, the training dataset we provide is the same; however, the validation and test datasets may be different for each of the four tasks.
+For each task, participants must submit their models separately as containerized inference pipelines via Docker images. Participants are allowed to make up to 3 formal submissions per task, and only the last run is officially counted to rank the results.
+
+
+Please note that for all three tasks, the provided datasets are identical: consisting of over 700 unpaired and 50 cases for training, 50 paired cases for validation, and 100 paired cases for testing. However, the evaluation reference targets will vary depending on the specific task (e.g., using a fixed 7T reference for Task 1, versus dynamic field-conditioned targets for Task 3).
+
 
 ## Objective
 
-To evaluate the models' capability for accurate reconstruction under ultra-high acceleration (Regular Task 1), rapid processing with limited computing resources (Regular Task 2), generalizability across new clinical sites and diseases (Special Task 1), and adaptability to different anatomical regions (Special Task 2).
+To evaluate generative models' capability for high-field-equivalent MRI synthesis from arbitrary input field strengths (Task 1) , enhancement of severely degraded ultra-low-field MRI to restore clinically meaningful tissue contrast (Task 2) , and controllable, generalizable field-to-field synthesis via explicit conditioning mechanisms (Task 3).
 
 ---
 
-🏆 **Regular Task 1: Accurate Reconstruction under High Acceleration**  
+🏆 **Task 1: Ultra-High Field MRI Synthesis from Arbitrary Magnetic Field Strengths**  
 
-This track targets the fundamental challenge of recovering high-fidelity 4D Flow information from severely undersampled k-space data. Participants are tasked with developing advanced reconstruction algorithms capable of operating at extreme acceleration factors, directly addressing the current barrier of lengthy scan times.
+This track targets the generation of 7T-equivalent brain MRI from an arbitrary input field strength, establishing ultra-high-field imaging as a unified reference domain. Participants are tasked with reconstructing images that match the fidelity, contrast properties, and fine anatomical detail characteristic of true 7T acquisitions.
 
-- **Goal:** Reconstruct 4D Flow data under extreme acceleration factors (10x – 50x).  
-- **Core Challenge:** The primary hurdle is to accurately recover not only the anatomical structure (represented by the magnitude image) but, critically, also the precise phase information that encodes the blood flow velocity. Errors in phase reconstruction directly translate to inaccurate hemodynamic parameters, undermining clinical utility.  
 
-- **Evaluation Metrics:** Submissions will undergo a comprehensive assessment of reconstruction fidelity.
-  - **Magnitude Image Quality:** Evaluated using standard metrics such as Normalized Root Mean Square Error (nRMSE) and Structural Similarity Index Measure (SSIM), focusing on the overall visual integrity and detail preservation of the reconstructed images.
-  - **Flow Velocity Field Accuracy:** Evaluated using Relative Velocity Error (RelErr) and Angular Error (AngErr), comparing reconstructed velocity vectors against ground truth.
+- **Goal:** Synthesize high-field-equivalent MRI from arbitrary input field strengths to recover fine anatomical details and quantitative properties associated with 7T imaging.
+  
+- **Core Challenge:** The primary hurdle is to bridge fundamental differences across magnetic field strengths while preserving anatomical fidelity and quantitative consistency. Models must handle field-dependent variations in noise, resolution, and contrast behavior to output a unified ultra-high-field representation. 
+
+
+- **Evaluation Metrics:** Submissions will undergo a comprehensive assessment combining voxel-level similarity metrics with anatomically grounded segmentation measures.
+  - **Image Fidelity & Perceptual Quality:** Evaluated using Normalized Root Mean Square Error (nRMSE) for global intensity and contrast deviations , Structural Similarity Index Measure (SSIM) for preservation of anatomical structures , and Learned Perceptual Image Patch Similarity (LPIPS) for visual realism and anatomical plausibility.
+  - **Regional Structural Preservation:** Evaluated on 14 bilateral deep gray matter nuclei using mean Dice overlap to quantify spatial overlap and boundary consistency , and normalized volume consistency to capture relative volumetric deviation.
+
 
 - **Ranking Method:**  
-  - **Per-metric aggregation:** For each submission and each metric (nRMSE, SSIM, RelErr, AngErr), compute the average metric value across all test cases.  
+  - **Per-metric aggregation:** For each submission and each metric (nRMSE, SSIM, LPIPS, mean Dice overlap, and mean normalized volume consistency), compute the average metric value across all test cases.
+
+  - **Per-metric ranking:** Rank methods separately for each metric based on its mean performance:
+
+    - Lower is better: nRMSE, LPIPS 
+ 
+    - Higher is better: SSIM, Dice overlap, Normalized volume consistency 
+
+  - **Overall ranking:** For each method, sum its per-metric ranks to obtain a composite score. Algorithms with the lowest composite scores achieve the highest final rank.
+
+
+---
+
+🏆 **Task 2: Higher-Field MRI Generation from Ultra-Low Magnetic Field Strengths**  
+
+
+This track addresses the global priority of enhancing ultra-low-field (0.1T) MRI. Participants are tasked with developing robust generative models capable of operating under extreme noise and resolution limitations to restore clinically meaningful tissue contrast. 
+
+
+- **Goal:** Generate higher-field brain MRI from 0.1T inputs to enable clinically meaningful image quality and preserve structures critical for downstream neuroanatomical interpretation.  
+
+- **Core Challenge:** Operating under fundamentally different signal and noise regimes, models must overcome severely reduced signal-to-noise ratio, limited spatial resolution, and diminished tissue separability where conventional reconstruction pipelines fail.
+
+
+- **Evaluation Metrics:** Submissions will be assessed for translation accuracy, structural fidelity, and perceptual realism.
+  - **Image Fidelity & Perceptual Quality:** Evaluated using Normalized Root Mean Square Error (nRMSE) for numerical reconstruction accuracy, Structural Similarity Index Measure (SSIM) for preservation of anatomically meaningful boundaries, and Learned Perceptual Image Patch Similarity (LPIPS) for visually plausible recovery.
+  - **Regional Structural Preservation:**  Evaluated using mean Dice overlap and normalized volume consistency across 14 bilateral deep gray matter nuclei to assess spatial overlap and relative volumetric deviation under extreme degradation.
+  
+
+- **Ranking Method:**  
+  - **Per-metric aggregation:** For each metric, compute the average value across all test cases.
+
+  - **Per-metric ranking:** Rank methods independently for each metric. Lower values are preferred for nRMSE and LPIPS, while higher values are preferred for SSIM. 
+
+  - **Overall ranking:** Sum the per-metric ranks for each algorithm. Algorithms with the lowest composite scores achieve the highest final rank. 
+
+
+
+---
+
+🏆 **Task 3: Controllable Field-to-Field MRI Synthesis with a Unified Conditional Model**  
+
+This track introduces controllable, generalizable field-to-field synthesis via explicit conditioning mechanisms. Unlike pairwise translation, the objective is to learn a generalizable representation that enables dynamic image generation conditioned on desired target field parameters.
+
+- **Goal:** Perform controllable transformations between any pair of field strengths (e.g., 0.1T to 7T) using a single unified conditional model where both input and target fields are explicitly specified.
+
+- **Core Challenge:** Scaling beyond isolated translation tasks, models must capture field-dependent variations in contrast behavior, noise, and spatial resolution across diverse and extreme transitions while adapting to user-specified field targets without compromising structural integrity.
+
+
+- **Evaluation Metrics:** Computed conditioned on different target field specifications to explicitly assess controllability and field-awareness.
+  - **Image Fidelity & Perceptual Quality:** Evaluated using Normalized Root Mean Square Error (nRMSE) for global intensity differences, Structural Similarity Index Measure (SSIM) for preservation of anatomical structures, and Learned Perceptual Image Patch Similarity (LPIPS) for field-dependent textural differences. 
+  
+  - **Regional Structural Preservation:** Evaluated using mean Dice overlap for boundary consistency and normalized volume consistency for relative volumetric deviation across 14 bilateral deep gray matter nuclei. 
+
+
+- **Ranking Method:**  
+  - **Per-metric aggregation:** For each metric (nRMSE, SSIM, LPIPS, mean Dice overlap, and mean normalized volume consistency), compute the average metric value across all test cases. 
+ 
   - **Per-metric ranking:** Rank methods separately for each metric:
-    - Lower is better: nRMSE, RelErr, AngErr  
-    - Higher is better: SSIM  
+    - Lower is better: nRMSE, LPIPS 
+    - Higher is better: SSIM, Dice overlap, Normalized volume consistency  
   - **Overall ranking:** For each method, sum its ranks across the four metrics to obtain a composite score. Methods with the lowest summed rank are ranked highest overall.
 
----
-
-🏆 **Regular Task 2: Fast Reconstruction under Limited Computing Resources**  
-
-
-This task prioritizes computational efficiency for routine clinical adoption. Participants develop algorithms that minimize reconstruction latency on standard workstation hardware, ensuring 4D Flow MRI is practical for high-throughput diagnostic workflows.
-
-- **Goal:** Achieve the fastest possible reconstruction using limited computational resources (standardized on a single NVIDIA A6000 48G GPU).  
-- **Core Challenge:** Reconstructing high-dimensional 4D Flow data within the computational limits of a single GPU, optimizing reconstruction efficiency while ensuring the diagnostic integrity of blood flow quantification.
-
-- **Evaluation Process:** The evaluation for Task 2 follows a two-stage process designed to prioritize computational speed without compromising clinical diagnostic quality.
-  - **Stage 1: Quality Qualification (Threshold Baseline)**
-    - **Benchmark:** The FlowVN algorithm (Vishnevskiy et al., Nat Mach Intell. 2020) serves as the baseline for acceptable reconstruction quality.  
-    - **Evaluation Metric:** Reconstruction quality is assessed using a unified metric, Complex Difference Error ($E_{complex}$), that evaluates the accuracy of the reconstructed complex-valued data, capturing both magnitude and phase information.  
-    - **Qualification Requirement:** Only algorithms achieving an $E_{complex}$ value equal to or lower than the FlowVN baseline qualify for the final ranking.  
-
-  - **Stage 2: Efficiency Ranking (Final Performance)**
-    - **Standardized Platform:** After meeting the reconstruction quality threshold, algorithms are ranked based on their computational efficiency. Reconstruction time per case, measured in seconds, is evaluated on a single NVIDIA A6000 GPU with 48 GB VRAM.  
-    - **Evaluation Metric:** Average Reconstruction Time – the mean end-to-end duration required to transform raw k-space input into final reconstructed images. The algorithm that delivers the shortest processing time per case achieves the highest rank.
-
-- **Ranking Method:**  
-  - **Quality gate (eligibility):** Submissions are first checked against a reconstruction-quality threshold benchmarked to FlowVN. Only methods that achieve quality equal to or better than FlowVN are eligible for ranking.  
-  - **Time-based ranking:** Among eligible submissions, rank methods by reconstruction time (seconds per case) measured on the standardized hardware platform (single NVIDIA A6000, 48GB). Shorter time ranks higher.
-
----
-
-🏆 **Special Task 1: Generalizability Across New Sites and Diseases**  
-
-Real-world clinical data often varies significantly across different hospitals, scanner models, and patient populations, especially in challenging disease states. This task investigates the robustness and generalizability of your reconstruction algorithms when faced with unseen data characteristics.
-
-- **Goal:** Develop reconstruction models that maintain high accuracy and quality when applied to 4D Flow data acquired from new, unseen clinical sites (e.g., different MRI scanner models) and/or new disease pathologies not explicitly represented in the primary training set.  
-
-- **Core Challenge:** Overcoming domain shift. Algorithms must demonstrate resilience to variations in:
-  - Signal-to-noise ratio  
-  - Coil sensitivities  
-  - Acquisition parameters  
-  - Pathological manifestations  
-  without retraining or fine-tuning on the new domain. This pushes the boundaries of robustness and true clinical applicability.
-
-- **Evaluation Metrics:** Submissions will undergo a comprehensive assessment of reconstruction fidelity:
-  - **Magnitude Image Quality:** Evaluated using standard metrics such as Normalized Root Mean Square Error (nRMSE) and Structural Similarity Index Measure (SSIM), focusing on the overall visual integrity and detail preservation of the reconstructed images.  
-  - **Flow Velocity Field Accuracy:** Evaluated using Relative Velocity Error (RelErr) and Angular Error (AngErr), comparing reconstructed velocity vectors against ground truth.
-
-- **Ranking Method:**  
-  - **Per-metric aggregation:** For each submission and each metric (nRMSE, SSIM, RelErr, AngErr), compute the average metric value across all test cases.  
-  - **Per-metric ranking:** Rank methods separately for each metric:
-    - Lower is better: nRMSE, RelErr, AngErr  
-    - Higher is better: SSIM  
-  - **Overall ranking:** For each method, sum its ranks across the four metrics to obtain a composite score. Methods with the lowest summed rank are ranked highest overall.
-
----
-
-🏆 **Special Task 2: Generalizability Across Different Anatomical Regions**  
-
-While the primary regular tasks focus on aortic 4D Flow, the principles of blood flow imaging and reconstruction are broadly applicable to other critical vascular beds. This task explores the transferability of algorithms developed for aortic data to entirely different anatomical regions within the cardiovascular system.
-
-- **Goal:** Evaluate how effectively reconstruction algorithms, primarily trained on aortic 4D Flow data, can generalize to other important vascular regions such as:
-  - Portal venous system  
-  - Renal arteries  
-  - Cerebral vessels  
-  - Cervical vessels  
-  without significant architectural changes or specific training on these new regions.
-
-- **Core Challenge:** Adapting to new anatomical geometries, flow patterns, and potential variations in image contrast and resolution inherent to different vascular territories. This tests the fundamental understanding of flow dynamics learned by the model, rather than just aortic-specific features.
-
-- **Evaluation Metrics:** Submissions will undergo a comprehensive assessment of reconstruction fidelity:
-  - **Magnitude Image Quality:** Evaluated using standard metrics such as Normalized Root Mean Square Error (nRMSE) and Structural Similarity Index Measure (SSIM), focusing on the overall visual integrity and detail preservation of the reconstructed images.  
-  - **Flow Velocity Field Accuracy:** Evaluated using Relative Velocity Error (RelErr) and Angular Error (AngErr), comparing reconstructed velocity vectors against ground truth.
-
-- **Ranking Method:**  
-  - **Per-metric aggregation:** For each submission and each metric (nRMSE, SSIM, RelErr, AngErr), compute the average metric value across all test cases.  
-  - **Per-metric ranking:** Rank methods separately for each metric:
-    - Lower is better: nRMSE, RelErr, AngErr  
-    - Higher is better: SSIM  
-  - **Overall ranking:** For each method, sum its ranks across the four metrics to obtain a composite score. Methods with the lowest summed rank are ranked highest overall.
 
 
 ---
 
 ## 🎖️ Awards
 
-The top 5 winners in each task will receive monetary awards. The bonus distribution plan is shown in the table below.
+The winners in each task will receive monetary awards. The bonus distribution plan is shown in the table below.
 
 <center>
   <img src="/tasks/awards.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
@@ -144,17 +123,6 @@ All submissions will be reported in the leaderboard. Each participating team can
 #### Challenge Platform
 - Hosted on **Synapse** platform: https://www.synapse.org/Synapse:syn64545434/wiki/
 
----
-
-
-
-## Principal of Participation
-
-<center>
-  <img src="/tasks/e2b762a5-4366-4e7f-876d-131e4e28bd2d.png" alt="Principal of Participation" width="90%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
-</center>
-
-Note: Participants are not required to upload the complete training code. But teams willing to upload the original training code will be automatically entered into the code-sharing pool.
 
 ---
 
@@ -163,22 +131,19 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 
 <div style="max-width: 700px; margin-top: 1rem;">
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[Feb. 01, 2026]</strong> Website opens for registration
+    <strong>[Apr. 01, 2026]</strong> Website opens for registration
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Mar. 01, 2026]</strong> Release training data and validation data
+    <strong>[Apr. 10, 2026]</strong> Release training data and validation data
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[May. 01, 2026]</strong> Submission system opens for validation
+    <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
     <strong>[Jul. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[Jul. 30, 2026]</strong> STACOM paper submission deadline
-  </div>
-  <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Aug. 20, 2026]</strong> Testing docker submission deadline
+    <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Oct. 08, 2026]</strong> Release final results during the MICCAI annual meeting
@@ -189,8 +154,11 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 
 ## Rules
 
-1. It should be restricted to the data provided by the current and previous CMRxRecon challenge as well as data from the ‘fastMRI’ challenge (the most related public dataset), under the terms and conditions associated with the data usage.
-2. For each task, participants are allowed to train only one model to reconstruct various images at the aforementioned different undersampling scenarios.  
+1. Training data usage should be restricted to the data provided by the current MRIxFields2026 challenges, under the terms and conditions associated with the data usage.
+2. For Task 1 and Task 2, participants may design separate models for different input field strengths (4 input field strengths) and different image contrast (T1w, T2w, T2Flair) to address field-dependent variations in noise, resolution, and contrast behavior. However, for Task 3, participants must utilize a single unified conditional model to enable dynamic image generation conditioned on desired target field parameters. You may use a prompt-based mechanism, but only one set of pretrained parameters is allowed to be stored for Task 3. If a participating team submits multiple models for Task 3, the submission will be disqualified and no score will be counted.
+3. The algorithms assessed must be fully automatic.
+4. Participating teams are allowed to make 3 formal submissions per task via Docker container through the Synapse platform. Only the last run submission is officially counted to rank challenge results.
+
 
 --------
 

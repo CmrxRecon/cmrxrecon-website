@@ -4,53 +4,45 @@ title: FAQ
 
 # FAQ
 
-**1. Is it possible to download the challenge dataset without participating in the challenge?**  
-Yes. However, all results generated based on this dataset can only be published three months after the end of the challenge. According to our agreement, it is required to cite our provided article and acknowledge the data source when referencing the results.
+### 1. Is it possible to download the challenge dataset without participating in the challenge?
 
-**2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?**  
-Yes. But to ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023,CMRxRecon2024, CMRxRecon2025 and CMRx4DFlow2026. Data augmentation based on the training dataset is allowed.
+Yes, under controlled access.
 
-**3. What is the maximum number of team members allowed?**  
-Each team can consist of up to 6 people.
+Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the organizing committee at [mrixfields@outlook.com](mailto:mrixfields@outlook.com) for review. Access to the dataset will be granted only after approval by the data governance committee.
 
-**4. Is it mandatory to perform calculations in the complex domain?**  
-It is not mandatory.
+All approved users are required to comply with the data usage agreement. In particular:
 
-**5. Is it necessary to introduce data fidelity terms?**  
-It can be done but is not mandatory. We only evaluate the test results and do not have specific requirements for the process.
+- Results derived from the dataset may only be published no earlier than **three months after the official end of the challenge**
+- The **challenge paper** must be properly cited
+- The **dataset source** must be explicitly acknowledged in any publication
 
-**6. Is motion correction between different frames necessary?**  
-No, it can be done but is not mandatory.
+### 2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?
 
-**7. Can we preprocess the data?**  
-We do not restrict any data preprocessing, and we only evaluate the final reconstruction effect. However, the total running time for all data in each task cannot exceed 20 hours.
+Yes. Any publicly available datasets may be used for training. However, participants are not allowed to use their own private data in order to ensure the fairness of this challenge. Data augmentation based on the training dataset is allowed.
 
-**8. Do we need to upload the training code?**  
-We do not require teams to upload the training code. Only the inference code's Docker image is needed for participation.
+### 3. What is the maximum number of team members allowed?
 
-**9. How should we aggregate evaluations for different acceleration factors and sampling patterns?**  
-For all the tasks regarding the sampling patterns and accelerations, all paired data are assigned equal weight when calculating the final ranking metrics.
+Each team can consist of up to **6 people**.
 
-**10. Does the validation submission affect the final ranking?**  
-No, the validation submission does not affect the final ranking.
+### 4. Can we preprocess the data?
 
+We do not restrict data preprocessing, and we only evaluate the final generation performance. However, the total running time for all data in each task cannot exceed **1 hour**.
 
-**11. What should we do if the k-space sizes are not uniform?**  
-We recommend zero-padding the k-space data to a consistent size for reconstruction, and then cropping them back to its original dimensions.
+### 5. Do we need to upload the training code?
 
-**12. Should we compute the evaluations after cropping the images? Specifically, should we evaluate the entire image or only the cardiac region?**  
-Evaluations are performed within the vessel ROI only, using the provided segmentation mask (*segmask). The segmask contains the vascular region-of-interest.
-For submission, participants should apply the segmask to their reconstructed images and submit the masked (ROI-only) results . Please keep the data dimensions consistent with the original data excluding the coil dimension, and preserve the original directory structure and file names.
-Details can be found at: [link](https://github.com/CmrxRecon/CMRx4DFlow2026/blob/main/CMRx4DFlowReconDemo/4_EvaluationDemo/example_evaluation.ipynb)
+We do not require teams to upload the training code. Only the **Docker image for the inference code** is required for participation.
 
-**13. How can we perform model computation using the sensitivity map?**  
-Our data includes a sensitivity map for each case, generated using ESPIRiT from the central 24 × 24 × 24 k-space region after averaging over the velocity-encoding and temporal dimensions.
+### 6. Does the validation submission affect the final ranking?
 
-**14. How to apply the undersampling mask to fully-sampled training data?**  
-To replicate the undersampled data for validation and test, please refer to :  
-[link](https://github.com/CmrxRecon/CMRx4DFlow2026/blob/main/CMRx4DFlowReconDemo/1_UndersamplingDemo/example_undersampling.ipynb)  
+No, the validation submission does **not** affect the final ranking.
 
+### 7. How many submissions are allowed?
 
+During the validation phase, each team is allowed to submit up to three times per day per task. In the test phase, each team can submit up to five Docker containers per task in total. The final ranking will be based on the results of the last submission.
+
+### 8. Can we participate in only one task?
+
+Yes, participants are free to join any single task. Of course, they are also welcome to participate in multiple or all tasks. Each task will be evaluated, ranked, and awarded independently.
 
 
 
@@ -68,14 +60,14 @@ To replicate the undersampled data for validation and test, please refer to :
 
 # Rules
 
-1. All individuals who wish to participate in this challenge are required to register using their real name, affiliation details (including department, university/institute/company name in full, country), and affiliation E-mails. Incomplete and repetitive registrations will be removed without any prior notice. Each team is permitted to have a maximum of six members.
+1. All individuals who wish to participate in this challenge are required to register using their real name, affiliation details (including department, university /institute/company name in full, country), and affiliation E-mails. Incomplete and repetitive registrations will be removed without any prior notice. Each team is permitted to have a maximum of six members.
 
-2. During the validation and training phase, all participants must submit a complete solution to this challenge, which includes a Docker image and a qualified methodology paper (of at least 8 pages, in LNCS format).
+2.  During the validation and training phase, all participants must submit a complete solution to this challenge, which includes a Docker image and a qualified methodology paper (of at least 8 pages, in LNCS format).
 
 3. All participants must agree that the short papers they submit can be made publicly available on the challenge website, and that organizers can use information provided by participants, including scores, predicted labels, and papers.
 
-4. Participants are not allowed to register multiple teams or accounts. The CMRxRecon Organizers reserve the right to disqualify such participants.
+4. Participants are not allowed to register multiple teams or accounts.The MRIxFields Organizers reserve the right to disqualify such participants.
 
 5. Redistribution or transfer of data or data links is prohibited. Participants must use the data solely for their own purposes.
 
-6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by CMRxRecon2023, CMRxRecon2024, CMRxRecon2025 and CMRx4DFlow2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
+6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by MRIxFields2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.

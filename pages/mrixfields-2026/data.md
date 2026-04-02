@@ -10,125 +10,223 @@ title: Data
        width="90%" 
        style="max-width: 600px; height: auto; margin-bottom: 20px;">
 </center>
-<center>
-  <img src="/data/table1.png" 
-       alt="CMRxRecon2026 Data Details" 
-       width="90%" 
-       style="max-width: 600px; height: auto; margin-bottom: 20px;">
-</center>
 
 ## Data sources
 
-CMRx4DFlow2026 provides an extensive multi-center, multi-vendor k-space 4D Flow MRI dataset.
 
 💾 **Data Overview: Scale & Diversity**
 
 - **Total Volume:**  
-  - Over 400 cases (volunteers and patients), including more than 300 aortic 4D Flow MRI cases.
+  - The dataset comprises approximately 650 retrospective cases (unpaired, ~100 cases per magnetic field strength) and 40 prospectively acquired travelling-volunteer cases (paired, scanned at all 5 field strengths), yielding 200 cross-field paired scans.
+- **Multi-field structural brain MRI data featuring:5 Field Strengths: 0.1T, 1.5T, 3T, 5T, 7T systems.**  
+  - 3 Modalities: 3D T1-Weighted (T1W), 2D/3D T2-Weighted (T2W), 2D/3D T2-FLAIR.
+  - 3 Manufacturers: Siemens Healthineers, United Imaging Healthcare, Point Imaging. 
 
-- **Multi-channel k-space data from:**  
-  - 10+ medical centers  
-  - 4+ vendors: GE, Philips, Siemens, United Imaging  
-  - 3 field strengths: 1.5T, 3T, 5T  
-  - 6+ anatomical regions: Aorta, heart, brain, liver, kidney, carotid arteries
-
-📊 **Acquisition Parameters**
-
-- **Field of View (FOV):** 200 × 200 × 40 mm³ to 450 × 450 × 90 mm³  
-- **Spatial Resolution:** 0.9 to 3.0 mm isotropic/anisotropic voxels  
-- **Temporal Resolution:** 23 to 120 ms across cardiac phases  
-- **Velocity Encoding (VENC):**  
-  - Liver/Kidney/Brain: 40–100 cm/s  
-  - Aorta/Carotid: 100–200 cm/s  
-- **Sequence Type:** ECG-gated 3D Cartesian 4D Flow MRI  
-  - Protocols include both retrospective gating and prospective gating
+| Field Strength | Prospective T1w (paired) | Prospective T2w (paired) | Prospective T2 FLAIR (paired) | Retrospective T1w (unpaired) | Retrospective T2w (unpaired) | Retrospective T2 FLAIR (unpaired) | Scanners | Manufacturer |
+|---|---:|---:|---:|---:|---:|---:|---|---|
+| 0.1T | 40 (3D) | 40 (3D) | 40 (3D) | 100 (3D) | 100 (3D) | 100 (2D) | piMR-820H | Point Imaging |
+| 1.5T | 40 (3D) | 40 (3D) | 40 (3D) | 104 (3D) | 221 (2D) | 221 (2D) | uMR 670 | United Imaging Healthcare |
+| 3T | 40 (3D) | 40 (3D) | 40 (3D) | 143 (3D) | 144 (3D) | 143 (2D) | MAGNETOM Prisma | Siemens Healthineers |
+| 5T | 40 (3D) | 40 (3D) | 40 (3D) | 122 (3D) | 44 (3D) | 103 (2D) | uMR Jupiter | United Imaging Healthcare |
+| 7T | 40 (3D) | 40 (3D) | 40 (3D) | 236 (3D) | 106 (3D) | 84 (2D) | MAGNETOM Terra | Siemens Healthineers |
 
 
-📊 **Diseases**
+📊 **Dataset seperation: Training, Validation, and Testing**
 
-- Aortic stenosis  
-- Pulmonary atresia  
-- Tricuspid regurgitation  
-- Ventricular septal defect  
-- Pulmonary hypertension  
-- Chronic kidney disease  
-- Acute kidney injury  
-- ...
+**Overall Split**
+- **Training set**: About 700 cases, consisting of the retrospective unpaired cohort together with paired data from 10 travelling volunteers × 5 field strengths
+- **Validation set:** 50 cases, corresponding to 10 volunteers × 5 field strengths
+- **Test set:** 100 cases, corresponding to 20 held-out volunteers × 5 field strengths
 
-📊 **Dataset Separation: Training, Validation, and Testing**  
-The dataset is carefully divided to support a robust development and evaluation cycle:
 
-### Regular Task 1 & 2
-- **Training Set (138 Cases):**  
-  - Fully sampled raw k-space data provided for each case. Serves as the "ground truth" input for deep learning models, allowing training from undersampled k-space to high-fidelity 4D Flow images.
+The precise role of each split varies across tasks, depending on whether the task is driven primarily by unpaired learning, paired target-domain supervision, or controllable conditional generation
+
+
+### Task 1: Ultra-High-Field MRI Synthesis from Arbitrary Input Field Strengths
+- **Training Set (N ≈ 750+)**  
+  - The training set consists primarily of the retrospective unpaired cohort **(N = 650 cases)**, supplemented with paired data from **10 travelling volunteers (N = 50 cases).**
   
-- **Validation Set (32 Cases):**  
-  - Undersampled raw k-space data (simulated with acceleration factors from 10x to 50x) derived from fully sampled data, without corresponding ground truth.
-  
-- **Test Set (43 Cases):**  
-  - Final undisclosed dataset for challenge ranking. Consists of undersampled raw k-space data (with varying acceleration factors) and fully sampled references.
+  This yields a total of more than 750 training cases, covering all five field strengths and multiple structural contrasts.
 
-### Special Task 1: Generalizability across new sites and diseases
-- **Validation Set (40 Cases):**  
-  - Undersampled raw k-space data (simulated with acceleration factors from 10x to 50x) acquired from different centers than the training set and from patients with different diseases. No corresponding ground truth is provided.
+- **Validation Set (N = 50):**  
+  - The validation set consists of **10 travelling volunteers scanned across five field strengths (10 × 5 = 50 cases).**
   
-- **Test Set (60 Cases):**  
-  - Final undisclosed dataset for special task ranking. Undersampled raw k-space data (with acceleration factors from 10x to 50x) from different centers and patients with different diseases; fully sampled references are withheld.
+  These paired data enable controlled within-subject validation against corresponding 7T targets.
 
-### Special Task 2: Generalizability across different anatomical regions
-- **Validation Set (40 Cases):**  
-  - Undersampled raw k-space data (simulated with acceleration factors from 10x to 50x) from multiple anatomical regions:  
-    - Cerebrovascular (10 cases)  
-    - Portal Vein (10 cases)  
-    - Renal Artery (10 cases)  
-    - Carotid (10 cases)  
-  - No corresponding ground truth is provided.
+- **Test Set ((N = 100):**  
+  - The test set includes **20 held-out travelling volunteers scanned across five field strengths (20 × 5 = 100 cases).**
   
-- **Test Set (80 Cases):**  
-  - Final undisclosed dataset for special task ranking. Undersampled raw k-space data (with acceleration factors from 10x to 50x) from the same four anatomical regions:  
-    - Cerebrovascular (20 cases)  
-    - Portal Vein (20 cases)  
-    - Renal Artery (20 cases)  
-    - Carotid (20 cases)  
-  - Fully sampled references are withheld for evaluation.
+  Paired 7T references are withheld and used exclusively for final evaluation.
 
----
+### Task 2: Higher-Field MRI Generation from Ultra-Low-Field MRI
+- **Training Set (N ≈ 750+)**  
+  - The training set includes all retrospective unpaired data **(N = 650 cases)**, with emphasis on **0.1T inputs**, and paired data from **10 travelling volunteers (N = 50 cases).**
+
+  In total, the training set contains more than 750 cases, spanning ultra-low-field to higher-field domains.
+
+- **Validation Set (N = 50):**  
+  - The validation set consists of **10 travelling volunteers (N = 50 cases)**, including paired **0.1T and higher-field scans** for within-subject evaluation.
+
+
+- **Test Set ((N = 100):**  
+  - The test set consists of **20 held-out travelling volunteers (N = 100 cases).**
+  
+  The 0.1T images serve as inputs, while higher-field references are withheld for evaluation.
+
+### Task 3: Controllable Field-to-Field MRI Synthesis with a Unified Conditional Model
+- **Training Set (N ≈ 750+)**  
+  - The training set includes the full retrospective unpaired cohort **(N = 650 cases)** and paired data from **10 travelling volunteers (N = 50 cases).**
+
+  This results in **more than 750 training cases**, covering all field strengths and supporting many-to-many translation learning.
+
+- **Validation Set (N = 50):**  
+  - The validation set consists of **10 travelling volunteers (N = 50 cases)**, enabling evaluation across all possible field-to-field translation directions.
+
+
+- **Test Set ((N = 100):**  
+  - The test set consists of **20 held-out travelling volunteers (N = 100 cases)**.
+  
+  All target-domain references are withheld and used only for final ranking.
+
 
 ## Pre-processing
 
-The raw k-space data exported from the scanner will be processed and transformed to '.mat' format using the script provided by each vendor. A readme file will be provided to describe the content and usage of the data.  
+To ensure anatomical consistency across field strengths while preserving realistic cross-field variability, we designed a unified yet cohort-specific preprocessing pipeline. The pipeline treats the **prospective travelling-volunteer paired cohort** and the **retrospective unpaired multi-field cohort** differently, reflecting their distinct roles in training and evaluation.
 
-Details of data description and different undersampling masks:
+### 1. Spatial Registration
 
-| Filename                     | Dimension                 | Description                                                      |
-|-------------------------------|---------------------------|------------------------------------------------------------------|
-| `kdata_full.mat`             | (Nv, Nt, Nc, SPE, PE, FE)| Retrospectively fully sampled multi-channel k-space data        |
-| `segmask.mat`                | (SPE, PE, FE)            | Segmentation mask for the region of interest                    |
-| `coilmap.mat`                | (Nc, SPE, PE, FE)        | Coil sensitivity maps                                            |
-| `usmask_ktGaussian{R}.mat`  | (1, Nt, 1, SPE, PE, 1)   | Gaussian k-t undersampling mask for $R\times$ acceleration      |
-| `params.csv`                 | N/A                       | Acquisition and reconstruction metadata                          |
+#### 1.1 Prospective Travelling-Volunteer Cohort (Paired Data)
+
+For the paired dataset, we adopted a **subject-specific, 3T-anchored registration strategy** to preserve within-subject anatomical correspondence across field strengths while minimizing artificial deformation.
+
+##### Step 1: Reference definition
+For each subject, the **3T T1-weighted image** was rigidly registered to the **MNI152 (1 mm, skull-on) template**, establishing a subject-specific reference in standard space.
+
+##### Step 2: Cross-field alignment
+T1-weighted images from all other field strengths (**0.1T, 1.5T, 5T, and 7T**) were rigidly registered to the **subject-specific 3T T1 image in MNI space**, ensuring consistent global alignment across fields.
+
+##### Step 3: Nonlinear refinement (optional)
+For cases with residual misalignment, **SyN nonlinear registration (ANTs)** was applied as a refinement step to improve local anatomical correspondence.
+
+##### Multi-contrast propagation
+The estimated transformations from **T1-weighted images** were propagated to the corresponding **T2-weighted** and **T2-FLAIR** images.  
+When necessary, additional **SyN-based refinement** was applied to these modalities to correct residual mismatch.
+
+#### 1.2 Retrospective Multi-Field Cohort (Unpaired Data)
+
+For the unpaired dataset, a **global normalization strategy** was adopted to enable large-scale model training under heterogeneous conditions:
+
+- All modalities (**T1w, T2w, and T2-FLAIR**) were registered directly to the **MNI152 template**
+- A combination of **affine** and **SyN nonlinear registration (ANTs)** was used to ensure robust inter-subject alignment
+
+This approach provides a consistent anatomical reference space while accommodating substantial variability across scanners, protocols, and subjects.
+
+This strategy preserves true cross-field anatomical correspondence while avoiding unnecessary nonlinear distortions that could bias downstream evaluation.
+
+### 2. Skull Stripping
+
+Skull stripping was performed after spatial registration using **HD-BET**, with different strategies for paired and unpaired data to balance consistency and robustness.
+
+#### 2.1 Paired Cohort
+
+- Skull stripping was performed only on the **3T T1-weighted images** using **HD-BET**
+- The resulting brain mask was propagated to **all other field strengths and modalities** for the same subject
+
+This design ensures:
+
+- Consistent brain boundaries across field strengths
+- Elimination of mask-induced variability in paired comparisons
+- Preservation of true anatomical differences across fields
+
+#### 2.2 Unpaired Cohort
+
+- Skull stripping was performed independently for each modality using **HD-BET**
+
+This approach ensures robustness across heterogeneous datasets without relying on cross-modal or cross-field correspondence.
+
+### 3. 2D-to-3D Super-Resolution Reconstruction
+
+For acquisitions with inherently anisotropic resolution, that is, **2D scans**, we employed a **learning-based super-resolution strategy** to reconstruct volumetric 3D data.
+
+Specifically, a **pre-trained super-resolution network** was used to perform **slice-to-volume reconstruction**, transforming 2D inputs into isotropic 3D volumes. This approach enables recovery of through-plane structural information and improves cross-plane consistency, which is critical for subsequent cross-field analysis and synthesis tasks.
+
+Unlike conventional interpolation-based resampling, this method leverages **data-driven priors** to enhance spatial resolution while preserving anatomical fidelity. The resulting 3D volumes are therefore more suitable for downstream processing, including:
+
+- registration
+- cross-field translation
+- quantitative evaluation
+
+### 4. Quality Control
+
+All data underwent **expert-guided quality control**, including:
+
+- Removal of scans with severe motion artifacts
+- Exclusion of images with incomplete brain coverage
+- Verification of registration accuracy across field strengths and modalities
+
+This process ensures high data quality and reliable anatomical alignment across the dataset.
+
+### 5. Intensity Standardization
+
+A conservative intensity normalization strategy was applied to reduce scanner-dependent scaling differences while preserving intrinsic field-dependent contrast characteristics.
+
+Importantly, preprocessing avoids aggressive normalization or histogram matching that could remove meaningful differences between field strengths, thereby maintaining the integrity of cross-field learning and evaluation.
+
+### 6. Data Organization
+
+All processed data are organized according to the **BIDS (Brain Imaging Data Structure)** standard, with consistent metadata across subjects, field strengths, and acquisition sites.
 
 
-> **Note:** The Cartesian trajectory is used for k-space data sampling.  
-> The readout direction (FE) is fully sampled, and undersampling occurs in the two phase-encoding directions (PE and SPE).  
-> `#` represents varied acceleration factors (10x, 20x, 30x, 40x, 50x). ACS lines are not included for calculations.  
-> If the data has no temporal dimension, the corresponding mask dimension becomes `(PE, SPE)`.
 
-**Dimension Reference:** Both fully sampled and undersampled data share the standardized dimension order `(Nv, Nt, Nc, SPE, PE, FE)`
+## Post-processing
 
-**Dimension definitions:**
+To enable anatomically informed downstream analysis, we incorporated a post-processing step based on automated brain segmentation.
 
-- **FE (Frequency Encoding):** Image-space X axis (readout/frequency-encoding direction) sample count; affects FOV and resolution along X.
-- **PE (Phase Encoding):** Image-space Y axis (phase-encoding direction) sample/step count; affects FOV and resolution along Y.
-- **SPE (Slice Phase Encoding):** Image-space Z axis (slice phase-encoding / second phase-encoding direction); affects volumetric coverage and resolution along Z.
-- **Nc (number of coils):** Number of receiver coil channels; each channel provides independent complex-valued measurements for SNR improvement and parallel imaging.
-- **Nt (number of cardiac phases):** Number of time frames in the cardiac cycle; each frame corresponds to a specific cardiac phase.
-- **Nv (number of velocity encodings):** Number of velocity-encoding conditions; used to compute velocity-induced phase and estimate velocity vectors.
+### 1. Automated Segmentation
 
-Further background on 4D flow MRI:
+All processed MRI volumes were segmented using **SynthSeg**, a deep learning-based whole-brain segmentation framework. SynthSeg was selected due to its robustness to variations in image contrast, resolution, and acquisition conditions, making it particularly suitable for multi-field MRI data.
 
-- [4D Flow MRI Overview](https://mriquestions.com/4d-flow-imaging.html)  
-- [CMRxRecon 4D Flow Data Overview](https://github.com/CmrxRecon/CMRx4DFlow2026/blob/main/ChallengeDataFormat/4DFlowDataOverview.md)
+Segmentation was applied uniformly to all images after preprocessing, without additional manual intervention.
+
+### 2. Structural Feature Extraction
+
+Based on the segmentation outputs, regional structural measures were derived for each subject, including:
+
+- Regional brain volumes for deep gray matter structures
+- Bilateral measurements across anatomical regions
+
+The primary structures include:
+
+- Thalamus
+- Caudate
+- Putamen
+- Pallidum
+- Hippocampus
+- Amygdala
+- Accumbens
+
+These regions are consistently identifiable across field strengths and are suitable for downstream quantitative analysis.
+
+### 3. Quality Control of Segmentation
+
+To ensure robustness of the segmentation outputs:
+
+- SynthSeg was applied under a unified configuration across all datasets
+- Outputs were visually inspected for gross failures or anatomical inconsistencies
+- Cases with severe segmentation artifacts were flagged during the quality control stage
+
+### 4. Role in the Pipeline
+
+This post-processing step provides anatomically meaningful representations of the MRI data, enabling:
+
+- Standardized structural characterization across field strengths
+- Region-wise quantitative analysis
+- Compatibility with downstream evaluation and analysis pipelines
+
+### Reference Information
+
+- **SynthSeg**: [GitHub Repository](https://github.com/BBillot/SynthSeg)
+- **Paper**: *SynthSeg: Segmentation of brain MRI scans of any contrast and resolution without retraining*
 
 ---
 
@@ -137,30 +235,41 @@ Further background on 4D flow MRI:
 
 ``` text
 ChallengeData
-├─ Task
-│  ├─ TrainSet
-│  │  └─ Aorta
-│  │     └─ Center001
-│  │        └─ UIH_30T_uMR890
-│  │           └─ P007
-│  │              ├─ kdata_full.mat
-│  │              ├─ coilmap.mat
-│  │              ├─ segmask.mat
-│  │              └─ params.csv
-│  └─ ValidationSet
-│     └─ Aorta
-│        └─ Center002
-│           └─ Siemens_30T_VIDA
-│              └─ P007
-│                 ├─ kdata_ktGaussian10.mat
-│                 ├─ usmask_ktGaussian10.mat
-│                 ├─ coilmap.mat
-│                 ├─ segmask.mat
-│                 └─ params.csv
+├── Training_retrospective/          # Training (unpaired, different subjects)
+│   ├── 3D_T1W/
+│   │   ├── 0.1T/*.nii.gz
+│   │   ├── 1.5T/*.nii.gz
+│   │   ├── 3T/*.nii.gz
+│   │   ├── 5T/*.nii.gz
+│   │   └── 7T/*.nii.gz
+│   ├── 3D_T2W/
+│   │   ├── 0.1T/*.nii.gz
+│   │   ├── 1.5T/*.nii.gz
+│   │   ├── 3T/*.nii.gz
+│   │   ├── 5T/*.nii.gz
+│   │   └── 7T/*.nii.gz
+│   └── 3D_T2_Flair/
+│       ├── 0.1T/*.nii.gz
+│       ├── 1.5T/*.nii.gz
+│       ├── 3T/*.nii.gz
+│       ├── 5T/*.nii.gz
+│       └── 7T/*.nii.gz
+├── Training_prospective/            # Training (paired, travelling volunteers)
+│   ├── 3D_T1W/ {0.1T, 1.5T, 3T, 5T, 7T}
+│   ├── 3D_T2W/
+│   └── 3D_T2_Flair/
+├── Validating_prospective/          # Validation (paired)
+│   ├── 3D_T1W/{0.1T, 1.5T, 3T, 5T, 7T}
+│   ├── 3D_T2W/
+│   └── 3D_T2_Flair/
+└── Testing_prospective/             # Test (paired)
+    ├── 3D_T1W/{0.1T, 1.5T, 3T, 5T, 7T}
+    ├── 3D_T2W/
+    └── 3D_T2_Flair/
 ```
 
 --------------------------------
 
 <center>
-  <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px;" />
+  <img src="./public/alllogos.png" style="height:160px; margin-bottom: 20px;" />
 </center>
