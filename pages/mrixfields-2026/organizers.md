@@ -39,7 +39,7 @@
 </center>
 
 ### Department of Psychiatry and Neuroscience, Charité – Universitätsmedizin Berlin, Gemany
-- Yuxiang Dai
+- Yuxiang Dai (Data Preprocessing and Evaluation Manager, yuxiangdai0627@gmail.com)
 
 <center>
   <img src="/organizers/charite.png" 
@@ -72,7 +72,8 @@
 </center>
 
 ### Department of Bioengineering and I-X, Imperial College London, UK
-- Jiahao Huang
+- Jiahao Huang (Platform Manager, j.huang21@imperial.ac.uk)
+- Guang Yang
 
 <center>
   <img src="/organizers/imp.png" 

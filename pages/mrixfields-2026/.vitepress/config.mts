@@ -4,19 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MRIxFields2026",
   description: "website for MRIxFields series competitions",
-  base: '/2026',
+  base: '/mrixfields-2026',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }],
-    ['script', { async: 'true', src: 'https://www.googletagmanager.com/gtag/js?id=G-0C45G4WF13'}],
-    ['script', {}, 
-      `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0C45G4WF13');
-      `
-    ]
+    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
   ],
   themeConfig: {
     logo: '/public/logo-combined.png',
@@ -31,16 +21,15 @@ export default defineConfig({
           { text: 'Task Submission', link: '/submission-task'},
           { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
       ]},
-      { text: 'Support', link: '/support' },
+      { text: 'Sponsor', link: '/sponsor' },
       { text: 'Organizers', link: '/organizers' },
       { text: 'FAQ', link: '/faq' },
-      // { text: 'Related challenges', link: '/related-challenges' },
     ],
 
     sidebar: [
       // {
       //   text: 'Examples',
-      //   items: [
+      //   items: [ß
       //     { text: 'Markdown Examples', link: '/markdown-examples' },
       //     { text: 'Runtime API Examples', link: '/api-examples' }
       //   ]
@@ -49,7 +38,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/mrixfields' },
-      { icon: 'twitter', link: 'https://twitter.com/mrixfields' },
+      { icon: 'twitter', link: 'https://x.com/mrixfields' },
       // { icon: {
       //   svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>'
       // }, 
