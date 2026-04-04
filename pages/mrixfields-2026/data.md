@@ -23,12 +23,12 @@ title: Data
   - 3 Manufacturers: Siemens Healthineers, United Imaging Healthcare, Point Imaging. 
 
 | Field Strength | Prospective T1w (paired) | Prospective T2w (paired) | Prospective T2 FLAIR (paired) | Retrospective T1w (unpaired) | Retrospective T2w (unpaired) | Retrospective T2 FLAIR (unpaired) | Scanners | Manufacturer |
-|---|---:|---:|---:|---:|---:|---:|---|---|
-| 0.1T | 40 (3D) | 40 (3D) | 40 (3D) | 100 (3D) | 100 (3D) | 100 (2D) | piMR-820H | Point Imaging |
-| 1.5T | 40 (3D) | 40 (3D) | 40 (3D) | 104 (3D) | 221 (2D) | 221 (2D) | uMR 670 | United Imaging Healthcare |
-| 3T | 40 (3D) | 40 (3D) | 40 (3D) | 143 (3D) | 144 (3D) | 143 (2D) | MAGNETOM Prisma | Siemens Healthineers |
-| 5T | 40 (3D) | 40 (3D) | 40 (3D) | 122 (3D) | 44 (3D) | 103 (2D) | uMR Jupiter | United Imaging Healthcare |
-| 7T | 40 (3D) | 40 (3D) | 40 (3D) | 236 (3D) | 106 (3D) | 84 (2D) | MAGNETOM Terra | Siemens Healthineers |
+|---|---:|---:|---:|---:|-----------------------------:|---:|---|---|
+| 0.1T | 40 (3D) | 40 (3D) | 40 (3D) | 100 (3D) |                     100 (3D) | 100 (2D) | piMR-820H | Point Imaging |
+| 1.5T | 40 (3D) | 40 (3D) | 40 (3D) | 104 (3D) |                     221 (2D) | 221 (2D) | uMR 670 | United Imaging Healthcare |
+| 3T | 40 (3D) | 40 (3D) | 40 (3D) | 143 (3D) |                     144 (3D) | 143 (2D) | MAGNETOM Prisma | Siemens Healthineers |
+| 5T | 40 (3D) | 40 (3D) | 40 (3D) | 122 (3D) |                      43 (3D) | 103 (2D) | uMR Jupiter | United Imaging Healthcare |
+| 7T | 40 (3D) | 40 (3D) | 40 (3D) | 236 (3D) |                      84 (3D) | 84 (2D) | MAGNETOM Terra | Siemens Healthineers |
 
 
 📊 **Dataset seperation: Training, Validation, and Testing**
@@ -146,15 +146,8 @@ This approach ensures robustness across heterogeneous datasets without relying o
 
 ### 3. 2D-to-3D Super-Resolution Reconstruction
 
-For acquisitions with inherently anisotropic resolution, that is, **2D scans**, we employed a **learning-based super-resolution strategy** to reconstruct volumetric 3D data.
+For acquisitions with inherently anisotropic resolution (i.e., 2D scans), we employed a learning-based super-resolution strategy to reconstruct volumetric 3D data. Specifically, a pre-trained super-resolution network was used to perform slice-to-volume reconstruction, transforming 2D inputs into isotropic 3D volumes. This approach enables recovery of through-plane structural information and improves cross-plane consistency, which is critical for subsequent cross-field analysis and synthesis tasks.
 
-Specifically, a **pre-trained super-resolution network** was used to perform **slice-to-volume reconstruction**, transforming 2D inputs into isotropic 3D volumes. This approach enables recovery of through-plane structural information and improves cross-plane consistency, which is critical for subsequent cross-field analysis and synthesis tasks.
-
-Unlike conventional interpolation-based resampling, this method leverages **data-driven priors** to enhance spatial resolution while preserving anatomical fidelity. The resulting 3D volumes are therefore more suitable for downstream processing, including:
-
-- registration
-- cross-field translation
-- quantitative evaluation
 
 ### 4. Quality Control
 
@@ -176,7 +169,11 @@ Importantly, preprocessing avoids aggressive normalization or histogram matching
 
 All processed data are organized according to the **BIDS (Brain Imaging Data Structure)** standard, with consistent metadata across subjects, field strengths, and acquisition sites.
 
+#### Reference Information
 
+- **ANTs registration**: [GitHub](https://github.com/antsx/ants)
+- **Super-resolution**: [GitHub](https://github.com/csguoh/MambaIR)
+- **HD-BET**: [GitHub](https://github.com/BrainLesion/HD-BET)
 
 ## Post-processing
 

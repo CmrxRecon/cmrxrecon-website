@@ -8,13 +8,19 @@ title: FAQ
 
 Yes, under controlled access.
 
-Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the organizing committee at [mrixfields@outlook.com](mailto:mrixfields@outlook.com) for review. Access to the dataset will be granted only after approval by the data governance committee.
+Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the MRIxFields Consortium (mrixfields@outlook.com) for review. Access to the dataset will be granted only upon approval by the MRIxFields Consortium.
 
 All approved users are required to comply with the data usage agreement. In particular:
 
 - Results derived from the dataset may only be published no earlier than **three months after the official end of the challenge**
 - The **challenge paper** must be properly cited
 - The **dataset source** must be explicitly acknowledged in any publication
+
+In addition, prior to manuscript submission, users must **notify the MRIxFields Consortium** (mrixfields@outlook.com), providing:
+- A description of how the dataset was used in the study
+- A copy of the manuscript intended for submission
+
+Furthermore, all resulting publications must include <a href="/mrixfields-2026/public/consortium_list.docx" target="_blank" rel="noopener noreferrer"><strong>“MRIxFields Consortium”</strong></a> <span style="opacity:0.75;">[Word member list]</span> as a group author in the author list (typically listed at the end of the author list).
 
 ### 2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?
 

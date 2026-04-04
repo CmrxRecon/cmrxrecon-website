@@ -44,7 +44,7 @@ LEARN MORE (MICCAI 2026 - 29. International Conference On Medical Image Computin
 Imagine taking a brain MRI from any hospital—whether on a portable, low-cost scanner or a high-end research machine—and instantly transforming it into a standardized, high-quality image. This is Cross-Field MRI Harmonization—breaking the physical limits of MRI scanners.
 
 
-- **The Multi-Field Challenge**: canners range from ultra-low (0.1T) to ultra-high (7T) fields, creating massive variations in noise, resolution, homogeneity and contrast. These differences severely limit data comparability across different hospitals.
+- **The Multi-Field Challenge**: Scanners range from ultra-low (0.1T) to ultra-high (7T) fields, creating massive variations in noise, resolution, homogeneity and contrast. These differences severely limit data comparability across different hospitals.
 - **Beyond Hardware Limits**: Using advanced generative AI, we can 	computationally reconstruct 7T-equivalent high-field images from arbitrary scanners , and restore crucial tissue contrast from severely degraded 0.1T ultra-low-field scans.
 
 - **Pivotal Clinical Value**: This technology enables seamless dataset harmonization for large-scale, multi-center neuroscience research. Crucially, it brings reliable, high-quality diagnostic imaging to low-resource and point-of-care settings without the need for expensive hardware.
