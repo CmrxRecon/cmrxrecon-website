@@ -268,5 +268,5 @@ ChallengeData
 --------------------------------
 
 <center>
-  <img src="./public/alllogos.png" style="height:160px; margin-bottom: 20px;" />
+  <img src="/alllogos.png" style="height:160px; margin-bottom: 20px;" />
 </center>

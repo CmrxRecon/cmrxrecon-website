@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "MRIxFields2026",
   description: "website for MRIxFields series competitions",
-  base: '/mrixfields-2026',
+  base: '/2026',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
   ],

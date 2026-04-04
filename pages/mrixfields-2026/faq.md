@@ -20,7 +20,7 @@ In addition, prior to manuscript submission, users must **notify the MRIxFields 
 - A description of how the dataset was used in the study
 - A copy of the manuscript intended for submission
 
-Furthermore, all resulting publications must include <a href="/mrixfields-2026/public/consortium_list.docx" target="_blank" rel="noopener noreferrer"><strong>“MRIxFields Consortium”</strong></a> <span style="opacity:0.75;">[Word member list]</span> as a group author in the author list (typically listed at the end of the author list).
+Furthermore, all resulting publications must include <a href="/2026/consortium_list.docx" target="_blank" rel="noopener noreferrer"><strong>“MRIxFields Consortium”</strong></a> <span style="opacity:0.75;">[Word member list]</span> as a group author in the author list (typically listed at the end of the author list).
 
 ### 2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?
 
