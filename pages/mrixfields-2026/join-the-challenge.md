@@ -48,14 +48,15 @@ Validation of the received docker will be performed on a cloud server with the f
 You are free to use and/or refer to the MRIxFields2026 challenge and datasets in your own research after the embargo period (Dec. 2026), provided that you cite the following manuscripts:
 
 **Reference from the organizers**
-1. Dai, Y. et al. Leveraging Deep Learning to Enhance MRI for Brain Disorders. 2025.02.10.25321126 Preprint at: https://doi.org/10.1101/2025.02.10.25321126 (2025).
-2. Dai, Y., Wang, C. & Wang, H. Deep compressed sensing MRI via a gradient-enhanced fusion model. Med Phys50, 1390–1405 (2023).
-3. Wang, F. et al. Multiple B-Value Model-Based Residual Network (MORN) for Accelerated High-Resolution Diffusion-Weighted Imaging. IEEE J Biomed Health Inform 26, 4575–4586 (2022).
-4. Wang, C. et al. Protocol for Brain Magnetic Resonance Imaging and Extraction of Imaging-Derived Phenotypes from the China Phenobank Project. Phenomics 3, 642–656 (2023).
-5. Tang, W. et al. Aleatoric-Uncertainty-Aware Maximum Intensity Projection-Based GAN for 7T-Like Generation From 3T TOF-MRA. IEEE Journal of Biomedical and Health Informatics 29, 6664–6677 (2025).
-6. P. K.Lee, Y.Qiu, C.Wang, and Z.Zhang, “Multiband Fast Spin Echo on portable low-field systems,” Magnetic Resonance in Medicine95, no. 1 (2026): 188–203.
-7. Lee PK, Qiu Y, Chen S, Wang C, Zhang Z. Diffusion Weighted Fast Spin Echo With RF-Encoded Slabs for Portable Low-Field MRI Systems. Magn Reson Med. 2026 Feb 25. doi: 10.1002/mrm.70292. Epub ahead of print. PMID: 41741943.
-8. Qiu Y, Dai K, Zhong S, et al. Spatiotemporal encoding MRI in a portable low-field system. Magn Reson Med. 2024;92(3):1011-1021. doi: 10.1002/mrm.30104
+1.	Dai, Y. et al. Leveraging Deep Learning to Enhance MRI for Brain Disorders. Preprint at: https://doi.org/10.1101/2025.02.10.25321126 (2025).
+2. Dai, Y., Wang, C. & Wang, H. Deep compressed sensing MRI via a gradient-enhanced fusion model. Med Phys 50, 1390–1405 (2023).
+3.	Wang, F. et al. Multiple B-Value Model-Based Residual Network (MORN) for Accelerated High-Resolution Diffusion-Weighted Imaging. IEEE J Biomed Health Inform 26, 4575–4586 (2022).
+4.	Wang, C. et al. Protocol for Brain Magnetic Resonance Imaging and Extraction of Imaging-Derived Phenotypes from the China Phenobank Project. Phenomics 3, 642–656 (2023).
+5.	Tang, W. et al. Aleatoric-Uncertainty-Aware Maximum Intensity Projection-Based GAN for 7T-Like Generation From 3T TOF-MRA. IEEE J Biomed Health Inform 29, 6664–6677 (2025).
+6.	Lee, P. K., Qiu, Y., Wang, C. & Zhang, Z. Multiband Fast Spin Echo on portable low-field systems. Magn Reson Med 95, 188–203 (2026).
+7.	Lee, P. K., Qiu, Y., Chen, S., Wang, C. & Zhang, Z. Diffusion Weighted Fast Spin Echo With RF-Encoded Slabs for Portable Low-Field MRI Systems. Magn Reson Med (2026). https://doi.org/10.1002/mrm.70292
+8.	Qiu, Y., Dai, K., Zhong, S. et al. Spatiotemporal encoding MRI in a portable low-field system. Magn Reson Med 92, 1011–1021 (2024).
+9.	Wang, Y., Xiong, H., Sun, K., Bai, S., Dai, L., Ding, Z., Liu, J., Wang, Q., Liu, Q. & Shen, D. Towards general text-guided multimodal brain MRI synthesis for diagnosis and medical image analysis. Cell Rep Med (2025).
 
 **References from others**
 1. Obusez, E. C. et al. 7T MR of intracranial pathology: Preliminary observations and comparisons to 3T and 1.5T. Neuroimage 168, 459–476 (2018).

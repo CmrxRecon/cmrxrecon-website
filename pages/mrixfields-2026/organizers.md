@@ -154,6 +154,18 @@
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
+### University of Science and Technology of China, China
+- Buyun Liu
+<center>
+  <img src="/organizers/ustc.png" 
+       alt="1" 
+       width="30%" 
+       style="max-width: 800px; height: auto; margin-bottom: 20px;">
+</center>
+
+
+
+
 ### Nvidia Corporation, U.S.
 - Daguang Xu
 - Can Zhao

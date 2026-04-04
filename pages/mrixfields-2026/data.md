@@ -23,12 +23,12 @@ title: Data
   - 3 Manufacturers: Siemens Healthineers, United Imaging Healthcare, Point Imaging. 
 
 | Field Strength | Prospective T1w (paired) | Prospective T2w (paired) | Prospective T2 FLAIR (paired) | Retrospective T1w (unpaired) | Retrospective T2w (unpaired) | Retrospective T2 FLAIR (unpaired) | Scanners | Manufacturer |
-|---|---:|---:|---:|---:|---:|---:|---|---|
-| 0.1T | 40 (3D) | 40 (3D) | 40 (3D) | 100 (3D) | 100 (3D) | 100 (2D) | piMR-820H | Point Imaging |
-| 1.5T | 40 (3D) | 40 (3D) | 40 (3D) | 104 (3D) | 221 (2D) | 221 (2D) | uMR 670 | United Imaging Healthcare |
-| 3T | 40 (3D) | 40 (3D) | 40 (3D) | 143 (3D) | 144 (3D) | 143 (2D) | MAGNETOM Prisma | Siemens Healthineers |
-| 5T | 40 (3D) | 40 (3D) | 40 (3D) | 122 (3D) | 44 (3D) | 103 (2D) | uMR Jupiter | United Imaging Healthcare |
-| 7T | 40 (3D) | 40 (3D) | 40 (3D) | 236 (3D) | 106 (3D) | 84 (2D) | MAGNETOM Terra | Siemens Healthineers |
+|---|---:|---:|---:|---:|-----------------------------:|---:|---|---|
+| 0.1T | 40 (3D) | 40 (3D) | 40 (3D) | 100 (3D) |                     100 (3D) | 100 (2D) | piMR-820H | Point Imaging |
+| 1.5T | 40 (3D) | 40 (3D) | 40 (3D) | 104 (3D) |                     221 (2D) | 221 (2D) | uMR 670 | United Imaging Healthcare |
+| 3T | 40 (3D) | 40 (3D) | 40 (3D) | 143 (3D) |                     144 (3D) | 143 (2D) | MAGNETOM Prisma | Siemens Healthineers |
+| 5T | 40 (3D) | 40 (3D) | 40 (3D) | 122 (3D) |                      43 (3D) | 103 (2D) | uMR Jupiter | United Imaging Healthcare |
+| 7T | 40 (3D) | 40 (3D) | 40 (3D) | 236 (3D) |                      84 (3D) | 84 (2D) | MAGNETOM Terra | Siemens Healthineers |
 
 
 📊 **Dataset seperation: Training, Validation, and Testing**
