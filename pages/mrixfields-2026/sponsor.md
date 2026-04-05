@@ -2,7 +2,7 @@
 ## Shanghai Point Imaging Healthcare Co., Ltd.
 
 <img
-  src="/2026/pointimaging.png"
+  src="/pointimaging.png"
   alt="Point Imaging logo"
   style="display: block; margin: 16px auto 20px auto; max-width: 300px; height: auto;"
 />
