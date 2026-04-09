@@ -105,10 +105,10 @@ To bridge the gap between heterogeneous clinical acquisitions and high-fidelity 
 
 
 ## Awards
-Each task will have 1 First Prize, 3 Second Prize and 5 Third Prize. We are actively finalizing the details with our sponsors, with a total prize pool of approximately **$9000**.
+Each task will have 1 First Prize, 3 Second Prize and 5 Third Prize. We are actively finalizing the details with our sponsors, with a total prize pool of approximately **$21000**.
 
 <center>
-  <img src="/tasks/awards.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
+  <img src="/tasks/awards_index.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
 </center>
 All valid submissions will be reported in the public leaderboard. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI 2026 annual meeting. Participating teams with a valid submission can nominate their team members as co-authors for the final challenge summary paper.
 
@@ -140,6 +140,10 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 
 --------------------------------
 
-<center>
-  <img src="./public/alllogos.png" style="height:160px; margin-bottom: 20px;" />
-</center>
+<div style="margin: 24px 0;">
+  <img
+    src="/alllogos.png"
+    alt="Consortium logos"
+    style="display: block; max-width: 60%; height: auto; margin: 0 auto;"
+  />
+</div>

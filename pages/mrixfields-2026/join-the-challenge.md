@@ -73,3 +73,12 @@ and wavelet domains. Med Image Anal 62, 101663 (2020).
 10. Sun, Y., Wang, L., Li, G., Lin, W. & Wang, L. A foundation model for enhancing magnetic resonance images and
 downstream segmentation, registration and diagnostic tasks. Nat Biomed Eng 9, 521–538 (2025).
 11. Billot, B. et al. SynthSeg: Segmentation of brain MRI scans of any contrast and resolution without retraining[J]. Medical image analysis, 86: 102789(2023).
+
+
+<div style="margin: 24px 0;">
+  <img
+    src="/alllogos.png"
+    alt="Consortium logos"
+    style="display: block; max-width: 60%; height: auto; margin: 0 auto;"
+  />
+</div>
