@@ -64,7 +64,7 @@
 ### School of Biomedical Engineering at Shanghai Jiao Tong University, China
 - Zhiyong Zhang
 - Cheng Jin
-- Hao Qi 
+- Hao Chen 
 - Yueqi Qiu
 
 
