@@ -10,8 +10,10 @@ Test submission tutorial: [Synapse](https://www.synapse.org/Synapse:syn72060672/
 
 --------------------------------
 
-<div style="display: flex; justify-content: center; align-items: center; position: fixed; left: 0; right: 0; bottom: 3cm;">
-    <center>
-    <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px; bottom: -1cm;" />
-    </center>
+<div style="margin: 24px 0;">
+  <img
+    src="/alllogos.png"
+    alt="Consortium logos"
+    style="display: block; max-width: 60%; height: auto; margin: 0 auto;"
+  />
 </div>

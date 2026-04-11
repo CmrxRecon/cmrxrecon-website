@@ -77,3 +77,13 @@ Yes, participants are free to join any single task. Of course, they are also wel
 5. Redistribution or transfer of data or data links is prohibited. Participants must use the data solely for their own purposes.
 
 6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by MRIxFields2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
+
+
+
+<div style="margin: 24px 0;">
+  <img
+    src="/alllogos.png"
+    alt="Consortium logos"
+    style="display: block; max-width: 60%; height: auto; margin: 0 auto;"
+  />
+</div>

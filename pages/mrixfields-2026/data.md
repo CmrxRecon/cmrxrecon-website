@@ -53,13 +53,13 @@ The precise role of each split varies across tasks, depending on whether the tas
   
   These paired data enable controlled within-subject validation against corresponding 7T targets.
 
-- **Test Set ((N = 100):**  
+- **Test Set (N = 100):**  
   - The test set includes **20 held-out travelling volunteers scanned across five field strengths (20 × 5 = 100 cases).**
   
   Paired 7T references are withheld and used exclusively for final evaluation.
 
 ### Task 2: Higher-Field MRI Generation from Ultra-Low-Field MRI
-- **Training Set ((N ≈ 700 for each modality)**  
+- **Training Set (N ≈ 700 for each modality)**  
   - The training set includes all retrospective unpaired data **(N = 650 cases)**, with emphasis on **0.1T inputs**, and paired data from **10 travelling volunteers (N = 50 cases).**
 
   In total, the training set contains **more than 750 cases**, spanning ultra-low-field to higher-field domains.
@@ -68,7 +68,7 @@ The precise role of each split varies across tasks, depending on whether the tas
   - The validation set consists of **10 travelling volunteers (N = 50 cases)**, including paired **0.1T and higher-field scans** for within-subject evaluation.
 
 
-- **Test Set ((N = 100):**  
+- **Test Set (N = 100):**  
   - The test set consists of **20 held-out travelling volunteers (N = 100 cases).**
   
   The 0.1T images serve as inputs, while higher-field references are withheld for evaluation.
@@ -83,7 +83,7 @@ The precise role of each split varies across tasks, depending on whether the tas
   - The validation set consists of **10 travelling volunteers (N = 50 cases)**, enabling evaluation across all possible field-to-field translation directions.
 
 
-- **Test Set ((N = 100):**  
+- **Test Set (N = 100):**  
   - The test set consists of **20 held-out travelling volunteers (N = 100 cases)**.
   
   All target-domain references are withheld and used only for final ranking.
@@ -267,6 +267,10 @@ ChallengeData
 
 --------------------------------
 
-<center>
-  <img src="/alllogos.png" style="height:160px; margin-bottom: 20px;" />
-</center>
+<div style="margin: 24px 0;">
+  <img
+    src="/alllogos.png"
+    alt="Consortium logos"
+    style="display: block; max-width: 60%; height: auto; margin: 0 auto;"
+  />
+</div>

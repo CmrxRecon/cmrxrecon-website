@@ -12,6 +12,9 @@ For each task, participants must submit their models separately as containerized
 
 Please note that for all three tasks, the provided datasets are identical: consisting of over 700 unpaired and 50 cases for training, 50 paired cases for validation, and 100 paired cases for testing. However, the evaluation reference targets will vary depending on the specific task (e.g., using a fixed 7T reference for Task 1, versus dynamic field-conditioned targets for Task 3).
 
+<center>
+  <img src="/tasks/3tasks.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
+</center>
 
 ## Objective
 
@@ -107,7 +110,7 @@ This track introduces controllable, generalizable field-to-field synthesis via e
 The winners in each task will receive monetary awards. The bonus distribution plan is shown in the table below.
 
 <center>
-  <img src="/tasks/awards.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
+  <img src="/tasks/awards_index.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
 </center>
 
 All submissions will be reported in the leaderboard. Each participating team can engage in any tasks or all four tasks. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI annual meeting.
@@ -162,6 +165,10 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 
 --------
 
-<center>
-  <img src="./public/alllogos.png" style="height:80px; margin-bottom: 10px; bottom: -1cm;" />
-</center>
+<div style="margin: 24px 0;">
+  <img
+    src="/alllogos.png"
+    alt="Consortium logos"
+    style="display: block; max-width: 60%; height: auto; margin: 0 auto;"
+  />
+</div>
