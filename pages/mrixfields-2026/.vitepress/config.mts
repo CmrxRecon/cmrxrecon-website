@@ -9,7 +9,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
   ],
   themeConfig: {
-    logo: '/public/logo-combined.png',
+    logo: '/logo-combined.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },

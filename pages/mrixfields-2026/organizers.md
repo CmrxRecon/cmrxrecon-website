@@ -164,8 +164,6 @@
 </center>
 
 
-
-
 ### Nvidia Corporation, U.S.
 - Daguang Xu
 - Can Zhao
@@ -173,5 +171,15 @@
   <img src="/organizers/nvidia.png" 
        alt="1" 
        width="55%" 
+       style="max-width: 800px; height: auto; margin-bottom: 20px;">
+</center>
+
+### Shanghai Fuying Medical Technology Co., Ltd., China
+- Ziqiang Xu(Technical Support, daryl.Xu@foxmail.com)
+
+<center>
+  <img src="/organizers/hfmed.png" 
+       alt="1" 
+       width="60%" 
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
