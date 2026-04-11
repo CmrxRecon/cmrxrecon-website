@@ -21,6 +21,7 @@ export default defineConfig({
   appearance: false,
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/2026/public/logo-combined.png' }],
+    ['meta', { name: "keywords", content: "CMRx4DFlow, CMRx4DFlow2026, CMRx4DFlow competition, CMRx4DFlow challenge, CMRx4DFlow dataset, CMRx4DFlow task, CMRx4DFlow paper, CMRx4DFlow workshop, CMRx4DFlow organization, CMRx4DFlow FAQ, CMRx4DFlow data, CMRx4DFlow task, CMRx4DFlow paper, CMRx4DFlow workshop, CMRx4DFlow organization, CMRx4DFlow FAQ"}],
     ['script', { async: 'true', src: 'https://www.googletagmanager.com/gtag/js?id=G-Y1FZN1BJN8'}],
     ['script', {}, 
       `
