@@ -16,7 +16,6 @@ title: Join the Challenge
 Participants are expected to train models in their local computational environments and submit docker containers on the Synapse platform.  
 A leaderboard will be maintained on the Synapse platform during the validation phase.
 
----
 
 ## Code Availability
 We provide the code to facilitate participation in the **MRIxFields2026** challenge at [GitHub](https://github.com/mrixfields).
@@ -28,8 +27,6 @@ A brief description of the provided package is as follows:
 - **Evaluation/**: Standalone evaluation code for computing all five metrics (**nRMSE, SSIM, LPIPS, Dice, and Volume Consistency**) as well as **SynthSeg**-based brain segmentation.
 - **Submission/**: Docker submission template, output format specification, and hardware requirements.
 
----
-
 ## Evaluation platform
 Evaluation of the received docker (test phase) will be performed on a cloud server with a configuration as follows:
 
@@ -40,8 +37,6 @@ Evaluation of the received docker (test phase) will be performed on a cloud serv
 - **GPU Driver Version:** 575 
 - **CUDA Version:** 12.9  
 - **Time Limitation:** 1 hours/team for each task  
-
----
 
 ## Publication References
 You are free to use and/or refer to the MRIxFields2026 challenge and datasets in your own research after the embargo period (Dec. 2026), provided that you cite the following manuscripts:

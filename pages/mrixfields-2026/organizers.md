@@ -5,7 +5,7 @@
 - Chengyan Wang (Co-Event Leader, wangcy@fudan.edu.cn)
 - Liguo Jia
 - Chen Zhu
-- Xiaoqian Qiao
+- Xiaoqing Qiao
 
 
 ### Institute of Science and Technology for Brain-inspired Intelligence, Fudan University, China
@@ -143,6 +143,7 @@
 
 ### School of Computer and Control Engineering, Yantai University, China
 - Jun Lyu
+- Xiaodong Zhong
 <center>
   <img src="/organizers/ucla.png" 
        alt="1" 
