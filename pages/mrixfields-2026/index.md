@@ -6,7 +6,9 @@ pageClass: narrow-page
 hero:
   name: "MRIxFields2026"
   text: "Official website for the MICCAI MRIxFields 2026 challenge"
-  tagline: A Benchmark for Cross-Field MRI Translation and Harmonization
+  tagline: |
+    A Benchmark for Cross-Field MRI Translation and Harmonization
+    <div class="hero-date">April 01 – October 08, 2026</div>
 
 features:
   - title: Unified Generative Modeling 
@@ -122,7 +124,10 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[Apr. 01, 2026]</strong> Website opens for registration
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Apr. 10, 2026]</strong> Release training data and validation data
+    <strong>[Apr. 10, 2026]</strong> Release training data
+  </div>
+  <div style="padding: 10px 14px; background-color: #ffffff;">
+    <strong>[Apr. 20, 2026]</strong> Release validation data
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[May. 10, 2026]</strong> Submission system opens for validation

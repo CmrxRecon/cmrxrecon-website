@@ -10,7 +10,6 @@ title: Join the Challenge
   - > After clicking the Submit button, the password for extracting the data will be displayed upon submission, as shown in the figure on the right. Please save it carefully. 
 
 ### Download the data
-- **Mimic data (for testing):** [Download here](https://www.synapse.org/Synapse:syn74313976.draft/datasets/)
 - **Full challenge data:** [Download here](https://www.synapse.org/Synapse:syn72060672/wiki/639758)
 
 ### Train the model
@@ -32,7 +31,7 @@ A brief description of the provided package is as follows:
 ---
 
 ## Evaluation platform
-Validation of the received docker will be performed on a cloud server with the following configuration:  
+Evaluation of the received docker (test phase) will be performed on a cloud server with a configuration as follows:
 
 - **OS:** Linux (RockyOS 9)  
 - **CPU:** 2.0GHz, 112 cores  

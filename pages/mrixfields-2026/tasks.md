@@ -137,13 +137,16 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[Apr. 01, 2026]</strong> Website opens for registration
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Apr. 10, 2026]</strong> Release training data and validation data
+    <strong>[Apr. 10, 2026]</strong> Release training data
+  </div>
+  <div style="padding: 10px 14px; background-color: #ffffff;">
+    <strong>[Apr. 20, 2026]</strong> Release validation data
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Jul. 01, 2026]</strong> Submission system opens for testing
+    <strong>[July. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline

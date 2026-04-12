@@ -6,9 +6,13 @@ title: FAQ
 
 ### 1. Is it possible to download the challenge dataset without participating in the challenge?
 
-Yes, under controlled access.
+Yes, under controlled access, with additional restrictions to ensure the fairness of the MICCAI challenge.
 
-Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the MRIxFields Consortium (mrixfields@outlook.com) for review. Access to the dataset will be granted only upon approval by the MRIxFields Consortium.
+To prevent potential leakage of paired data to participating teams and to preserve the integrity and fairness of the challenge evaluation, priority is given to the MICCAI challenge process. Therefore:
+
+- Access requests from non-participating researchers will only be considered after the official release of the challenge results.
+
+Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the **MRIxFields Consortium** ([mrixfields@outlook.com](mailto:mrixfields@outlook.com)) for review. Access will be granted only upon approval by the Consortium.
 
 All approved users are required to comply with the data usage agreement. In particular:
 
@@ -16,12 +20,12 @@ All approved users are required to comply with the data usage agreement. In part
 - The **challenge paper** must be properly cited
 - The **dataset source** must be explicitly acknowledged in any publication
 
-In addition, prior to manuscript submission, users must **notify the MRIxFields Consortium** (mrixfields@outlook.com), providing:
+In addition, prior to manuscript submission, users must notify the **MRIxFields Consortium** ([mrixfields@outlook.com](mailto:mrixfields@outlook.com)), providing:
+
 - A description of how the dataset was used in the study
 - A copy of the manuscript intended for submission
 
-Furthermore, all resulting publications must include <a href="/2026/consortium_list.docx" target="_blank" rel="noopener noreferrer"><strong>“MRIxFields Consortium”</strong></a> <span style="opacity:0.75;">[Word member list]</span> as a group author in the author list (typically listed at the end of the author list).
-
+Furthermore, all resulting publications must include **“MRIxFields Consortium”** as a group author in the author list, typically listed at the end of the author list.
 ### 2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?
 
 Yes. Any publicly available datasets may be used for training. However, participants are not allowed to use their own private data in order to ensure the fairness of this challenge. Data augmentation based on the training dataset is allowed.
