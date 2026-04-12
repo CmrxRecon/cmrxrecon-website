@@ -6,7 +6,8 @@ export default defineConfig({
   description: "website for CMRx4Dflow series competitions",
   base: '/2027',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/2027/home/face.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/2027/home/face.png' }],
+    ['meta', { name: "keywords", content: "CMRx4Dflow2027"}],
   ],
   themeConfig: {
     logo: '/logo-combine.png',

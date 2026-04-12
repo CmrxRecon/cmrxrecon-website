@@ -6,7 +6,20 @@ export default defineConfig({
   description: "website for MRIxFields series competitions",
   base: '/2026',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/2026/home/face.png' }],
+    // bing search validation
+    ['meta', { name: "msvalidate.01", content: "6368EFC66805B80B86054DC0976A2250"}],
+    ['meta', { name: "keywords", content: "MRIxFields, MRIxFields2026, MRIxFields competition, MRIxFields challenge, MRIxFields dataset, MRIxFields task, MRIxFields paper, MRIxFields workshop, MRIxFields organization, MRIxFields FAQ, MRIxFields data, MRIxFields task, MRIxFields paper, MRIxFields workshop, MRIxFields organization, MRIxFields FAQ"}],
+    ['script', { async: 'true', src: 'https://www.googletagmanager.com/gtag/js?id=G-0C45G4WF13'}],
+    ['script', {}, 
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0C45G4WF13');
+      `
+    ]
   ],
   themeConfig: {
     logo: '/logo-combined.png',
