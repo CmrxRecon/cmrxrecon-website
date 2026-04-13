@@ -32,7 +32,7 @@ export default defineConfig({
       { text: 'Submission', 
         items: [
           { text: 'Task Submission', link: '/submission-task'},
-          { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
+          { text: 'Workshop paper', link: '/submission-stacom-workshop-paper'}
       ]},
       { text: 'Sponsor', link: '/sponsor' },
       { text: 'Organizers', link: '/organizers' },
@@ -52,11 +52,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/mrixfields' },
       { icon: 'twitter', link: 'https://x.com/mrixfields' },
-      // { icon: {
-      //   svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>'
-      // }, 
-      //   link: 'mailto:cmrxrecon@outlook.com' 
-      // },
+      { icon: {
+         svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Email</title><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>'},
+         link: 'mailto:mrixfields@outlook.com'
+      },
     ],
     footer: {
       message: `

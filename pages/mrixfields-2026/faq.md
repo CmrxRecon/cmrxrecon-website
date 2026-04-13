@@ -6,9 +6,13 @@ title: FAQ
 
 ### 1. Is it possible to download the challenge dataset without participating in the challenge?
 
-Yes, under controlled access.
+Yes, under controlled access, with additional restrictions to ensure the fairness of the MICCAI challenge.
 
-Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the MRIxFields Consortium (mrixfields@outlook.com) for review. Access to the dataset will be granted only upon approval by the MRIxFields Consortium.
+To prevent potential leakage of paired data to participating teams and to preserve the integrity and fairness of the challenge evaluation, priority is given to the MICCAI challenge process. Therefore:
+
+- Access requests from non-participating researchers will only be considered after the official release of the challenge results.
+
+Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the **MRIxFields Consortium** ([mrixfields@outlook.com](mailto:mrixfields@outlook.com)) for review. Access will be granted only upon approval by the Consortium.
 
 All approved users are required to comply with the data usage agreement. In particular:
 
@@ -16,11 +20,14 @@ All approved users are required to comply with the data usage agreement. In part
 - The **challenge paper** must be properly cited
 - The **dataset source** must be explicitly acknowledged in any publication
 
-In addition, prior to manuscript submission, users must **notify the MRIxFields Consortium** (mrixfields@outlook.com), providing:
+In addition, prior to manuscript submission, users must notify the **MRIxFields Consortium** ([mrixfields@outlook.com](mailto:mrixfields@outlook.com)), providing:
+
 - A description of how the dataset was used in the study
 - A copy of the manuscript intended for submission
 
-Furthermore, all resulting publications must include <a href="/2026/consortium_list.docx" target="_blank" rel="noopener noreferrer"><strong>“MRIxFields Consortium”</strong></a> <span style="opacity:0.75;">[Word member list]</span> as a group author in the author list (typically listed at the end of the author list).
+Furthermore, all resulting publications must include **“MRIxFields Consortium”** as a group author in the author list, typically listed at the end of the author list.
+
+For the full consortium author list, please download the document <a href="./consortium_list.docx" download>here</a>.
 
 ### 2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?
 
@@ -66,17 +73,29 @@ Yes, participants are free to join any single task. Of course, they are also wel
 
 # Rules
 
-1. All individuals who wish to participate in this challenge are required to register using their real name, affiliation details (including department, university /institute/company name in full, country), and affiliation E-mails. Incomplete and repetitive registrations will be removed without any prior notice. Each team is permitted to have a maximum of six members.
+1. All individuals who wish to participate in this challenge are required to register using their real name, affiliation details (including department, university/institute/company name in full, country), and affiliation emails. Incomplete and repetitive registrations will be removed without prior notice. Each team is permitted to have a maximum of six members.
 
-2.  During the validation and training phase, all participants must submit a complete solution to this challenge, which includes a Docker image and a qualified methodology paper (of at least 8 pages, in LNCS format).
+2. During the validation and training phase, all participants must submit a complete solution to this challenge, which includes a Docker image and a qualified methodology paper (of at least 8 pages, in LNCS format). If you are downloading the data for purposes other than participating in the challenge, please refer to our explanation in the FAQ.
 
-3. All participants must agree that the short papers they submit can be made publicly available on the challenge website, and that organizers can use information provided by participants, including scores, predicted labels, and papers.
+3. All participants must agree that their methodology can be made publicly available on the challenge website, and that organizers can use information provided by participants, including scores, predicted labels, and papers.
 
-4. Participants are not allowed to register multiple teams or accounts.The MRIxFields Organizers reserve the right to disqualify such participants.
+4. Participants are not allowed to register multiple teams or accounts. The MRIxFields Organizers reserve the right to disqualify such participants.
 
 5. Redistribution or transfer of data or data links is prohibited. Participants must use the data solely for their own purposes.
 
-6. Participants should develop fully automated methods based solely on the training set. To ensure the fairness of this challenge, you are only allowed to use the datasets provided by MRIxFields2026. Data augmentation based on the training dataset is allowed. No manual interventions (such as manual annotation of cases) are allowed.
+6. Any publicly available datasets can be used for training. However, participants are not allowed to use their own private data to ensure the fairness of this challenge. Data augmentation based on the training dataset is allowed. No manual interventions, such as manual annotation of cases, are allowed.
+
+7. For Task 1 and Task 2, participants may design separate models for different input field strengths (4 input field strengths) and different image contrasts (T1w, T2w, T2-FLAIR) to address field-dependent variations in noise, resolution, and contrast behavior. That is, you may provide 12 separate models for image generation. However, for Task 3, participants must utilize a single unified conditional model to enable dynamic image generation conditioned on desired target field parameters. You may use a prompt-based mechanism, but only one set of pretrained parameters is allowed to be stored for Task 3. If a participating team submits multiple models for Task 3, the submission will be disqualified and no score will be counted.
+
+8. Participants may choose to use a single contrast (e.g., T1w) as input for model inference, or multiple contrasts (e.g., T1w + T2w + T2-FLAIR). The outputs can be either multi-contrast or single-contrast. We do not impose any restrictions on how participants use the provided data. However, please note that in the retrospective dataset, not every case includes all contrasts (T1w + T2w + T2-FLAIR). For matching across contrasts, please refer to the following: for each individual NIfTI file, our naming convention is "field strength_ID", for example, "5T_002". Please note that the same ID corresponds to the same subject, while different IDs correspond to different subjects. Therefore, if you intend to use multi-contrast data for training, you will need to match the IDs accordingly. For retrospective data (from different subjects), we only performed rigid registration. If you are not satisfied with the cross-contrast alignment, you may perform your own registration. For prospective data (from the same subject), we applied deformable registration to achieve better spatial consistency across field strengths and contrasts.
+
+9. During the validation phase, to ensure efficiency in image segmentation, participants are required to perform segmentation locally and upload the segmentation results along with their submissions to the validation platform. During the test phase, participants only need to submit their inference Docker container, and we will perform standardized segmentation and evaluation.
+
+10. During the validation phase, each team is allowed to submit up to three times per day per task. In the test phase, each team can submit up to five Docker containers per task in total. The final ranking will be based on the results of the last submission.
+
+11. For each task, during both the validation and test phases, you are required to generate the corresponding target field-strength images for all provided cases and all contrasts. Missing results will lead to the lowest possible score for that metric, which will in turn affect the overall score.
+
+12. Detailed examples of the required output file structure will be provided on our GitHub: https://github.com/mrixfields .
 
 
 

@@ -3,8 +3,9 @@
 
 ### Human Phenome Institute, Fudan University, China
 - Chengyan Wang (Co-Event Leader, wangcy@fudan.edu.cn)
-- Tianxing He
-- Yuntong Lyu
+- Liguo Jia
+- Chen Zhu
+- Xiaoqing Qiao
 
 
 ### Institute of Science and Technology for Brain-inspired Intelligence, Fudan University, China
@@ -15,6 +16,10 @@
 - Xueqin Xia
 - Xin Guo
 - Chang Xu
+
+### College of Biomedical Engineering, Fudan University, China
+- Yucheng Yang
+- Tianxing He
 
 <center>
   <img src="/organizers/fd.png" 
@@ -138,6 +143,7 @@
 
 ### School of Computer and Control Engineering, Yantai University, China
 - Jun Lyu
+- Xiaodong Zhong
 <center>
   <img src="/organizers/ucla.png" 
        alt="1" 

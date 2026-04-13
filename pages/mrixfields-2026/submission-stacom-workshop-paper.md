@@ -1,10 +1,10 @@
 ---
-title: STACOM Workshop Paper
+title: Workshop Paper
 ---
 
-# STACOM Workshop Paper
+# Workshop Paper
 
-Participants are invited to submit an 8-page manuscript describing the algorithm and results of the training and validation phase for consideration in the MICCAI STACOM workshop 2026. Accepted challenge papers will be published in a Lecture Notes in Computer Science (LNCS) proceeding published by Springer.
+Participants are invited to submit an **8 pages** manuscript describing the algorithm and results of the training and validation phase for consideration in the MICCAI  workshop 2026. Accepted challenge papers will be published in a Lecture Notes in Computer Science proceeding published by Springer.
 
 ## General rules for paper submission
 

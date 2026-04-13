@@ -10,14 +10,12 @@ title: Join the Challenge
   - > After clicking the Submit button, the password for extracting the data will be displayed upon submission, as shown in the figure on the right. Please save it carefully. 
 
 ### Download the data
-- **Mimic data (for testing):** [Download here](https://www.synapse.org/Synapse:syn74313976.draft/datasets/)
 - **Full challenge data:** [Download here](https://www.synapse.org/Synapse:syn72060672/wiki/639758)
 
 ### Train the model
 Participants are expected to train models in their local computational environments and submit docker containers on the Synapse platform.  
 A leaderboard will be maintained on the Synapse platform during the validation phase.
 
----
 
 ## Code Availability
 We provide the code to facilitate participation in the **MRIxFields2026** challenge at [GitHub](https://github.com/mrixfields).
@@ -29,10 +27,8 @@ A brief description of the provided package is as follows:
 - **Evaluation/**: Standalone evaluation code for computing all five metrics (**nRMSE, SSIM, LPIPS, Dice, and Volume Consistency**) as well as **SynthSeg**-based brain segmentation.
 - **Submission/**: Docker submission template, output format specification, and hardware requirements.
 
----
-
 ## Evaluation platform
-Validation of the received docker will be performed on a cloud server with the following configuration:  
+Evaluation of the received docker (test phase) will be performed on a cloud server with a configuration as follows:
 
 - **OS:** Linux (RockyOS 9)  
 - **CPU:** 2.0GHz, 112 cores  
@@ -41,8 +37,6 @@ Validation of the received docker will be performed on a cloud server with the f
 - **GPU Driver Version:** 575 
 - **CUDA Version:** 12.9  
 - **Time Limitation:** 1 hours/team for each task  
-
----
 
 ## Publication References
 You are free to use and/or refer to the MRIxFields2026 challenge and datasets in your own research after the embargo period (Dec. 2026), provided that you cite the following manuscripts:

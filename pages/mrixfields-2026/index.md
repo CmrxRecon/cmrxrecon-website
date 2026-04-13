@@ -6,7 +6,10 @@ pageClass: narrow-page
 hero:
   name: "MRIxFields2026"
   text: "Official website for the MICCAI MRIxFields 2026 challenge"
-  tagline: A Benchmark for Cross-Field MRI Translation and Harmonization
+  tagline: |
+    A Benchmark for Cross-Field MRI Translation and Harmonization
+    <div class="hero-date">April 01 – October 08, 2026</div>
+    <div class="hero-date">Total Prize Pool: $21,000</div>
 
 features:
   - title: Unified Generative Modeling 
@@ -29,9 +32,9 @@ features:
 #### Welcome to the Generalizable Cross-Field MRI Translation and Harmonization Challenge (MRIxFields2026)
 
 
-—an integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Abu Dhabi, United Arab Emirates, from October 4th to 8th, 2026. 
+An integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Abu Dhabi, United Arab Emirates, from October 4th to 8th, 2026. 
 
-LEARN MORE (MICCAI 2026 - 29. International Conference On Medical Image Computing & Computer Assisted Intervention)
+LEARN MORE (MICCAI 2026 - the 29th. International Conference On Medical Image Computing & Computer Assisted Intervention)
 
 
 **🧠 MRIxFields2026: Cross-Field MRI Translation and Harmonization**
@@ -74,27 +77,27 @@ While MRI is a central tool for neuroscience research and clinical assessment, t
 
 
 
-| Module | Description |
-|---|---|
-| Challenge Name | MRIxFields2026: A Generalizable Cross-Field MRI Translation and Harmonization Challenge |
-| Field Strengths | 0.1T, 1.5T, 3T, 5T, 7T |
-| Imaging Modality | Structural MRI |
-| Sequences / Contrasts | 3D T1-weighted, 2D/3D T2-weighted, 2D/3D T2-FLAIR |
-| Data Composition | Unpaired multi-field cohorts + travelling-volunteer paired cross-field cohort |
-| Total Cases | 850+ cases for each modality (T1W, T2W and T2-Flair) |
-| Unpaired Cohort | 650+ cases (across 5 field strengths for each modality) |
-| Paired Cohort | 200 cases (40 volunteers × 5 field strengths for each modality) |
-| Training Set | 700 cases+ (unpaired cohort + 10 paired subjects × 5 field strengths) |
-| Validation Set | 50 cases (10 volunteers × 5 field strengths) |
-| Test Set | 100 cases (20 held-out volunteers × 5 field strengths) |
+| Module | Description                                                                                                        |
+|---|--------------------------------------------------------------------------------------------------------------------|
+| Challenge Name | MRIxFields2026: A Generalizable Cross-Field MRI Translation and Harmonization Challenge                            |
+| Field Strengths | 0.1T, 1.5T, 3T, 5T, 7T                                                                                             |
+| Imaging Modality | Structural MRI                                                                                                     |
+| Sequences / Contrasts | 3D T1-weighted, 2D/3D T2-weighted, 2D/3D T2-FLAIR                                                                  |
+| Data Composition | Unpaired multi-field cohorts + travelling-volunteer paired cross-field cohort                                      |
+| Total Cases | ~ 850 cases / modality (average)                                                                                   |
+| Unpaired Cohort | ~ 650 cases / modality (average)                                                                                   |
+| Paired Cohort | 200 cases / modality (40 voluneers × 5 field strengths)                                                            |
+| Training Set | ~ 665 cases / modality (average; unpaired cohort + 3 paired subjects × 5 field strenghts)                          |
+| Validation Set | 85 cases / modality (17 volunteers × 5 field strengths)                                                            |
+| Test Set | 100 cases / modality (20 held-out volunteers × 5 field strengths)                                                  |
 | Case Definition | One case is defined as a complete scan of a single subject acquired on one MRI system at a specific field strength |
-| Paired Information | The travelling-volunteer cohort consists of the same subjects scanned across all five field strengths |
-| Primary Applications | Cross-field MRI synthesis, ultra-low-field enhancement, controllable field-to-field translation |
-| Evaluation Reference | Ground-truth images at the target/high field strength from the paired cohort |
-| Evaluation Metrics | nRMSE, SSIM, LPIPS, Dice, normalized volume consistency |
-| Scanners | 0.1T: piMR-820H; 1.5T: uMR 670; 3T: MAGNETOM Prisma; 5T: uMR Jupiter; 7T: MAGNETOM Terra |
+| Paired Information | The travelling-volunteer cohort consists of the same subjects scanned across all five field strengths              |
+| Primary Applications | Cross-field MRI synthesis, ultra-low-field enhancement, controllable field-to-field translation                    |
+| Evaluation Reference | Ground-truth images at the target/high field strength from the paired cohort                                       |
+| Evaluation Metrics | nRMSE, SSIM, LPIPS, Dice, normalized volume consistency                                                            |
+| Scanners | 0.1T: piMR-820H; 1.5T: uMR 670; 3T: MAGNETOM Prisma; 5T: uMR Jupiter; 7T: MAGNETOM Terra                           |
 
-To bridge the gap between heterogeneous clinical acquisitions and high-fidelity neuroscience research, the MRIxFields2026 challenge utilizes about 850 cases spanning 5 magnetic field strengths (0.1T to 7T) to evaluate generative models across three specific tasks:
+To bridge the gap between heterogeneous clinical acquisitions and high-fidelity neuroscience research, the MRIxFields2026 challenge utilizes about 850 cases spanning 5 magnetic field strengths (0.1T to 7T) for each modality (average) to evaluate generative models across three specific tasks:
 
 
 1. **Task 1: Ultra-High Field MRI Synthesis from Arbitrary Magnetic Field Strengths** – Targets the generation of high-field-equivalent MRI from arbitrary input field strengths, enabling models to recover fine anatomical details and quantitative properties associated with 7T imaging.
@@ -110,8 +113,9 @@ Each task will have 1 First Prize, 3 Second Prize and 5 Third Prize. We are acti
 <center>
   <img src="/tasks/awards_index.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
 </center>
-All valid submissions will be reported in the public leaderboard. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI 2026 annual meeting. Participating teams with a valid submission can nominate their team members as co-authors for the final challenge summary paper.
+All valid submissions will be reported in the public leaderboard. Prize-winning methods will be announced publicly as part of a scientific session at the MICCAI 2026 annual meeting. The inclusion of papers in the MICCAI conference proceedings and the selection of oral presentations will be determined and communicated through the paper review system.
 
+For the authorship policy of the challenge summary paper: for each task, the first-place team may include up to three authors, the second-place team up to two authors, and the third-place team one author. If the same team ranks within the top nine (award-winning positions) in multiple tasks, the authorship allocation will be determined based on their highest-ranking result.
 
 
 ## Timeline
@@ -122,13 +126,16 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[Apr. 01, 2026]</strong> Website opens for registration
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Apr. 10, 2026]</strong> Release training data and validation data
+    <strong>[Apr. 10, 2026]</strong> Release training data
+  </div>
+  <div style="padding: 10px 14px; background-color: #ffffff;">
+    <strong>[Apr. 20, 2026]</strong> Release validation data
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[July. 01, 2026]</strong> Submission system opens for testing
+    <strong>[Aug. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline
