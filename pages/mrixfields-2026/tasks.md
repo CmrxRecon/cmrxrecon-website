@@ -141,7 +141,7 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Aug. 01, 2026]</strong> Submission system opens for testing
+    <strong>[Jul. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline
