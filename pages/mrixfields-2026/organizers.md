@@ -9,7 +9,7 @@
 
 
 ### Institute of Science and Technology for Brain-inspired Intelligence, Fudan University, China
-- Hao Li (Co-Event Leader, h_li@fudan.edu.cn)
+- Hao Li (Co-Event Leader,  h_li@fudan.edu.cn)
 - He Wang
 - Weirui Cai
 - Hui Zhang
