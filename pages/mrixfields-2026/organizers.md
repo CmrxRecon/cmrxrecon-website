@@ -2,14 +2,14 @@
 
 
 ### Human Phenome Institute, Fudan University, China
-- Chengyan Wang (Co-Event Leader, wangcy@fudan.edu.cn)
+- Chengyan Wang (Co-Event Leader)
 - Liguo Jia
 - Chen Zhu
 - Xiaoqing Qiao
 
 
 ### Institute of Science and Technology for Brain-inspired Intelligence, Fudan University, China
-- Hao Li (Co-Event Leader, h_li@fudan.edu.cn)
+- Hao Li (Co-Event Leader)
 - He Wang
 - Weirui Cai
 - Hui Zhang
