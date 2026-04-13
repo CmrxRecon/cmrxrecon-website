@@ -4,11 +4,8 @@ pageClass: narrow-page
 
 
 hero:
-  name: "MRIxFields2026"
-  text: "Official website for the MICCAI MRIxFields 2026 challenge"
-  tagline: |
-    A Benchmark for Cross-Field MRI Translation and Harmonization
-
+  name: "MRIxFields 2026"
+  tagline: A Benchmark for Cross-Field MRI Translation and Harmonization.
 features:
   - title: Unified Generative Modeling 
     details: A structured valuation protocol defining three complementary tasks. 7T-equivalent synthesis, ultra-low-field enhancement, and controllable any-to-any field-conditioned transformation.
