@@ -10,7 +10,7 @@ The MRIxFields2026 challenge includes three complementary tasks. The tasks are e
 For each task, participants must submit their models separately as containerized inference pipelines via Docker images. Participants are allowed to make up to 3 formal submissions per task, and only the last run is officially counted to rank the results.
 
 
-Please note that for all three tasks, the provided datasets are identical: consisting of about 650 unpaired for each modality (average) and 3 paired volunteers (15 cases) for training, 17 paired volunteers (85 cases) for validation, and 20 paired volunteers (100 cases) for testing. However, the evaluation reference targets will vary depending on the specific task (e.g., using a fixed 7T reference for Task 1, versus dynamic field-conditioned targets for Task 3).
+Please note that for all three tasks, the provided datasets are identical: consisting of about 1900+ unpaired cases (T1W, T2W, T2 FLAIR) and 45 paired cases (3 paired volunteers × 5 fields × 3 modalities) for training, 255 paired cases (17 paired volunteers × 5 fields × 3 modalities)  for validation, and 300 paired cases (20 paired volunteers × 5 fields × 3 modalities) for testing. However, the evaluation reference targets will vary depending on the specific task (e.g., using a fixed 7T reference for Task 1, versus dynamic field-conditioned targets for Task 3).
 
 <center>
   <img src="/tasks/3tasks.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">
@@ -141,7 +141,7 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Aug. 01, 2026]</strong> Submission system opens for testing
+    <strong>[Jul. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline
@@ -168,10 +168,19 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
 
 6. Any publicly available datasets can be used for training. However, participants are not allowed to use their own private data to ensure the fairness of this challenge. Data augmentation based on the training dataset is allowed. No manual interventions, such as manual annotation of cases, are allowed.
 
-7. For Task 1 and Task 2, participants may design separate models for different input field strengths (4 input field strengths) and different image contrasts (T1w, T2w, T2-FLAIR) to address field-dependent variations in noise, resolution, and contrast behavior. That is, you may provide 12 separate models for image generation. However, for Task 3, participants must utilize a single unified conditional model to enable dynamic image generation conditioned on desired target field parameters. You may use a prompt-based mechanism, but only one set of pretrained parameters is allowed to be stored for Task 3. If a participating team submits multiple models for Task 3, the submission will be disqualified and no score will be counted.
+7. For Task 1 and Task 2, participants may design separate models for different input field strengths (4 input field strengths) and different image contrasts (T1W, T2W, T2 FLAIR) to address field-dependent variations in noise, resolution, and contrast behavior. That is, you may provide 12 separate models for image generation. However, for Task 3, participants must utilize a single unified conditional model to enable dynamic image generation conditioned on desired target field parameters. You may use a prompt-based mechanism, but only one set of pretrained parameters is allowed to be stored for Task 3. If a participating team submits multiple models for Task 3, the submission will be disqualified and no score will be counted.
 
-8. Participants may choose to use a single contrast (e.g., T1w) as input for model inference, or multiple contrasts (e.g., T1w + T2w + T2-FLAIR). The outputs can be either multi-contrast or single-contrast. We do not impose any restrictions on how participants use the provided data. However, please note that in the retrospective dataset, not every case includes all contrasts (T1w + T2w + T2-FLAIR). For matching across contrasts, please refer to the following: for each individual NIfTI file, our naming convention is "field strength_ID", for example, "5T_002". Please note that the same ID corresponds to the same subject, while different IDs correspond to different subjects. Therefore, if you intend to use multi-contrast data for training, you will need to match the IDs accordingly. For retrospective data (from different subjects), we only performed rigid registration. If you are not satisfied with the cross-contrast alignment, you may perform your own registration. For prospective data (from the same subject), we applied deformable registration to achieve better spatial consistency across field strengths and contrasts.
+8. Participants may choose to use a single contrast (e.g., T1W) as input for model inference, or multiple contrasts (e.g., T1W + T2W + T2 FLAIR). The outputs can be either multi-contrast or single-contrast. We do not impose any restrictions on how participants use the provided data. However, please note that in the retrospective dataset, not every case includes all contrasts (T1W + T2W + T2 FLAIR).
 
+   For matching across contrasts, please refer to the following:
+
+   Retrospective data uses global sequential IDs from 0001 to 1056. Each field strength occupies a distinct ID range: 0.1T corresponds to 0001–0100 (100 volunteers), 1.5T to 0101–0328 (228 volunteers), 3T to 0329–0471 (143 volunteers), 5T to 0472–0737 (266 volunteers), and 7T to 0738–1056 (319 volunteers). Since each subject was scanned at only one field strength, data across different field strengths are unpaired.
+
+   Prospective data uses IDs from 0001 to 0040. The same ID across all field strengths corresponds to the same volunteers. For example, P_T1W_0.1T_0006.nii.gz and P_T1W_7T_0006.nii.gz are from the same person scanned at 0.1T and 7T respectively. This enables paired training and evaluation across field strengths.
+
+   For retrospective data (from different volunteers), we only performed rigid registration. If you are not satisfied with the cross-contrast alignment, you may perform your own registration.
+
+   For prospective data (from the same volunteers), we applied deformable registration to achieve better spatial consistency across field strengths and contrasts.
 9. During the validation phase, to ensure efficiency in image segmentation, participants are required to perform segmentation locally and upload the segmentation results along with their submissions to the validation platform. During the test phase, participants only need to submit their inference Docker container, and we will perform standardized segmentation and evaluation.
 
 10. During the validation phase, each team is allowed to submit up to three times per day per task. In the test phase, each team can submit up to five Docker containers per task in total. The final ranking will be based on the results of the last submission.

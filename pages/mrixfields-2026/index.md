@@ -10,7 +10,7 @@ features:
   - title: Unified Generative Modeling 
     details: A structured valuation protocol defining three complementary tasks. 7T-equivalent synthesis, ultra-low-field enhancement, and controllable any-to-any field-conditioned transformation.
   - title: Comprehensive Multi-Field Dataset 
-    details: About 850 multi-center scans spanning 0.1T–7T, including 500 unpaired subjects and 200 (5 scanners) prospectively acquired travelling-volunteer paired scans for anatomically grounded cross-field evaluation.
+    details: 2500+ MRI multi-center cases spanning 0.1T–7T (T1W, T2W, T2 FLAIR), including 1900+ unpaired cases (1056 volunteers) and 600 paired cases (40 paired volunteers ×5 fields ×3 modalities) acquired travelling-volunteer paired scans for anatomically grounded cross-field evaluation. 
   - title: Cross-Field MRI Harmonization
     details: Addressing field-strength heterogeneity as a structured full-spectrum benchmark (0.1T–7T) for principled cross-domain generalization and representation consistency. 
 
@@ -79,12 +79,12 @@ While MRI is a central tool for neuroscience research and clinical assessment, t
 | Imaging Modality | Structural MRI                                                                                                     |
 | Sequences / Contrasts | 3D T1-weighted, 2D/3D T2-weighted, 2D/3D T2-FLAIR                                                                  |
 | Data Composition | Unpaired multi-field cohorts + travelling-volunteer paired cross-field cohort                                      |
-| Total Cases | ~ 850 cases / modality (average)                                                                                   |
-| Unpaired Cohort | ~ 650 cases / modality (average)                                                                                   |
-| Paired Cohort | 200 cases / modality (40 voluneers × 5 field strengths)                                                            |
-| Training Set | ~ 665 cases / modality (average; unpaired cohort + 3 paired subjects × 5 field strenghts)                          |
-| Validation Set | 85 cases / modality (17 volunteers × 5 field strengths)                                                            |
-| Test Set | 100 cases / modality (20 held-out volunteers × 5 field strengths)                                                  |
+| Total Cases | 2500+ cases                                                                                                        |
+| Unpaired Cohort | 1900+ cases                                                                                                        |
+| Paired Cohort | 600 cases (40 paired voluneers × 5 field  × 3 modalities)                                                          |
+| Training Set | 1945+ cases (1900+ unpaired cases + 3 paired volunteers × 5 field × 3 modalities)                                  |
+| Validation Set | 255 cases (17 volunteers × 5 field strengths × 3 modalities)                                                       |
+| Test Set | 300 cases (20 held-out volunteers × 5 field strengths × 3 modalities)                                                            |
 | Case Definition | One case is defined as a complete scan of a single subject acquired on one MRI system at a specific field strength |
 | Paired Information | The travelling-volunteer cohort consists of the same subjects scanned across all five field strengths              |
 | Primary Applications | Cross-field MRI synthesis, ultra-low-field enhancement, controllable field-to-field translation                    |
@@ -92,7 +92,7 @@ While MRI is a central tool for neuroscience research and clinical assessment, t
 | Evaluation Metrics | nRMSE, SSIM, LPIPS, Dice, normalized volume consistency                                                            |
 | Scanners | 0.1T: piMR-820H; 1.5T: uMR 670; 3T: MAGNETOM Prisma; 5T: uMR Jupiter; 7T: MAGNETOM Terra                           |
 
-To bridge the gap between heterogeneous clinical acquisitions and high-fidelity neuroscience research, the MRIxFields2026 challenge utilizes about 850 cases spanning 5 magnetic field strengths (0.1T to 7T) for each modality (average) to evaluate generative models across three specific tasks:
+To bridge the gap between heterogeneous clinical acquisitions and high-fidelity neuroscience research, the MRIxFields2026 challenge utilizes 2500+ cases spanning 5 magnetic field strengths (0.1T to 7T) for 3 modalities to evaluate generative models across three specific tasks:
 
 
 1. **Task 1: Ultra-High Field MRI Synthesis from Arbitrary Magnetic Field Strengths** – Targets the generation of high-field-equivalent MRI from arbitrary input field strengths, enabling models to recover fine anatomical details and quantitative properties associated with 7T imaging.
@@ -130,7 +130,7 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[May. 10, 2026]</strong> Submission system opens for validation
   </div>
   <div style="padding: 10px 14px; background-color: #ffffff;">
-    <strong>[Aug. 01, 2026]</strong> Submission system opens for testing
+    <strong>[Jul. 01, 2026]</strong> Submission system opens for testing
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
     <strong>[Sept. 10, 2026]</strong> Registration and docker submission deadline
