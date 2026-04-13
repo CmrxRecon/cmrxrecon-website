@@ -22,7 +22,6 @@ features:
 ---
 
 
-## Image Gallery
 
 ![Slide 1](./public/home/index2.png)
 
