@@ -8,8 +8,10 @@ hero:
   text: "Official website for the MICCAI MRIxFields 2026 challenge"
   tagline: |
     A Benchmark for Cross-Field MRI Translation and Harmonization
-    <div class="hero-date">April 01 – October 08, 2026</div>
-    <div class="hero-date">Total Prize Pool: $21,000</div>
+    <ClientOnly>
+      <div class="hero-date">April 01 – October 08, 2026</div>
+      <div class="hero-date">Total Prize Pool: $21,000</div>
+    </ClientOnly>
 
 features:
   - title: Unified Generative Modeling 
@@ -21,8 +23,6 @@ features:
 
 ---
 
-
-## Image Gallery
 
 ![Slide 1](./public/home/index2.png)
 
