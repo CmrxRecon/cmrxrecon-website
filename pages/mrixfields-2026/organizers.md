@@ -29,6 +29,20 @@
 </center>
 
 
+### School of Biomedical Engineering at Shanghai Jiao Tong University, China
+- Zhiyong Zhang
+- Cheng Jin
+- Hao Chen 
+- Yueqi Qiu
+
+
+<center>
+  <img src="/organizers/sjtu.png" 
+       alt="1" 
+       width="30%" 
+       style="max-width: 800px; height: auto; margin-bottom: 20px;">
+</center>
+
 ### School of Biomedical Engineering, ShanghaiTech University,China
 - Dinggang Shen
 - Kaicong Sun
@@ -61,22 +75,6 @@
   <img src="/organizers/charite.png" 
        alt="1" 
        width="45%" 
-       style="max-width: 800px; height: auto; margin-bottom: 20px;">
-</center>
-
-
-
-### School of Biomedical Engineering at Shanghai Jiao Tong University, China
-- Zhiyong Zhang
-- Cheng Jin
-- Hao Chen 
-- Yueqi Qiu
-
-
-<center>
-  <img src="/organizers/sjtu.png" 
-       alt="1" 
-       width="30%" 
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
@@ -126,7 +124,7 @@
 - Xingfeng Shao
 
 <center>
-  <img src="/organizers/ruijinluwan.png" 
+  <img src="/organizers/ruijin.png" 
        alt="1" 
        width="30%" 
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
