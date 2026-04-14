@@ -70,7 +70,9 @@ This track addresses the global priority of enhancing ultra-low-field (0.1T) MRI
 - **Ranking Method:**  
   - **Per-metric aggregation:** For each metric, compute the average value across all test cases.
 
-  - **Per-metric ranking:** Rank methods independently for each metric. Lower values are preferred for nRMSE and LPIPS, while higher values are preferred for SSIM. 
+  - **Per-metric ranking:** Rank methods separately for each metric based on its mean performance:
+    - Lower is better: nRMSE, LPIPS 
+    - Higher is better: SSIM, Dice overlap, normalized volume consistency  
 
   - **Overall ranking:** Sum the per-metric ranks for each algorithm. Algorithms with the lowest composite scores achieve the highest final rank. 
 
@@ -88,18 +90,15 @@ This track introduces controllable, generalizable field-to-field synthesis via e
 
 
 - **Evaluation Metrics:** Computed conditioned on different target field specifications to explicitly assess controllability and field-awareness.
-  - **Image Fidelity & Perceptual Quality:** Evaluated using Normalized Root Mean Square Error (nRMSE) for global intensity differences, Structural Similarity Index Measure (SSIM) for preservation of anatomical structures, and Learned Perceptual Image Patch Similarity (LPIPS) for field-dependent textural differences. 
-  
-  - **Regional Structural Preservation:** Evaluated using mean Dice overlap for boundary consistency and normalized volume consistency for relative volumetric deviation across 14 bilateral deep gray matter nuclei. 
-
+  - **Image Fidelity & Perceptual Quality:** Evaluated using Normalized Root Mean Square Error (nRMSE) for global intensity and contrast deviations, Structural Similarity Index Measure (SSIM) for preservation of anatomical structures, and Learned Perceptual Image Patch Similarity (LPIPS) for visual realism and anatomical plausibility. 
 
 - **Ranking Method:**  
-  - **Per-metric aggregation:** For each metric (nRMSE, SSIM, LPIPS, mean Dice overlap, and mean normalized volume consistency), compute the average metric value across all test cases. 
+  - **Per-metric aggregation:** For each metric (nRMSE, SSIM, LPIPS), compute the average metric value across all test cases. 
  
   - **Per-metric ranking:** Rank methods separately for each metric:
     - Lower is better: nRMSE, LPIPS 
-    - Higher is better: SSIM, Dice overlap, Normalized volume consistency  
-  - **Overall ranking:** For each method, sum its ranks across the four metrics to obtain a composite score. Methods with the lowest summed rank are ranked highest overall.
+    - Higher is better: SSIM  
+  - **Overall ranking:** For each method, sum its per-metric ranks to obtain a composite score. Algorithms with the lowest composite scores achieve the highest final rank.
 
 
 
