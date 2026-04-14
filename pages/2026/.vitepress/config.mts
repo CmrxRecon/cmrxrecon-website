@@ -18,6 +18,10 @@ export default defineConfig({
   title: "CMRx4DFlow2026",
   description: "website of CMRx series challenges",
   base: '/2026',
+  sitemap: {
+    hostname: 'https://cmrx.chihucloud.com/2026/',
+    lastmodDateOnly: false
+  },
   appearance: false,
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/2026/public/logo-combined.png' }],
