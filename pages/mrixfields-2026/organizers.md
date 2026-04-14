@@ -139,7 +139,7 @@
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
-### School of Computer and Control Engineering, Yantai University, China
+### Department of Radiological Sciences, University of California, Los Angeles, US
 - Jun Lyu
 - Xiaodong Zhong
 <center>
@@ -153,6 +153,15 @@
 - Chengcheng Zhu
 <center>
   <img src="/organizers/uw.png" 
+       alt="1" 
+       width="30%" 
+       style="max-width: 800px; height: auto; margin-bottom: 20px;">
+</center>
+
+### School of Biomedical Engineering, Tsinghua University, China
+- Rui Li
+<center>
+  <img src="/organizers/tsu.png" 
        alt="1" 
        width="30%" 
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
