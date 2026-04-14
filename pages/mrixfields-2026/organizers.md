@@ -68,7 +68,7 @@
 </center>
 
 
-### Department of Psychiatry and Neuroscience, Charité – Universitätsmedizin Berlin, Gemany
+### Department of Psychiatry and Neuroscience, Charité – Universitätsmedizin Berlin, Germany
 - Yuxiang Dai (Data Preprocessing and Evaluation Manager, yuxiangdai0627@gmail.com)
 
 <center>
