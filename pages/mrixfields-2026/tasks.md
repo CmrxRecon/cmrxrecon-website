@@ -10,7 +10,7 @@ The MRIxFields2026 challenge includes three complementary tasks. The tasks are e
 For each task, participants must submit their models separately as containerized inference pipelines via Docker images. Participants are allowed to make up to 3 formal submissions per task, and only the last run is officially counted to rank the results.
 
 
-Please note that for all three tasks, the provided datasets are identical: consisting of about 1900+ unpaired cases (T1W, T2W, T2 FLAIR) and 45 paired cases (3 paired volunteers × 5 fields × 3 modalities) for training, 255 paired cases (17 paired volunteers × 5 fields × 3 modalities)  for validation, and 300 paired cases (20 paired volunteers × 5 fields × 3 modalities) for testing. However, the evaluation reference targets will vary depending on the specific task (e.g., using a fixed 7T reference for Task 1, versus dynamic field-conditioned targets for Task 3).
+Please note that for all three tasks, the provided datasets are identical: consisting of about 1900+ unpaired cases (T1W, T2W, T2 FLAIR) and 45 paired cases (3 paired volunteers × 5 fields × 3 modalities) for training, 255 paired cases (17 paired volunteers × 5 fields × 3 modalities)  for validation, and 300 paired cases (20 paired volunteers × 5 fields × 3 modalities) for testing. However, the evaluation reference targets will vary depending on the specific task (e.g., using a fixed 7T reference for Task 1, versus dynamic field-conditioned targets for Task 3).
 
 <center>
   <img src="/tasks/3tasks.png" alt="Awards Overview" width="100%" style="max-width: 1100px; height: auto; margin-bottom: 20px;">

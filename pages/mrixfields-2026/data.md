@@ -17,7 +17,7 @@ MRIxFields2026 provides a large-scale multi-field MRI dataset spanning 0.1T to 7
 💾 **Data Overview: Scale & Diversity**
 
 - **Total Volume:**  
-  - Total Volume: The dataset comprises approximately 2500+ retrospective unpaired cases (5 fields; 3 modalities ) and 600 paired cases (40 paired volunteers×5 fields×3 modalities).
+  - Total Volume: The dataset comprises approximately 2500+ retrospective unpaired cases (5 fields; 3 modalities ) and 600 paired cases (40 paired volunteers×5 fields×3 modalities).
 
 - **○Multi-field structural brain MRI data featuring:5 Field Strengths: 0.1T, 1.5T, 3T, 5T, 7T systems.**  
   - 3 Modalities: 3D T1-Weighted (T1W), 2D/3D T2-Weighted (T2W), 2D/3D T2 FLAIR.(For 2D data, we utilize a pre-trained super-resolution network to reconstruct 3D volumes from 2D inputs.)
@@ -223,21 +223,25 @@ ChallengeData
 │       └── 7T/*.nii.gz
 ├── Training_prospective/            # Training (paired, travelling volunteers)
 │   ├── T1W/ {0.1T, 1.5T, 3T, 5T, 7T}
-│   ├── T2W/
-│   └── T2FLAIR/
+│   ├── T2W/{...}/
+│   └── T2FLAIR/{...}/
 ├── Validating_prospective/          # Validation (paired)
 │   ├── T1W/{0.1T, 1.5T, 3T, 5T, 7T}
-│   ├── T2W/
-│   └── T2FLAIR/
+│   ├── T2W/{...}/
+│   └── T2FLAIR/{...}/
 └── Testing_prospective/             # Test (paired)
     ├── T1W/{0.1T, 1.5T, 3T, 5T, 7T}
-    ├── T2W/
-    └── T2FLAIR/
+    ├── T2W/{...}/
+    └── T2FLAIR/{...}/
 ```
 
-For each individual NIfTI file, our naming convention is “field strength_ID”, for example, “5T_002”. Please note that the same ID corresponds to the same subject, while different IDs correspond to different subjects. Therefore, if you plan to use multi-contrast data for training, you will need to match the IDs accordingly.
+Our naming convention is: "Type_contrast_fieldStrength_ID.nii.gz", where Type is either P (prospective) or R (retrospective). For example, P_T1W_0.1T_0006.nii.gz. The same ID corresponds to the same volunteer.
 
-For retrospective data (from different subjects), we only performed rigid registration. If you are not satisfied with the cross-contrast alignment, you may perform your own registration. For prospective data (from the same subject), we applied deformable registration to achieve better spatial alignment across field strengths and contrasts. However, some degree of mismatch is unavoidable. If you identify any severe misalignment issues in the data, please contact us at: mrixfields@outlook.com.
+Retrospective data uses global sequential IDs from 0001 to 1056. Each field strength occupies a distinct ID range: 0.1T corresponds to 0001–0100 (100 volunteers), 1.5T to 0101–0328 (228 volunteers), 3T to 0329–0471 (143 volunteers), 5T to 0472–0737 (266 volunteers), and 7T to 0738–1056 (319 volunteers). Since each volunteer was scanned at only one field strength, data across different field strengths are unpaired.
+
+Prospective data uses IDs from 0001 to 0040. The same ID across all field strengths corresponds to the same volunteer. For example, P_T1W_0.1T_0006.nii.gz and P_T1W_7T_0006.nii.gz are from the same person scanned at 0.1T and 7T respectively. This enables paired training and evaluation across field strengths.
+
+For retrospective data (from different volunteers), we only performed rigid registration. If you are not satisfied with the cross-contrast alignment, you may perform your own registration. For prospective data (from the same volunteer), we applied deformable registration to achieve better spatial alignment across field strengths and contrasts. However, some degree of mismatch is unavoidable. If you identify any severe misalignment issues in the data, please contact us at: mrixfields@outlook.com.
 
 
 --------------------------------
