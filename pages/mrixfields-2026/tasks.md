@@ -99,10 +99,13 @@ This track introduces controllable, generalizable field-to-field synthesis via e
     - Lower is better: nRMSE, LPIPS 
     - Higher is better: SSIM  
   - **Overall ranking:** For each method, sum its per-metric ranks to obtain a composite score. Algorithms with the lowest composite scores achieve the highest final rank.
+- **Additional Constraints:**  
+    - Task 3 requires a single jointly trained, parameter-sharing conditional model that supports all source-to-target field transformations within one unified architecture.
+    - Methods that decompose Task 3 into field-specific, target-specific, or source-target-pair-specific dedicated subnetworks/models selected by a router are NOT allowed, even if they are packaged as a single checkpoint. 
+    - Mixture-of-Experts (MoE) style modules are allowed only when they are part of a single end-to-end model with substantial sharing and are not dedicated exclusively to fixed field strengths, contrasts, or translation pairs.
+    - The submission must NOT be functionally equivalent to an ensemble of specialized models for fixed field or translation pairs.
+    - The organizers reserve the right to request additional method details and to make the final determination on whether a submission is consistent with the spirit and requirements of Task 3.
 
-
-
----
 
 ## 🎖️ Awards
 
