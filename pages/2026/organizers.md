@@ -54,13 +54,6 @@
 - Zi Wang
 - Fanwen Wang
 
-<center>
-  <img src="/organizers/icl.png" 
-       alt="1" 
-       width="30%" 
-       style="max-width: 800px; height: auto; margin-bottom: 20px;">
-</center>
-
 ### Department of Radiology, Feinberg School of Medicine, Northwestern University, Chicago, USA
 - Michael Markl
 
