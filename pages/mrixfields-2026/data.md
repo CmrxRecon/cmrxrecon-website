@@ -19,7 +19,7 @@ MRIxFields2026 provides a large-scale multi-field MRI dataset spanning 0.1T to 7
 - **Total Volume:**  
   - Total Volume: The dataset comprises approximately 2500+ retrospective unpaired cases (5 fields; 3 modalities ) and 600 paired cases (40 paired volunteers×5 fields×3 modalities).
 
-- **○Multi-field structural brain MRI data featuring:5 Field Strengths: 0.1T, 1.5T, 3T, 5T, 7T systems.**  
+- **Multi-field structural brain MRI data featuring:5 Field Strengths: 0.1T, 1.5T, 3T, 5T, 7T systems.**  
   - 3 Modalities: 3D T1-Weighted (T1W), 2D/3D T2-Weighted (T2W), 2D/3D T2 FLAIR.(For 2D data, we utilize a pre-trained super-resolution network to reconstruct 3D volumes from 2D inputs.)
   - 3 Manufacturers: Siemens Healthineers, United Imaging Healthcare, Point Imaging. 
 
@@ -35,8 +35,10 @@ MRIxFields2026 provides a large-scale multi-field MRI dataset spanning 0.1T to 7
 
 ### Overall Split
 
-- Training set: 1945+ cases (T1W, T2W, T2 FLAIR), consisting of the 1900+ retrospective unpaired cases together with 45 paired cases (3 paired volunteers× 5 fields×3 modalities)
-- Validation set: 255 cases, corresponding to 17 volunteers × 5 fields × 3 modalities
+- Training set: 1945+ cases (T1W, T2W, T2 FLAIR), consisting of the 1900+ retrospective unpaired cases together with 45 paired cases (3 paired volunteers× 5 fields×3 modalities). All training data (both unpaired and paired) are released in full.
+- Validation set: 225 cases, corresponding to 15 volunteers × 5 fields × 3 modalities. Only inputs are released to participants. Each validation volunteer is assigned to exactly one of the 5 source fields (3 volunteers per field), and only that volunteer's scans at the assigned source field are released as model input. The remaining 4 field strengths × 3 modalities per volunteer are withheld as paired ground truth for evaluation. See here for validation details: 
+https://github.com/MRIxFields/MRIxFields2026/tree/main/Submission  
+
 - Test set: 300 cases, corresponding to 20 held-out volunteers × 5 fields × 3 modalities
 
 The precise role of each split varies across tasks, depending on whether the task is driven primarily by unpaired learning, paired target-domain supervision, or controllable conditional generation.
