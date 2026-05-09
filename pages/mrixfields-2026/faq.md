@@ -12,7 +12,7 @@ To prevent potential leakage of paired data to participating teams and to preser
 
 - Access requests from non-participating researchers will only be considered after the official release of the challenge results.
 
-Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal to the **MRIxFields Consortium** ([mrixfields@outlook.com](mailto:mrixfields@outlook.com)) for review. Access will be granted only upon approval by the Consortium.
+Researchers who do not intend to participate in the challenge but wish to use the dataset must submit a research proposal (The applicant form is <a href="./MRIxFields%20proposal%20Form.docx" download>here</a>) to the MRIxFields Consortium (<a href="mailto:mrixfields@outlook.com">mrixfields@outlook.com</a>) for review. Access will be granted only upon approval by the Consortium.
 
 All approved users are required to comply with the data usage agreement. In particular:
 
@@ -25,9 +25,9 @@ In addition, prior to manuscript submission, users must notify the **MRIxFields 
 - A description of how the dataset was used in the study
 - A copy of the manuscript intended for submission
 
-Furthermore, all resulting publications must include **“MRIxFields Consortium”** as a group author in the author list, typically listed at the end of the author list.
+Furthermore, all resulting publications must include **“MRIxFields Consortium”** as a group author in the author list, typically listed at the end of the author list. Group authorship does not diminish the importance of the corresponding author.
 
-For the full consortium author list, please download the document <a href="./consortium_list.docx" download>here</a>.
+For the detailed information of MRIxFields Consortium, please download the document <a href="./MRIxFields%20Consortium.docx" download>here</a>.
 
 ### 2. Can other datasets or pre-trained models be used to develop the reconstruction algorithms?
 
