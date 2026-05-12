@@ -16,6 +16,7 @@
 - Xueqin Xia
 - Xin Guo
 - Chang Xu
+- Debin Zeng
 
 ### College of Biomedical Engineering, Fudan University, China
 - Yucheng Yang
@@ -89,6 +90,7 @@
 
 ### Department of Radiology, Zhongshan Hospital, Fudan University, Shanghai, China
 - Zhang Shi
+- Shuhan Jin
 
 <center>
   <img src="/organizers/zhongshan.png" 
