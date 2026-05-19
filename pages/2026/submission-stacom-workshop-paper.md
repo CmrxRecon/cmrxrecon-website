@@ -1,25 +1,29 @@
 # ▾ Challenge Paper
 
-1. Manuscript Format
+**1. Manuscript Format**
+
 - Please follow the Springer LNCS template: [LNCS Conference Proceedings Guidelines](https://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines)
 - Initial submissions must be anonymized and limited to:
   - a. 8 pages for the main content (including text, figures, and tables), plus
   - b. up to 2 additional pages for references.
 
+**2. Review Process and Submission**
 
-2. Review Process and Submission
 All submissions will undergo a peer-review process. Papers should be submitted through the workshop OpenReview submission system: https://openreview.net/group?id=MICCAI.org/2026/Workshop/CMRx4DFlow
 
-3. Submission Policy
+**3. Submission Policy**
+
 Submitted manuscripts must describe original work that has not been previously published or simultaneously submitted elsewhere. Papers should primarily focus on the challenge methods, experimental settings, and validation results.
 
-4. Important Dates
+**4. Important Dates**
+
 All deadlines are Pacific Standard Time (PST +23:59).
 - [Jun. 10, 2026] Paper submission system opens
 - [Jul. 30, 2026] Deadline for paper submission
 - [Aug. 20, 2026] Deadline for camera-ready paper submission
 
-5. Presentation
+**5. Presentation**
+
 At least one author of each accepted paper must register for the workshop and present the work during the MICCAI Workshop 2026.
 
 --------------------------------
