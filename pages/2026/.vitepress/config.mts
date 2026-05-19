@@ -49,7 +49,7 @@ export default defineConfig({
       { text: 'Submission', 
         items: [
           { text: 'Task Submission', link: '/submission-task'},
-          { text: 'Stacom workshop paper', link: '/submission-stacom-workshop-paper'}
+          { text: 'Challenge Paper', link: '/submission-stacom-workshop-paper'}
       ]},
       { text: 'Support', link: '/support' },
       { text: 'Organizers', link: '/organizers' },

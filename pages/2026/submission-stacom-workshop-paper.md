@@ -1,7 +1,5 @@
----
-title: Challenge Paper
----
-## ▾ Challenge Paper
+# ▾ Challenge Paper
+
 1. Manuscript Format
 - Please follow the Springer LNCS template: [LNCS Conference Proceedings Guidelines](https://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines)
 - Initial submissions must be anonymized and limited to:
