@@ -18,7 +18,7 @@ Submitted manuscripts must describe original work that has not been previously p
 **4. Important Dates**
 
 All deadlines are Pacific Standard Time (PST +23:59).
-- [Jun. 10, 2026] Paper submission system opens
+- [May. 20, 2026] Paper submission system opens
 - [Jul. 30, 2026] Deadline for paper submission
 - [Aug. 20, 2026] Deadline for camera-ready paper submission
 
