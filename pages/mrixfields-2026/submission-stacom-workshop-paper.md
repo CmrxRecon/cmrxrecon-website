@@ -2,15 +2,40 @@
 title: Workshop Paper
 ---
 
-# Workshop Paper
-
-Participants are invited to submit an **8 pages** manuscript describing the algorithm and results of the training and validation phase for consideration in the MICCAI  workshop 2026. Accepted challenge papers will be published in a Lecture Notes in Computer Science proceeding published by Springer.
+# Chanllenge Paper
 
 ## General rules for paper submission
 
-1. Please follow the LNCS template ([Springer LNCS guidelines](https://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines)) for your manuscript. Initial submission must be anonymized and limited to 8 pages (text, tables, and figures) + up to 2 pages for references.  
-2. All papers will undergo a peer review process. Submit your paper through the [Springer submission system](https://stacom.github.io/) and make sure you choose the **“MRIxFields”** category.  
-3. A paper placeholder must be submitted before TBD. 2026.
+1. **Manuscript Format**
+
+Please follow the Springer LNCS template:
+
+[🔗 LNCS Conference Proceedings Guidelines](https://www.springer.com/us/computer-science/lncs/conference-proceedings-guidelines)
+
+Initial submissions must be **anonymized** and limited to:
+
+- **8 pages** for the main content, including text, figures, and tables.
+- Up to **2 additional pages** for references.
+
+2. **Review Process and Submission**
+
+All submissions will undergo a peer-review process. Papers should be submitted through the workshop OpenReview submission system: https://openreview.net/group?id=MICCAI.org/2026/Workshop/MRIxFields
+
+3. **Submission Policy**
+
+Submitted manuscripts must describe original work that has not been previously published or simultaneously submitted elsewhere. Papers should primarily focus on the challenge methods, experimental settings, and validation results.
+
+4. **Important Dates**
+
+All deadlines are Pacific Standard Time (PST +23:59).
+
+- [May. 20, 2026] Paper submission system opens
+- [Jul. 10, 2026] Deadline for initial paper submission
+- [Aug. 15, 2026] Deadline for camera-ready paper submission
+
+5. **Presentation**
+
+At least one author of each accepted paper must register for the workshop and present the work during the MICCAI Workshop 2026.
 
 --------------------------------
 
