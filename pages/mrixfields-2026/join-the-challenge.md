@@ -36,7 +36,7 @@ Evaluation of the received docker (test phase) will be performed on a cloud serv
 - **GPU:** A6000 (48 GB VRAM, single GPU)  
 - **GPU Driver Version:** 575 
 - **CUDA Version:** 12.9  
-- **Time Limitation:** 1 hours/team for each task  
+- **Time Limitation:** 20 hours per team for each task (The test set contains 20 cases, corresponding to an average processing time of 1 hour per case.) 
 
 ## Publication References
 You are free to use and/or refer to the MRIxFields2026 challenge and datasets in your own research after the embargo period (Dec. 2026), provided that you cite the following manuscripts:
