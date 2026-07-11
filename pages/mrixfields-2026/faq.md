@@ -39,7 +39,7 @@ Each team can consist of up to **6 people**.
 
 ### 4. Can we preprocess the data?
 
-We do not restrict data preprocessing, and we only evaluate the final generation performance. However, the total running time for all data in each task cannot exceed **1 hour**.
+We do not restrict data preprocessing, and we only evaluate the final generation performance.
 
 ### 5. Do we need to upload the training code?
 
