@@ -31,7 +31,7 @@ All deadlines are Pacific Standard Time (PST +23:59).
 
 - [May. 20, 2026] Paper submission system opens
 - [Jul. 24, 2026] Deadline for paper submission
-- [Aug. 29, 2026] Deadline for camera-ready paper submission
+- [Aug. 20, 2026] Deadline for camera-ready paper submission
 
 5. **Presentation**
 
