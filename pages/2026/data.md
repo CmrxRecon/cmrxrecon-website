@@ -65,7 +65,7 @@ The dataset is carefully divided to support a robust development and evaluation 
 - **Validation Set (32 Cases):**  
   - Undersampled raw k-space data (simulated with acceleration factors from 10x to 50x) derived from fully sampled data, without corresponding ground truth.
   
-- **Test Set (43 Cases):**  
+- **Test Set (27 Cases):**  
   - Final undisclosed dataset for challenge ranking. Consists of undersampled raw k-space data (with varying acceleration factors) and fully sampled references.
 
 ### Special Task 1: Generalizability across new sites and diseases
