@@ -105,7 +105,7 @@ The schedule of the challenge is as follows. All deadlines are Pacific Standard 
     <strong>[Aug. 20, 2026]</strong> Testing docker submission deadline
   </div>
   <div style="padding: 10px 14px; background-color: #f5f7fa;">
-    <strong>[Oct. 08, 2026]</strong> Release final results during the MICCAI annual meeting
+    <strong>[Oct. 01, 2026]</strong> Release final results during the MICCAI annual meeting
   </div>
 </div>
 
