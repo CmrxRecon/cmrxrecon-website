@@ -16,7 +16,7 @@ features:
 
 ---
 
-<div class="hero-date">April 01 – October 08, 2026</div>
+<div class="hero-date">April 01 – October 01, 2026</div>
 <div class="hero-date">Total Prize Pool: $21,000</div>
 
 ![Slide 1](./public/home/index2.png)
