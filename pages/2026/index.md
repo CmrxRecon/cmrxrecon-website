@@ -27,7 +27,7 @@ features:
 
 #### Welcome to the 4D Flow MRI Reconstruction Challenge 2026 (CMRx4DFlow2026)
 
-—an integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Abu Dhabi, United Arab Emirates, from October 4th to 8th, 2026.  
+—an integral part of the 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026), hosted in Strasbourg, from September 27th to October 1st, 2026.  
 LEARN MORE (MICCAI 2026 - 29. International Conference On Medical Image Computing & Computer Assisted Intervention)
 
 **🫀 CMRx4DFlow2026: Ultra-Fast 4D Flow MRI**
