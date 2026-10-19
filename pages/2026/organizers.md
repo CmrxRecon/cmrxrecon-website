@@ -211,11 +211,11 @@
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
 </center>
 
-### Shanghai Fuying Medical Technology Co., Ltd., China
-- Ziqiang Xu(Technical Support, daryl.Xu@foxmail.com)
+### Shanghai Chihu Cloud Software Co., Ltd., China
+- Ziqiang Xu(Technical Support, xu_ziqiang@chihucloud.com)
 
 <center>
-  <img src="/organizers/hfmed.png" 
+  <img src="/organizers/red-arc.png" 
        alt="1" 
        width="60%" 
        style="max-width: 800px; height: auto; margin-bottom: 20px;">
