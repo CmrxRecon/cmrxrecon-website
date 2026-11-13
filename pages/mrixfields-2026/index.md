@@ -10,7 +10,7 @@ features:
   - title: Unified Generative Modeling 
     details: A structured valuation protocol defining three complementary tasks. 7T-equivalent synthesis, ultra-low-field enhancement, and controllable any-to-any field-conditioned transformation.
   - title: Comprehensive Multi-Field Dataset 
-    details: 2500+ MRI multi-center cases spanning 0.1T–7T (T1W, T2W, T2 FLAIR), including 1900+ unpaired cases (1056 volunteers) and 600 paired cases (40 paired volunteers ×5 fields ×3 modalities) acquired travelling-volunteer paired scans for anatomically grounded cross-field evaluation. 
+    details: 2500+ MRI multi-center cases spanning 0.1T–7T (T1W, T2W, T2 FLAIR), including 1900+ unpaired cases (1055 volunteers) and 600 paired cases (40 paired volunteers ×5 fields ×3 modalities) acquired travelling-volunteer paired scans for anatomically grounded cross-field evaluation. 
   - title: Cross-Field MRI Harmonization
     details: Addressing field-strength heterogeneity as a structured full-spectrum benchmark (0.1T–7T) for principled cross-domain generalization and representation consistency. 
 
